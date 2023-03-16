@@ -12,9 +12,14 @@ class DataRow:
     def __init__(self, date: datetime, product: str, hub: str, price: float, bool_product_type: bool):
         self.date = date
         self.product = product
-        self.hub = hub.replace(' ', '_')
+        if hub.find('/') != -1:
+            self.hub = hub[:hub.find('/')]
+            self.hub2 = hub[hub.find('/') + 1:]
+        else:
+            self.hub = hub
+            self.hub2 = None
         self.price = price
-        self.prices_name = self.hub + '_spread'
+        self.prices_name = hub.replace('/', '_')
         self.unit = 'MWh'
         self.currency = 'EUR'
         self.id_source = 8
@@ -43,6 +48,7 @@ class DataRow:
             'prices_name': self.prices_name,
             'price': self.price,
             'hub': self.hub,
+            'hub2': self.hub2,
             'unit': self.unit,
             'currency': self.currency,
             'price_type': self.price_type,
@@ -59,7 +65,7 @@ class GASSheet:
     """
     def __init__(self, sheet_):
         self.date = datetime.datetime.strptime(sheet_.title, '%d%b%Y')
-        self.df_sheet = pd.DataFrame(columns=['date', 'prices_name', 'price', 'hub', 'unit', 'currency', 'price_type',
+        self.df_sheet = pd.DataFrame(columns=['date', 'prices_name', 'price', 'hub', 'hub2', 'unit', 'currency', 'price_type',
                                               'products', 'id_source', 'product_type'])
 
         def read_sheet():
@@ -116,7 +122,7 @@ class GASParser:
     def __init__(self, file_name):
         self.file_name = file_name
         self.xlsx_file = Path('', self.file_name)
-        self.df = pd.DataFrame(columns=['date', 'prices_name', 'price', 'hub', 'unit', 'currency', 'price_type',
+        self.df = pd.DataFrame(columns=['date', 'prices_name', 'price', 'hub', 'hub2', 'unit', 'currency', 'price_type',
                                         'products', 'id_source', 'product_type'])
 
         self.get_sheets_from_file()
