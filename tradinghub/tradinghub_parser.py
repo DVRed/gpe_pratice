@@ -18,7 +18,6 @@ def get_url():
 
 
 def parse(output_path):
-
     url = get_url()
     r = requests.get(url)
     json_data = r.json()
@@ -66,6 +65,8 @@ def parse(output_path):
         parsed_date = '/'.join(date_split)
 
         for p in TradingHubParser.delivery_points.keys():
+            if json_data[i][p] is None:
+                continue
             df = pd.concat([
                 df,
                 pd.DataFrame({
