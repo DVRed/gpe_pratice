@@ -126,6 +126,16 @@ class GASParser:
                                         'products', 'id_source', 'product_type'])
 
         self.get_sheets_from_file()
+        #replacing hubs
+        self.df = self.df.replace({'Czech Virtual Point':'Czech VTP',
+                                   'THE':'THE VTP','CEGH':'Austria VTP',
+                                   'SK VTP':'Slovak VTP','VTP':'Austria VTP'})
+        #replacing instruments
+        self.df = self.df.replace({'WE':'W/END', 'CAL24':'2024', 'CAL25':'2025', 'CAL26':'2026','WIN23':'Win 2023/2024',
+                                   'SUM23':'Sum 2023', 'SUM24':'Sum 2024', 'WIN24':'Win 2024/2025',
+                                   'Q122':'Q1/22', 'Q222':'Q2/22', 'Q322':'Q3/22', 'Q422':'Q4/22', 
+                                   'Q123':'Q1/23', 'Q223':'Q2/23', 'Q323':'Q3/23', 'Q423':'Q4/23',
+                                   'Q124':'Q1/24', 'Q224':'Q2/24', 'Q324':'Q3/24', 'Q424':'Q4/24'})
 
     def get_sheets_from_file(self):
         wb = openpyxl.load_workbook(self.xlsx_file, data_only=True)
@@ -143,6 +153,7 @@ class GASParser:
         self.df.to_csv(self.xlsx_file.stem + '.csv')
 
 if __name__ == '__main__':
-    file_name = 'ClosingDayPricesGAS2023.xlsx'
+    file_name = r'C:\Users\Dmitry\source\repos\gpe_pratice\gas\ClosingDayPricesGAS2023.xlsx'
     new_parser = GASParser(file_name)
-    new_parser.write_df_to_csv()
+    new_parser.df.to_csv(r'C:\Users\Dmitry\source\repos\gpe_pratice\gas\ClosingDayPricesGAS2023.csv')
+
