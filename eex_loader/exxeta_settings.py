@@ -52,8 +52,8 @@ EXCHANGES = [
 ]
 
 # соответствие единиц измерения пунктам поставки
-UNITS = {'TTF': 'MWh', 'NCG': 'MWh', 'Gaspool': 'MWh', 'THE VTP': 'MWh',
-         'Austria VTP': 'MWh', 'Czech VTP': 'MWh', 'Slovak VTP': 'MWh',
+UNITS = {'TTF': 'MWh', 'TTF EGSI': 'MWh', 'NCG': 'MWh', 'Gaspool': 'MWh', 'THE VTP': 'MWh', 'THE VTP EGSI': 'MWh',
+         'Austria VTP': 'MWh', 'Austria VTP EGSI': 'MWh', 'Czech VTP': 'MWh', 'Slovak VTP': 'MWh',
          'Peg Nord': 'MWh', 'AOC': 'MWh', 'Denmark ETF': 'MWh', 'Denmark GTF': 'MWh',
          'NBP': 'therm', 'IBP': 'therm', 'ZEE': 'therm',
          'ZTP': 'MWh', 'MGP': 'MWh', 'PSV': 'MWh', 'NCG (Lo-Cal)': 'MWh',
@@ -64,12 +64,12 @@ UNITS = {'TTF': 'MWh', 'NCG': 'MWh', 'Gaspool': 'MWh', 'THE VTP': 'MWh',
          'Nordic': 'specific', 'Poland': 'specific', 'Romania': 'specific', 'Serbian': 'specific',
          'Slovenian': 'specific', 'Spain': 'specific', 'UK': 'specific',
          'API 2': 'MT', 'API 4': 'MT', 'API 5': 'MT', 'API 8': 'MT', 'NEWC': 'MT', 'ICI 4': 'MT',
-         'CER': 'MT', 'EUA': 'MT', 'ERU': 'MT', 'UKA': 'MT', 'JKM': 'mmbtu'
+         'CER': 'MT', 'EUA': 'MT', 'ERU': 'MT', 'UKA': 'MT', 'JKM': 'mmbtu', 'PVB': 'MWh'
          }
 
 # соответствие валют пунктам поставки
-CURRENCIES = {'TTF': 'EUR', 'NCG': 'EUR', 'Gaspool': 'EUR', 'THE VTP': 'EUR',
-              'Austria VTP': 'EUR', 'Czech VTP': 'EUR', 'Slovak VTP': 'EUR',
+CURRENCIES = {'TTF': 'EUR', 'TTF EGSI': 'EUR', 'NCG': 'EUR', 'Gaspool': 'EUR', 'THE VTP': 'EUR', 'THE VTP EGSI': 'EUR',
+              'Austria VTP': 'EUR', 'Austria VTP EGSI': 'EUR', 'Czech VTP': 'EUR', 'Slovak VTP': 'EUR',
               'Peg Nord': 'EUR', 'AOC': 'EUR', 'Denmark ETF': 'EUR', 'Denmark GTF': 'EUR',
               'NBP': 'GBP', 'IBP': 'GBP', 'ZEE': 'GBP', 'ZTP': 'EUR',
               'MGP': 'EUR', 'PSV': 'EUR', 'NCG (Lo-Cal)': 'EUR',
@@ -80,7 +80,7 @@ CURRENCIES = {'TTF': 'EUR', 'NCG': 'EUR', 'Gaspool': 'EUR', 'THE VTP': 'EUR',
               'Nordic': 'EUR', 'Poland': 'EUR', 'Romania': 'EUR', 'Serbian': 'EUR',
               'Slovenian': 'EUR', 'Spain': 'EUR', 'UK': 'GBP', 'API 2': 'USD', 'API 4': 'USD', 'API 5': 'USD',
               'API 8': 'USD', 'NEWC': 'USD', 'ICI 4': 'USD',
-              'CER': 'EUR', 'EUA': 'EUR', 'ERU': 'EUR', 'UKA': 'GBP', 'JKM': 'USD'}
+              'CER': 'EUR', 'EUA': 'EUR', 'ERU': 'EUR', 'UKA': 'GBP', 'JKM': 'USD', 'PVB': 'EUR'}
 
 # коллекция для парсинга продуктов из спецификации сделки
 PARSER_PATTERNS = (
