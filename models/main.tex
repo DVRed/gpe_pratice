@@ -1,0 +1,176 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{lmodern}
+\usepackage{breqn}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[affil-it]{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tabularx}
+
+
+\begin{document}
+
+\title{Однофакторная модель с учётом сезонности}
+\author{Д. Мартынов, Д. Девяткин, М. Петров}
+\affil{ООО "Газпром Экспорт" \\ 
+Департамент трейдинговых операций и аукционной торговли \\
+Отдел квантовой оптимизации}
+\maketitle
+
+\tableofcontents
+
+\section*{TO-DO list}
+\begin{enumerate}
+    \item Проставить лэйблы ко всем уравнениям, потом по тексту сделать на них ссылки.  
+    \item Добавить текст, а то так она выглядит как-то очень верхнеуровнево.
+\end{enumerate}
+ 
+\section{Описание}
+
+За основу взята однофакторная модель для товарных рынков, предложенная Шварцем в 1997 году.  В модель добавлена сезонность, характерная для газового рынка. 
+
+Пусть $P_t$  -- спот цена базового актива (в нашем случае цена $DA$ газа на одном из хабов : $TTF$, $GASPOOL$ и т.д. Цена без учета сезонности - $D_t$ ($deseasonalized\; price$), тогда:
+
+\begin{equation}
+P_t = f_t D_t    
+\end{equation}
+
+где $f_t$ -- сезонный фактор со следующим свойством: 
+\begin{equation}
+    \sum_{i=1}^{i = 12} f_{\frac{i}{12}} = 12 
+\end{equation}
+\; \; \; или 
+\begin{equation}
+    \sum_{i=1}^{i = 12} \ln(f_{\frac{i}{12}}) = 0. 
+\end{equation}
+
+Модель предполагает, что цена без учета сезонности -- $D_t$ подчиняется стохастическому экспоненциальному процессу \textbf{Орнштейна--Уленбека}:
+\begin{equation}
+    dD_t = k(\mu - \ln{D_t})D_tdt + \sigma D_tdZ_t.
+\end{equation}
+Произведя замену $X_t = \ln D_t$ и применяя лемму Ито получим, что логарифм цены подчиняется стандартному процессу \textbf{Орнштейна--Уленбека}: 
+\begin{equation}
+    \begin{aligned}
+    & dX_t = k(\alpha - X_t)dt + \sigma dZ_t \\
+    & \alpha = \mu - \frac{\sigma^2}{2k}. 
+    \end{aligned}
+\end{equation}
+Коэффициент $k > 0$ показывает скорость возвращения к долгосрочному среднему логарифму цены базового актива $\alpha$.
+
+Распределение случайной величины $X_t$ в риск-нейтральных условиях починяется нормальному распределению с параметрами:
+\begin{equation}
+ E(X_t| X_0) = e^{-kt} X_0 + \alpha (1-e^{-kt}) 
+\end{equation}
+\begin{equation}
+ Var(X_t| X_0) = (1-e^{-2kt}) \frac{\sigma^2}{2k} .
+\end{equation}
+
+Соответственно, цена без учета сезонности --  $D_t$ (а также цена базовoго актива -- $P_t$) имеет параметры среднего и дисперсии \footnote{В силу свойств логнормального распределения}:
+
+\begin{equation}
+    \begin{aligned}  
+    & E(D_t|X_0) = e^{E(X_t|X_0) + \frac{1}{2} Var(X_t|X_0)} = e^{e^{-kt}X_0 + \alpha (1 - e^{-kt}) + \frac{1}{2} Var(X_t|X_0)} \\
+    & Var(D_t| X_0) = Var(P_t| X_0) = Var(X_t| X_0) = (1-e^{-2kt} ) \frac{\sigma^2}{2k} \\
+    & E(P_t|X_0) = f_t E(D_t|X_0).
+    \end{aligned}
+\end{equation}
+
+Предполагая, что процентные ставки постоянны, в риск-нейтральной мере форвардная (или фьючерсная) цена $F(P_t,T)$ на срок $T$, будет в точности совпадать с ожидаемой ценой $P_t$ для любого момента времени $t$:
+\begin{equation}
+F(P_t, T) = E(P_t) = f_t e^{e^{-k(T-t)}X_t+ \alpha (1 - e^{-k(T-t)}) + \frac{1}{2} Var(X_t|X_0)}
+\end{equation}
+ или в логформе, с учетом $X_t=\ln(D_t)$, а также (А) и (Б): %расставить ссылки 
+\begin{multline}
+\ln F(P_t, T) = 
+\ln f_t + e^{-k(T-t)} \ln D_t + \\
+(\mu - \frac{\sigma^2}{2k})(1-e^{-k(T-t)}) +  
+\frac{\sigma^2}{4k}(1-e^{-2k(T-t)}).         
+\end{multline}
+
+Калибровка параметров для моделирования $P_t$ достигается путем подстановки в уравнение (NN) текущих значений форвардных цен (12, 24 или 36 ближайших месяцев) и минимизации целевой функции. Целевая функция определяется как сумма абсолютных разниц между подобранными и фактическими форвардными ценами на все имеющиеся даты (12, 24 или 36 ближайших месяцев).
+
+\begin{equation}
+ \sum_{i = 1}^{N} |{F(P_t,T_i ) - F(T)}| \to \min
+\end{equation}
+
+где N=12/24/36 ближайших месяцев.
+
+Дополнительные ограничения при оптимизации целевой функции:
+\begin{equation}
+    \sum_{i=1}^{12} \ln f_{\frac{i}{12}} = 0
+\end{equation} 
+\begin{equation}
+    \sigma_{implied}^2 = (1-e^{-2k\Delta t}) \frac{\sigma^2}{2k\Delta t}
+\end{equation}
+
+Ограничение вводимое уравнением (NN) можно использовать на все имеющиеся месяца, для которых определена $\sigma_{implied}$. В этом случае моделируемые спот- и форвардные цены имеют большую волатильность на коротких сроках,  что более приближенно к реальному рынку.
+
+Для определения спот-цены $P_t$  на любой момент времени $t$, аналитическое решение уравнения (N) для $\ln D_t$, с учетом (4), (7) и (8), может быть представлено в виде дискретного процесса (где $\Delta t=\frac{1}{365}$):
+
+\begin{multline}
+\ln D_t = e^{-k\Delta t} \ln D_{t-1} + (\mu-\frac{\sigma^2}{2k})(1-e^{-k\Delta t} )  + \sigma \sqrt{\frac{1-e^{-2k\Delta t}}{2k}} \epsilon
+\end{multline}
+
+Откуда $P_t$ определяется по уравнению (1).
+
+Дискретное решение (NN) позволяет моделировать риск-нейтральную (мартингальную) оценку базового актива и его форвардных цен на любой момент времени $t>t_0$, при известных форвардных ценах $F(P_{t=0}, T)$  и $\sigma_{implied}$ в момент времени $t_0$. Под риск-нейтральной (мартингальной) понимается как соответствие текущих цен европейских опционов $Call$ и $Put$, ценам опционов полученным на базе ценовой модели на соответствующий срок.
+
+Модель предназначена для прайсинга любых контрактов с гибкостью, расчетная цена которых зависит от спот-цен базового актива, форвардных цен или их комбинации ($MA\; index$, $QA\; index$ и т.д.).
+
+Проверка модели на прайсинге $swing$-опциона $GUNVOR$ от $17.07.2020$ со следующими условиями контракта:  
+
+\begin{center}
+\begin{tabularx}{0.75\textwidth}{ 
+  | >{\raggedright\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\raggedleft\arraybackslash}X | }
+\hline
+Gazprom Export is selling \\ 
+\hline
+Gunvor is buying \\  
+\hline
+Gaspool   \\ 
+\hline
+01.10.20 06:00 – 01.04.21 06:00 CET \\ 
+\hline
+Max TCQ: 3.672 TWh (1000*24*153) \\ 
+\hline
+Min TCQ: 2.5704 TWh (70\% of Max TCQ) \\ 
+\hline
+Max DCQ: 1000 MWh/h \\ 
+\hline
+Min DCQ: 500 MWh/h (50\% of max DCQ) \\
+\hline
+Heren GPL MA index \\
+\hline
+\end{tabularx}
+\end{center}
+
+Все цены в $eur$ (модели - 10 000 итераций)
+\begin{center}
+\begin{tabularx}{\textwidth}{ 
+  | >{\raggedright\arraybackslash}X  
+  | >{\raggedright\arraybackslash}l | }
+\hline	
+Price\_counterparty	& 964 000 – 1 250 000\\
+\hline
+Model Risk &	1 261 500\\
+\hline
+Model TRD (Implied Vol; N_frd=12) &	1 112 200 \\
+\hline
+Model TRD (model Vol; N_frd=12)	& 1 190 800 \\
+\hline
+Model TRD (Implied Vol; N_frd=36) & 1 325 300 \\
+\hline
+Model TRD (model Vol; N_frd=36) & 938 900 \\
+\hline
+\end{tabularx}
+\end{center}
+
+\section{Программная реализация}
+
+Здесь будет приведён код на $Python$. 
+
+\end{document}

@@ -34,7 +34,7 @@ class Eex:
                              'EEX Japanese Power Futures - Tokyo':'JP_Tokyo','EEX-PXE Polish Power Futures':'Poland',
                              'EEX-PXE Romanian Power Futures':'Romania','EEX-PXE Slovakian Financial Power Future':'Slovakian',
                              'EEX-PXE Slovenian Power Futures':'Slovenian'}
-        self.proxy = {'http': 'http://192.168.114.230:8080', 'https': 'http://192.168.114.230:8080'}
+        #self.proxy = {'http': 'http://192.168.114.230:8080', 'https': 'http://192.168.114.230:8080'}
         self.country_marker = {'E.AT': "EEX Austrian Power Future",
                                'E.AB': "EEX Austrian Power Future",
                                'E.AP': "EEX Austrian Power Future",
