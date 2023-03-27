@@ -1,3 +1,5 @@
+import json
+
 import pandas as pd
 import requests
 
@@ -6,7 +8,7 @@ from eex_ng.pandas_configurator import PandasConfigurator
 from eex_loader.exxeta_settings import UNITS, CURRENCIES
 
 
-class EexNaturalGasFuturesParser:
+class EexNaturalGasSpotParser:
     """
     Class to parse Natural Gas Spot from eex
     https://www.eex.com/en/market-data/natural-gas/spot
@@ -62,59 +64,56 @@ class EexNaturalGasFuturesParser:
 
     def parse(self):
 
-        # print(str((self.end_date - self.start_date).days + 1))
-
         self.make_requests(symbols=self.symbols_day_ahead,
                            products='DA',
-                           product_type='Day')  # TODO or 'Daily'?
+                           product_type='Day')
 
         self.make_requests(symbols=self.symbols_weekend,
                            products='WKND',
-                           product_type='Day')  # TODO or 'Daily'?
+                           product_type='Day')
 
         self.pc.df = self.pc.df.dropna(subset=['price'])
+        self.pc.df = self.pc.df.drop(self.pc.df[self.pc.df.price <= 0].index)
         self.pc.df['date'] = pd.to_datetime(self.pc.df['date'])
         self.pc.df['date'] = self.pc.df['date'] - pd.to_timedelta(self.pc.df['date'].dt.hour, unit='h')
 
-    # TODO make_requests
     def make_requests(self, symbols, products, product_type):
         """
         make requests and append response to DataFrame using PandasConfigurator
         """
         for symbol, hub_name in symbols.items():
             params = {
-                'priceSymbol': symbol,  # '"#E.CEGH_WDRP"',
-                # TODO if end_date == start_date response will contain 1 item
+                'priceSymbol': symbol,
+                # if end_date == start_date response will contain 1 item
                 'chartstartdate': self.start_date.strftime('%Y/%m/%d'),
                 'chartstopdate': self.end_date.strftime('%Y/%m/%d'),
                 'dailybarinterval': 'Days',
                 'aggregatepriceselection': 'First'
             }
             r = requests.get(self.url, params=params, headers=self.headers)
-            # print(json.dumps(r.json(), indent=2))
-
             df = pd.DataFrame(r.json()['results']['items'])
-
-            self.pc.append(
-                date=df['tradedatetimegmt'],
-                price=df['ontradeprice'],
-                hub=hub_name,
-                currency=CURRENCIES[hub_name],
-                unit=UNITS[hub_name],
-                prices_name='EEX Natural Gas Spot ' + hub_name + ' Weekend' if products == 'WD' else ' Day Ahead',
-                price_type='PX_LAST',
-                products=products,  # DA or WKND
-                product_type=product_type
-            )
+            if len(r.json()['results']['items']) != 0:
+                self.pc.append(
+                    date=df['tradedatetimegmt'],
+                    price=df['ontradeprice'],
+                    hub=hub_name,
+                    currency=CURRENCIES[hub_name],
+                    unit=UNITS[hub_name],
+                    prices_name='EEX Natural Gas Spot ' + hub_name + ' Weekend' if products == 'WD' else ' Day Ahead',
+                    price_type='PX_LAST',
+                    products=products,  # DA or WKND
+                    product_type=product_type,
+                    id_source=9
+                )
 
     def get_df(self):
         return self.pc.df
 
 
 if __name__ == '__main__':
-    parser = EexNaturalGasFuturesParser(
-        end_date=date.today() - timedelta(days=1),
-        start_date=date.today() - timedelta(days=1)
+    parser = EexNaturalGasSpotParser(
+        end_date=date.today(),
+        start_date=date.today()
     )
     parser.parse()
     result = parser.get_df()

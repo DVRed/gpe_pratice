@@ -4,10 +4,10 @@ import requests
 
 from datetime import date, timedelta
 from eex_ng.pandas_configurator import PandasConfigurator
-from eex_loader.exxeta_settings import UNITS, CURRENCIES, DELIVERY_POINTS_CORRECT
+from eex_loader.exxeta_settings import UNITS, CURRENCIES
 
 
-class EexNaturalGasFuturesParser:
+class EexNaturalGasIndicesParser:
     """
     Class to parse Natural Gas Indices from eex
     https://www.eex.com/en/market-data/natural-gas/indices
@@ -79,28 +79,28 @@ class EexNaturalGasFuturesParser:
         for symbol, hub_name in symbols.items():
             params = {
                 'priceSymbol': symbol,
-                # TODO if end_date == start_date response will contain 0 items
-                'daysback': str((self.end_date - self.start_date).days),
+                # if end_date == start_date response will contain 1 item
+                'daysback': str((self.end_date - self.start_date).days + 1),
                 'chartstopdate': self.end_date.strftime('%Y/%m/%d'),
                 'dailybarinterval': 'Days',
                 'aggregatepriceselection': 'First'
             }
             r = requests.get(self.url, params=params, headers=self.headers)
-            # print(r.status_code)
 
             df = pd.DataFrame(r.json()['results']['items'])
-
-            self.pc.append(
-                date=df['tradedatetimegmt'],
-                price=df['close'],
-                hub=hub_name,
-                currency=CURRENCIES[hub_name],
-                unit=UNITS[hub_name],
-                prices_name='EEX Natural Gas Spot Index ' + hub_name,
-                price_type='PX_SETTLE',
-                products=products,  # WD or MA
-                product_type=product_type  # Daily or Month
-            )
+            if len(r.json()['results']['items']) != 0:
+                self.pc.append(
+                    date=df['tradedatetimegmt'],
+                    price=df['close'],
+                    hub=hub_name,
+                    currency=CURRENCIES[hub_name],
+                    unit=UNITS[hub_name],
+                    prices_name='EEX Natural Gas Spot Index ' + hub_name,
+                    price_type='PX_SETTLE',
+                    products=products,  # WD or MA
+                    product_type=product_type,  # Daily or Month
+                    id_source=9
+                )
 
     def get_df(self):
         return self.pc.df
@@ -120,9 +120,9 @@ class EexNaturalGasFuturesParser:
 
 
 if __name__ == '__main__':
-    parser = EexNaturalGasFuturesParser(
+    parser = EexNaturalGasIndicesParser(
         end_date=date.today(),
-        start_date=date.today() - timedelta(days=0)
+        start_date=date.today()
     )
     parser.parse()
     result = parser.get_df()

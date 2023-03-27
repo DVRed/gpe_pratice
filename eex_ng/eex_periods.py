@@ -43,10 +43,6 @@ class Week(Period):
         week_str = date.strftime("%W")
         return f"Week {week_str}/{str(date.year)[2:]}".upper()
 
-        # 4 digit year
-        # week = week.strftime("%W/%y")
-        # del_start = f"Week {week}"
-
 
 class Month(Period):
     symbol = 'BM'
@@ -56,10 +52,6 @@ class Month(Period):
     def get_products(date) -> str:
         month_str = date.strftime("%b")
         return f"{month_str}/{str(date.year)[2:]}".upper()
-
-        # 4 digit year
-        # month = month.strftime("%b/%Y")
-        # del_start= f"{month}"
 
 
 class Quarter(Period):
@@ -72,9 +64,6 @@ class Quarter(Period):
         quarter = pd.Timestamp(date).quarter
         return f"{quarter}/{str(year)[2:]}".upper()
 
-        # 4 digit year
-        # del_start = f"{quarter}/{year}"
-
 
 class Season(Period):
     symbol = 'BS'
@@ -85,9 +74,6 @@ class Season(Period):
         season = 'SUM' if date.month in range(3, 9) else 'WIN'
         return f"{season}-{str(date.year)[2:]}".upper()
 
-        # 4 digit year
-        # del_start = f"{season}-{year.year}"
-
 
 class Year(Period):
     symbol = 'BY'
@@ -97,6 +83,3 @@ class Year(Period):
     def get_products(date) -> str:
         year = date.strftime("%Y")
         return f"Cal-{str(year)[2:]}".upper()
-
-        # 4 digit year
-        # return f"Cal-{year}"

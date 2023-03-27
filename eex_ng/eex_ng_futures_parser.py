@@ -58,7 +58,6 @@ class EexNaturalGasFuturesParser:
 
     def parse(self):
         for on_date in daterange(self.start_date, self.end_date):
-            # TODO should we skip weekdays?
             if on_date.weekday() >= 5:
                 continue
             for period in [Month(), Quarter(), Season(), Year()]:
@@ -79,7 +78,6 @@ class EexNaturalGasFuturesParser:
                     period=period
                 )
 
-            # TODO JKM request returns close=0
             self.make_requests(
                 # dictionary that contains {'<symbol_for_request>': '<hub_name>'}
                 symbols={'"/E.GLJM"': 'JKM'},
@@ -88,6 +86,7 @@ class EexNaturalGasFuturesParser:
             )
 
         self.pc.df = self.pc.df.dropna(subset=['price'])
+        self.pc.df = self.pc.df.drop(self.pc.df[self.pc.df.price <= 0].index)
         self.pc.df['date'] = pd.to_datetime(self.pc.df['date'])
         self.pc.df['date'] = self.pc.df['date'] - pd.to_timedelta(self.pc.df['date'].dt.hour, unit='h')
 
@@ -98,26 +97,27 @@ class EexNaturalGasFuturesParser:
         for symbol, hub_name in symbols.items():
             params = {
                 'optionroot': symbol,
-                'onDate': on_date.strftime('%Y/%m/%d')  # TODO
+                'onDate': on_date.strftime('%Y/%m/%d')
             }
             r = requests.get(self.url, params=params, headers=self.headers)
-            df = pd.DataFrame(r.json()['results']['items'])
-            df['gv.displaydate'] = df['gv.displaydate'].map(lambda d: datetime.strptime(d, "%m/%d/%Y"))
 
-            # TODO append if df['ontradeprice'] or df['close'] is not None
-            for price, price_type in {'ontradeprice': 'PX_LAST', 'close': 'PX_SETTLE'}.items():
-                self.pc.append(
-                    date=df['tradedatetimegmt'],
-                    price=df[price],
-                    hub=hub_name,
-                    currency=CURRENCIES[hub_name],
-                    unit=UNITS[hub_name],
-                    prices_name='EEX ' + hub_name + ' Natural Gas Futures',
-                    price_type=price_type,
-                    products=df['gv.displaydate'].map(period.get_products),
-                    product_type=period.print(),
-                    beg_date=df['gv.displaydate']
-                )
+            df = pd.DataFrame(r.json()['results']['items'])
+            if len(r.json()['results']['items']) != 0:
+                df['gv.displaydate'] = df['gv.displaydate'].map(lambda d: datetime.strptime(d, "%m/%d/%Y"))
+                for price, price_type in {'ontradeprice': 'PX_LAST', 'close': 'PX_SETTLE'}.items():
+                    self.pc.append(
+                        date=df['tradedatetimegmt'],
+                        price=df[price],
+                        hub=hub_name,
+                        currency=CURRENCIES[hub_name],
+                        unit=UNITS[hub_name],
+                        prices_name='EEX ' + hub_name + ' Natural Gas Futures',
+                        price_type=price_type,
+                        products=df['gv.displaydate'].map(period.get_products),
+                        product_type=period.print(),
+                        beg_date=df['gv.displaydate'],
+                        id_source=9
+                    )
 
     def get_df(self):
         return self.pc.df
@@ -125,8 +125,8 @@ class EexNaturalGasFuturesParser:
 
 if __name__ == '__main__':
     parser = EexNaturalGasFuturesParser(
-        end_date=date.today() - timedelta(days=5),
-        start_date=date.today() - timedelta(days=5)
+        end_date=date.today(),
+        start_date=date.today()
     )
     parser.parse()
     result = parser.get_df()
