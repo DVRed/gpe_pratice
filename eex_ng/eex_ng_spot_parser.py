@@ -10,7 +10,7 @@ from eex_loader.exxeta_settings import UNITS, CURRENCIES
 
 class EexNaturalGasSpotParser:
     """
-    Class to parse Natural Gas Spot from eex
+    Class to parse EEX Natural Gas Spot
     https://www.eex.com/en/market-data/natural-gas/spot
     """
 
@@ -53,7 +53,12 @@ class EexNaturalGasSpotParser:
 
     pc = PandasConfigurator()
 
-    def __init__(self, end_date: date, start_date: date):
+    def __init__(self, end_date: date, start_date: date = None):
+        """
+        Парсер вернет <(end_date-start_date).days + 1> значений, заканчивая ближайшей к end_date датой,
+         содержащей действительное значение
+        """
+        # ^-- Это связано со спецификой формата запросов
         if start_date is None:
             self.start_date = end_date - timedelta(days=10)
         else:
@@ -63,6 +68,11 @@ class EexNaturalGasSpotParser:
             raise Exception("End_date can't be before Start_date")
 
     def parse(self):
+
+        """
+        Make requests and form Pandas.DataFrame
+        :return: DataFrame
+        """
 
         self.make_requests(symbols=self.symbols_day_ahead,
                            products='DA',
@@ -76,6 +86,8 @@ class EexNaturalGasSpotParser:
         self.pc.df = self.pc.df.drop(self.pc.df[self.pc.df.price <= 0].index)
         self.pc.df['date'] = pd.to_datetime(self.pc.df['date'])
         self.pc.df['date'] = self.pc.df['date'] - pd.to_timedelta(self.pc.df['date'].dt.hour, unit='h')
+
+        return self.pc.df
 
     def make_requests(self, symbols, products, product_type):
         """

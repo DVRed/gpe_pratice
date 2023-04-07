@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 
 from datetime import date, timedelta, datetime
-from eex_ng.eex_periods import Day, Weekend, Week, Month, Quarter, Season, Year
+from eex_ng.eex_periods import Day, Weekend, Week, Month, Quarter, Season, Year, Period
 from eex_ng.pandas_configurator import PandasConfigurator
 from eex_ng.utils import daterange
 from eex_loader.exxeta_settings import CURRENCIES, UNITS
@@ -10,7 +10,7 @@ from eex_loader.exxeta_settings import CURRENCIES, UNITS
 
 class EexNaturalGasFuturesParser:
     """
-    Class to parse Natural Gas Futures from eex
+    Class to parse EEX Natural Gas Futures
     https://www.eex.com/en/market-data/natural-gas/futures
     """
 
@@ -47,7 +47,7 @@ class EexNaturalGasFuturesParser:
 
     pc = PandasConfigurator()
 
-    def __init__(self, end_date: date, start_date: date):
+    def __init__(self, end_date: date, start_date: date = None):
         if start_date is None:
             self.start_date = end_date - timedelta(days=10)
         else:
@@ -57,6 +57,12 @@ class EexNaturalGasFuturesParser:
             raise Exception("End_date can't be before Start_date")
 
     def parse(self):
+
+        """
+        Make requests and form Pandas.DataFrame
+        :return: DataFrame
+        """
+
         for on_date in daterange(self.start_date, self.end_date):
             if on_date.weekday() >= 5:
                 continue
@@ -90,7 +96,9 @@ class EexNaturalGasFuturesParser:
         self.pc.df['date'] = pd.to_datetime(self.pc.df['date'])
         self.pc.df['date'] = self.pc.df['date'] - pd.to_timedelta(self.pc.df['date'].dt.hour, unit='h')
 
-    def make_requests(self, symbols, on_date, period):
+        return self.pc.df
+
+    def make_requests(self, symbols, on_date, period: Period):
         """
         makes requests and appends response to DataFrame using PandasConfigurator
         """

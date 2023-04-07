@@ -4,6 +4,9 @@ import pandas as pd
 
 
 class Period(ABC):
+    """
+    Класс для описания периодов
+    """
 
     @staticmethod
     @abstractmethod
@@ -12,6 +15,7 @@ class Period(ABC):
         converts date into products
         """
         pass
+
 
     def print(self):
         return self.__class__.__name__

@@ -9,7 +9,7 @@ from eex_loader.exxeta_settings import UNITS, CURRENCIES
 
 class EexNaturalGasIndicesParser:
     """
-    Class to parse Natural Gas Indices from eex
+    Class to parse EEX Natural Gas Indices
     https://www.eex.com/en/market-data/natural-gas/indices
     """
 
@@ -52,7 +52,7 @@ class EexNaturalGasIndicesParser:
 
     pc = PandasConfigurator()
 
-    def __init__(self, end_date: date, start_date: date):
+    def __init__(self, end_date: date, start_date: date = None):
         if start_date is None:
             self.start_date = end_date - timedelta(days=10)
         else:
@@ -62,6 +62,12 @@ class EexNaturalGasIndicesParser:
             raise Exception("End_date can't be before Start_date")
 
     def parse(self):
+
+        """
+        Make requests and form Pandas.DataFrame
+        :return: DataFrame
+        """
+
         self.make_requests(symbols=self.symbols_daily_hard,
                            products='DA',
                            product_type='Daily')
@@ -74,6 +80,8 @@ class EexNaturalGasIndicesParser:
 
         self.pc.df['date'] = pd.to_datetime(self.pc.df['date'])
         self.pc.df['date'] = self.pc.df['date'] - pd.to_timedelta(self.pc.df['date'].dt.hour, unit='h')
+
+        return self.pc.df
 
     def make_requests(self, symbols, products, product_type):
         for symbol, hub_name in symbols.items():
@@ -121,9 +129,8 @@ class EexNaturalGasIndicesParser:
 
 if __name__ == '__main__':
     parser = EexNaturalGasIndicesParser(
-        end_date=date.today(),
-        start_date=date.today()
+        end_date=date.today()
     )
     parser.parse()
     result = parser.get_df()
-    result.to_excel('./output/out_indices.xlsx')
+    # result.to_excel('./output/out_indices.xlsx')
