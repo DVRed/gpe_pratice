@@ -48,13 +48,13 @@ def update_sheet(workbook: Workbook, sheet_name: str, data: DataFrame, column_na
                 insert_value = value
                 sheet.cell(row=j + 1 + row_offset, column=column_index).value = insert_value
     last_row_index = sheet.max_row + 1
-    print(last_row_index)
     sheet.insert_rows(last_row_index)
     for column_index, formula in enumerate(formulas):
         sheet.cell(row=last_row_index, column=column_index + column_offset).value = formula
 
 
 # TODO handle if end_date < begin_date
+# TODO delete temporary file
 def main(input_path, temp_path, output_path, sheet_name, begin_date: datetime, end_date: datetime):
     """
     Parameters:
@@ -88,10 +88,8 @@ def main(input_path, temp_path, output_path, sheet_name, begin_date: datetime, e
     query = generate_query(
         list(formula_parser.data_sources.values()), formula_parser.sum_if_formulas, column_names, begin_date, end_date
     )
-    print(query)
 
     df_generated: DataFrame = execute_query_to_dataframe(query)
-    print(df_generated)
 
     # В копию книги в лист 'sheet_name' вносим изменения
     update_sheet(workbook, sheet_name, df_generated, column_names, formulas, row_offset, column_offset)
@@ -119,7 +117,6 @@ def main(input_path, temp_path, output_path, sheet_name, begin_date: datetime, e
                 raise ValueError('cant find index')
             sheet_index = m.group()
             target_xml_name = 'xl/worksheets/sheet' + sheet_index + '.xml'
-            print(target_xml_name)
             target_xml = temporary_extracted[target_xml_name]
     if target_xml is None:
         raise ValueError('Target list "Daily" was not found')

@@ -90,6 +90,8 @@ def get_first_num_row_index(workbook, sheet_name, check_column_index) -> int:
     return i - 1
 
 
+# TODO возможно решение уже есть в openpyxl:
+#  https://openpyxl.readthedocs.io/en/stable/api/openpyxl.workbook.external_link.external.html
 # TODO do more testing
 def get_connections(extracted_zip: dict[str, bytes]) -> dict[str, str]:
     """
