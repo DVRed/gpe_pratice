@@ -1,7 +1,5 @@
 import re
 
-QUERIES_PATH = 'queries/'  # TODO remove as redundant
-
 
 class Argument:
     """
@@ -63,22 +61,12 @@ class DataSource:
     """
     # TODO identifier объявленный в поле "Имя" закладки "Область Использования" в свойствах подключения
     #  может отличаться от имени, которое упоминается в формуле
-    def __init__(self, identifier: str, source_query: str, required_point_names=None, required_properties=None, required_properties_dict=None):
-        # TODO remove as we have required_properties dict
-        # if required_properties is None:
-        #     required_properties = set([])  # TODO order is not guarantee
-        # if required_point_names is None:
-        #     required_point_names = set([])  # TODO order is not guarantee
-        #
+    def __init__(self, identifier: str, source_query: str, required_properties_dict=None):
         if required_properties_dict is None:
             required_properties_dict: dict[str, Property] = {}
         self.identifier = identifier
         self.source_query = source_query
-        # with open(QUERIES_PATH + identifier + '_query', 'r') as file:
-        #     self.source_query = file.read()  # TODO Fluxys_data_query today() date
-        # self.required_point_names = required_point_names
         self.required_properties_dict = required_properties_dict
-        # self.required_properties = required_properties
         self.most_relevant_property = None
 
     def __eq__(self, obj):
@@ -138,15 +126,11 @@ class FormulaParser:
 
     def parse(self, formulas: list[str], connections):
         for i, formula in enumerate(formulas):
-
-            # formula = formula.replace('Table_ExternalData_164', 'House_curves_data')
-            # formula = formula.replace('Table_ExternalData_16', 'Fluxys_data')
             formula = re.sub(r'Daily!\$[A-Z]{1,2}\d+', 'date', formula)
             formula = formula.replace('[[#All],', '')
             formula = formula.replace(']]', ']')
             formula = formula.replace('[1]', '')
             formula = formula.replace('!', '')
-            # formula = formula.replaceAll(r'Daily!\\$[A-Z]{1,2}\\d+', 'date')  # TODO
 
             if re.search(r'=SUMIFS\(.*\)', formula):
 
@@ -180,7 +164,6 @@ class FormulaParser:
                         else:
                             ds = DataSource(identifier, connections[identifier][:-1])
                             self.data_sources[identifier] = ds
-                        # ds.required_properties.add(property_name)
                         sum_argument = Argument(identifier, property_name)
                         continue
 
@@ -189,18 +172,13 @@ class FormulaParser:
                     if len(argument_parts) == 1:
                         value = argument_parts[0].replace('"', '')
                         data_source = self.data_sources[prev_argument.identifier]
-                        # if prev_argument.property_name == 'point_name':
-                        #     data_source.required_point_names.add(value)
                         conditions.append(Condition(prev_argument, value))
-                        # data_source.required_properties.add(prev_argument.property_name)
 
                         property_dict = data_source.required_properties_dict
                         if prev_argument.property_name not in property_dict.keys():
                             my_property = Property(prev_argument.property_name)
-                            #self.data_sources[prev_argument.identifier].required_properties_dict[prev_argument.property_name] = my_property
                             property_dict[prev_argument.property_name] = my_property
                         else:
-                            # my_property = self.data_sources[prev_argument.identifier].required_properties_dict[prev_argument.property_name]
                             my_property = property_dict[prev_argument.property_name]
                         my_property.add_value(value)
 

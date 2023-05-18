@@ -1,5 +1,5 @@
-from model_data_loader_c.formula_parser import DataSource, SumIfFormula, Condition
-from model_data_loader_c.utils import indent_with_tabs
+from model_data_loader.formula_parser import DataSource, SumIfFormula, Condition
+from model_data_loader.utils import indent_with_tabs
 from datetime import datetime
 
 
@@ -22,10 +22,8 @@ def generate_cross_tab(data_source: DataSource):
         property_name0 != 'value' and
         property_name0 != cross_tab_property and
         property_name0 != 'date',
-        data_source.required_properties_dict.keys()  # data_source.required_properties
+        data_source.required_properties_dict.keys()
     ))
-
-    # data_source.required_properties
 
     if len(extra_properties) != 0:
         select_from_source_query = 'select CONCAT(date, '
@@ -41,23 +39,20 @@ def generate_cross_tab(data_source: DataSource):
 
     cross_tab_column_select = '"id" varchar,\n"date" timestamp without time zone,\n'
 
-    for property_name in data_source.required_properties_dict.keys():  # data_source.required_properties:
-        print(property_name)
-        if property_name != 'value' and property_name != cross_tab_property:  # 'point_name':
+    for property_name in data_source.required_properties_dict.keys():
+        if property_name != 'value' and property_name != cross_tab_property:
             if property_name == 'date':
-                print('AAAAAAAAAA')
                 continue
-                # cross_tab_column_select += '"date" timestamp without time zone'
             else:
                 cross_tab_column_select += '"' + property_name + '" varchar'
             cross_tab_column_select += ',\n'
-        if property_name != 'date' and property_name != 'value' and property_name != cross_tab_property: # 'point_name':
+        if property_name != 'date' and property_name != 'value' and property_name != cross_tab_property:
             select_from_source_query += property_name + ', '
 
-    for i, property_value in enumerate(cross_tab_column_list):  # data_source.required_point_names):
+    for i, property_value in enumerate(cross_tab_column_list):
         cross_tab_column_select += '"' + property_value + '" numeric'
         category_query += '(\'\'' + property_value + '\'\')'
-        if i != len(cross_tab_column_list) - 1:  # data_source.required_point_names) - 1:
+        if i != len(cross_tab_column_list) - 1:
             cross_tab_column_select += ',\n'
             category_query += ','
 
@@ -67,7 +62,7 @@ def generate_cross_tab(data_source: DataSource):
         indent_with_tabs(data_source.source_query.replace("'", "''"), 1) + '\n' + \
         ') m order by id'
 
-    category_query += ') b(' + cross_tab_property + ')'  # point_name)'
+    category_query += ') b(' + cross_tab_property + ')'
 
     return 'select * from crosstab(\n' + \
         indent_with_tabs("'" + select_from_source_query + "'", 1) + ',\n' + \
@@ -84,10 +79,9 @@ def generate_query(data_sources: list[DataSource],
     data_source_query = 'with '
     for data_source in data_sources:
         source_query = ''
-        # date,
         if len(data_source.required_properties_dict.keys()) > 1:
             print('generating crosstab query for ' + data_source.identifier)
-            source_query = generate_cross_tab(data_source)  # TODO
+            source_query = generate_cross_tab(data_source)
         else:
             source_query = data_source.source_query
         data_source_query += '\n' + data_source.identifier + ' as (\n' +\
@@ -96,7 +90,6 @@ def generate_query(data_sources: list[DataSource],
     date_format = '%Y-%m-%d %H:%M:%S'
     begin_date_formatted = begin_date.strftime(date_format)
     end_date_formatted = end_date.strftime(date_format)
-    # TODO handle if end_date < begin_date
 
     data_source_query += '\ndates as (' \
                          'select * from generate_series(' \

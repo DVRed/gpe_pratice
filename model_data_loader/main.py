@@ -5,10 +5,10 @@ from openpyxl.reader.excel import load_workbook
 from openpyxl.workbook import Workbook
 from pandas import DataFrame
 import xml.etree.ElementTree as ElementTree
-from model_data_loader_c.db_loader import execute_query_to_dataframe
-from model_data_loader_c.formula_parser import FormulaParser
-from model_data_loader_c.query_generator import generate_query
-from model_data_loader_c.utils import load_xlsx_row, extract_zip, zip_back, get_column_offset, \
+from model_data_loader.db_loader import execute_query_to_dataframe
+from model_data_loader.formula_parser import FormulaParser
+from model_data_loader.query_generator import generate_query
+from model_data_loader.utils import load_xlsx_row, extract_zip, zip_back, get_column_offset, \
     get_first_num_row_index, get_connections
 from datetime import datetime
 
@@ -37,10 +37,9 @@ def update_sheet(workbook: Workbook, sheet_name: str, data: DataFrame, column_na
         sheet = workbook.create_sheet(sheet_name)
     for (column_name, column_data) in data.iteritems():
         column_index = column_names.index(column_name) + column_offset
-        # print('index of "' + column_name + '" is ' + int_to_excel_index(column_index))
         for j, value in enumerate(column_data):
             if column_name == 'Date':
-                # print(type(value))
+                # TODO дата печатается как число
                 # j+1 т.к. в екселе строки нумеруются с 1
                 sheet.cell(row=j + 1 + row_offset, column=column_index).number_format = 'dd.mm.yyyy'
                 sheet.cell(row=j + 1 + row_offset, column=column_index).value = value
@@ -55,6 +54,7 @@ def update_sheet(workbook: Workbook, sheet_name: str, data: DataFrame, column_na
         sheet.cell(row=last_row_index, column=column_index + column_offset).value = formula
 
 
+# TODO handle if end_date < begin_date
 def main(input_path, temp_path, output_path, sheet_name, begin_date: datetime, end_date: datetime):
     """
     Parameters:
@@ -67,7 +67,7 @@ def main(input_path, temp_path, output_path, sheet_name, begin_date: datetime, e
     """
     # создаем копию книги
     shutil.copy(input_path, temp_path)
-    workbook = load_workbook(temp_path)  # TODO
+    workbook = load_workbook(temp_path)
 
     column_offset = get_column_offset(workbook, sheet_name, 10)
     row_offset = get_first_num_row_index(workbook, sheet_name, 10)
