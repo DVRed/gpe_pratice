@@ -11,7 +11,9 @@ import os
 from dataclasses import dataclass
 from dotenv import load_dotenv
 
-load_dotenv('/srv/sstd/.env')
+# TODO
+load_dotenv('./srv/sstd/.env')
+# load_dotenv('/srv/sstd/.env')
 
 
 @dataclass(frozen=True)

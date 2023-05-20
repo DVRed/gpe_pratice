@@ -1,20 +1,12 @@
 from __future__ import annotations
 
 import pandas as pd
+from loguru import logger
 from pandas import DataFrame
 from sqlalchemy import create_engine, text
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
-from db_config import DBConfigInstance, DBConfig
-
-_TESTING_CONFIG = DBConfig(DBMS='postgresql',
-                           DRIVER='psycopg2',
-                           HOSTNAME='localhost',
-                           DATABASE='analytics_relized',
-                           USERNAME='postgres',
-                           PASSWORD='postgres',
-                           config_name='My_test_config')
-TESTING_CONFIG = DBConfigInstance(_TESTING_CONFIG)
+from db_config import DBConfigInstance, ANALYTICS_BASE_DB_CONFIG
 
 
 class DBConnector:
@@ -22,7 +14,7 @@ class DBConnector:
     Класс подключения к БД аналитической информации через SQLAlchemy
     """
 
-    def __init__(self, config: DBConfigInstance = TESTING_CONFIG):
+    def __init__(self, config: DBConfigInstance = ANALYTICS_BASE_DB_CONFIG):
         self._config = config.DB_URI
         self.engine = None
         self.session = None
@@ -34,6 +26,7 @@ class DBConnector:
         Returns:
             Engine: объект подключения engine
         """
+        logger.debug(f'creating engine with {self._config} config')
         self.engine = create_engine(
             self._config, echo=False)
         return self.engine
@@ -63,8 +56,8 @@ class DBLoader:
     """Базовый класс для загрузки данных в БД
 
     Attributes:
-        in_base (AutomapBase): БД
-        in_session (Session): объект сессии в БД
+        base (AutomapBase): БД
+        session (Session): объект сессии в БД
     """
 
     def __init__(self, in_base, in_session):
@@ -72,7 +65,10 @@ class DBLoader:
         self.session = in_session
 
 
-def execute_query_to_dataframe(query_text) -> DataFrame:
+def execute_query_to_dataframe(query_text: str) -> DataFrame:
+    """
+    Connects to DB, executes query_text into pandas DataFrame
+    """
     connector = DBConnector()
     base = connector.connect_to_base()
     session = connector.create_session()

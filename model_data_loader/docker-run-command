@@ -1,0 +1,3 @@
+
+# Путь внутри контейнера задается INPUT_PATH и OUTPUT_PATH переменными в config.py
+docker run -v <SOURCE_PATH_WITH_XLSX_ON_HOST>:/model_data_loader/src -v <OUTPUT_PATH_ON_HOST>:/model_data_loader/out model_data_loader:latest

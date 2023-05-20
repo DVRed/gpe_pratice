@@ -1,23 +1,25 @@
+import os
 import re
+from dataclasses import dataclass
+from loguru import logger
+from config import QUERIES_PATH
 
 
+@dataclass(frozen=True)
 class Argument:
     """
     Класс, представляющий аргумент в условии.
     Напр. Table_External_Data[some_property]
 
     Attributes:
-        identifier (str): имя внешней таблицы
+        identifier (str): имя внешней таблицы ()
         property_name (str): свойство (столбец)
     """
-    def __init__(self, identifier: str, property_name: str):
-        self.identifier = identifier
-        self.property_name = property_name
-
-    def __eq__(self, obj):
-        return isinstance(obj, Argument) and obj.identifier == self.identifier
+    identifier: str
+    property_name: str
 
 
+@dataclass(frozen=True)
 class Condition:
     """
     Класс представляющий условие в excel формуле: Criteria_range; Criteria.
@@ -26,9 +28,8 @@ class Condition:
         argument (Argument): Criteria_range
         value (str): Criteria, только строки, значения хранятся без кавычек
     """
-    def __init__(self, argument: Argument, value: str):
-        self.argument = argument
-        self.value = value
+    argument: Argument
+    value: str
 
 
 class Property:
@@ -69,9 +70,6 @@ class DataSource:
         self.required_properties_dict = required_properties_dict
         self.most_relevant_property = None
 
-    def __eq__(self, obj):
-        return isinstance(obj, DataSource) and obj.identifier == self.identifier
-
     def get_most_relevant_property(self) -> Property:
         """
         Метод для получения наиболее выгодного для cross_tab'a свойства
@@ -90,6 +88,7 @@ class DataSource:
         return most_relevant
 
 
+@dataclass(frozen=True)
 class SumIfFormula:
     """
     Класс, представляющий SUMIFS(Sum_range; Criteria_range1; Criteria1; ...)*a*b*... excel формулу
@@ -100,31 +99,28 @@ class SumIfFormula:
         multipliers: *a*b*...
         column_index: индекс столбца, в котором лежит формула
     """
-    def __init__(self, data_source: DataSource, sum_argument: Argument,
-                 conditions: list[Condition], column_index: int, multipliers: str = ''):
-        self.data_source = data_source
-        self.sum_argument = sum_argument
-        self.column_index = column_index
-        self.conditions = conditions
-        self.multipliers = multipliers
-
-    def __eq__(self, obj):
-        return isinstance(obj, SumIfFormula) and obj.column_index == self.column_index
+    data_source: DataSource
+    sum_argument: Argument
+    conditions: list[Condition]
+    column_index: int
+    multipliers: str = ''
 
 
 class FormulaParser:
-
-    data_sources: dict[str, DataSource] = {}
-    sum_if_formulas: list[SumIfFormula] = []
 
     MULTIPLIERS_PATTERN = r'(?<=\))\*.*'
     FUNCTION_BODY_PATTERN = r'(?<=SUMIFS\().+(?=\))'
     ARGUMENT_SPLITTER_PATTERN = r'[a-zA-Z_\"0-9 \\-]+'
 
-    def __init__(self, formulas: list[str], connections):
-        self.parse(formulas, connections)
+    def __init__(self, formulas: list[str], connections: dict[str, str], model_name: str):
+        self.data_sources: dict[str, DataSource] = dict()
+        self.sum_if_formulas: list[SumIfFormula] = list()
+        self.connections = connections
+        self.model_name = model_name
+        self.parse(formulas)
 
-    def parse(self, formulas: list[str], connections):
+    # TODO too large function body, split
+    def parse(self, formulas: list[str]) -> None:
         for i, formula in enumerate(formulas):
             formula = re.sub(r'Daily!\$[A-Z]{1,2}\d+', 'date', formula)
             formula = formula.replace('[[#All],', '')
@@ -159,10 +155,11 @@ class FormulaParser:
                     if argument == arguments[0]:
                         identifier = argument_parts[0]
                         property_name = argument_parts[1]
-                        if identifier in self.data_sources:
+                        if identifier in self.data_sources.keys():
                             ds = self.data_sources[identifier]
                         else:
-                            ds = DataSource(identifier, connections[identifier][:-1])
+                            source_query = self.get_source_query(identifier)
+                            ds = DataSource(identifier, source_query)
                             self.data_sources[identifier] = ds
                         sum_argument = Argument(identifier, property_name)
                         continue
@@ -191,4 +188,31 @@ class FormulaParser:
 
                 sif = SumIfFormula(ds, sum_argument, conditions, i, multipliers)
                 self.sum_if_formulas.append(sif)
-            formulas[i] = formula
+            else:
+                if any(connection_id in formula for connection_id in self.connections.keys()):
+                    raise RuntimeError(f'"{formula}" formula is not implemented')
+            # formulas[i] = formula
+
+    # TODO в некоторых запросах присутствует сегодняшняя дата, которую нужно как-то обновлять
+    def get_source_query(self, identifier) -> str:
+        """
+        Достает SQL запрос из словарика connections и сохраняет этот запрос в папку по пути QUERIES_PATH
+         либо из папки по пути QUERIES_PATH с запросами по идентификатору identifier
+        """
+        if identifier in self.connections.keys() and self.connections[identifier] != '':
+            logger.info(f'saving external query for {identifier}')
+            source_query = self.connections[identifier][:-1]
+            path_to_save_query = QUERIES_PATH + '/' + self.model_name
+            if not os.path.exists(path_to_save_query):
+                os.makedirs(path_to_save_query)
+            with open(path_to_save_query + '/' + identifier + '_query', 'w') as file:
+                file.write(source_query)
+        else:
+            logger.info(f'query was not found for {identifier}, loading from queries dir')
+            try:
+                with open(QUERIES_PATH + '/' + self.model_name + '/' + identifier + '_query', 'r') as file:
+                    source_query = file.read()
+            except IOError as e:
+                raise FileNotFoundError(f'no pre saved query for {identifier} in {self.model_name}.'
+                                        f'check if identifier in formula matches with name of connection')
+        return source_query

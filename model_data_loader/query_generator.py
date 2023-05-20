@@ -1,9 +1,11 @@
-from model_data_loader.formula_parser import DataSource, SumIfFormula, Condition
-from model_data_loader.utils import indent_with_tabs
+from loguru import logger
+
+from formula_parser import DataSource, SumIfFormula, Condition
+from utils.text_utils import indent_with_tabs
 from datetime import datetime
 
 
-def generate_cross_tab(data_source: DataSource):
+def generate_cross_tab(data_source: DataSource) -> str:
     """
     Генерирует CROSSTAB sql-запрос, множество значений колонки cross_tab_property развертываются в колонки,
     значения в этих колонках берутся из колонки value исходной таблицы
@@ -80,9 +82,10 @@ def generate_query(data_sources: list[DataSource],
     for data_source in data_sources:
         source_query = ''
         if len(data_source.required_properties_dict.keys()) > 1:
-            print('generating crosstab query for ' + data_source.identifier)
+            logger.info(f'generating crosstab query for {data_source.identifier}')
             source_query = generate_cross_tab(data_source)
         else:
+            logger.info(f'using unmodified query for {data_source.identifier}')
             source_query = data_source.source_query
         data_source_query += '\n' + data_source.identifier + ' as (\n' +\
             indent_with_tabs(source_query, 1) + '\n),'
@@ -99,16 +102,16 @@ def generate_query(data_sources: list[DataSource],
 
     select = 'select \n\tdates.date as "Date",\n'
     joins = ''
-    t = 0
-    j = 0
+    inner_alias_counter = 0
+    join_alias_counter = 0
 
     for sum_if_formula in sum_if_formulas:
         cross_tab_property = sum_if_formula.data_source.get_most_relevant_property().property_name
 
-        inner_alias = 't' + str(t)
-        t += 1
-        join_alias = 'j' + str(j)
-        j += 1
+        inner_alias = f't{inner_alias_counter}'
+        inner_alias_counter += 1
+        join_alias = f'j{join_alias_counter}'
+        join_alias_counter += 1
 
         cross_tab_property_condition = None
         cross_tab_property_filtered_list: list[Condition] = list(filter(

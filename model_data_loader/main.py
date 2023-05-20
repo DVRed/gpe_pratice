@@ -1,102 +1,87 @@
+import os
 import re
 import shutil
+import sys
 from io import StringIO
+
 from openpyxl.reader.excel import load_workbook
-from openpyxl.workbook import Workbook
 from pandas import DataFrame
 import xml.etree.ElementTree as ElementTree
-from model_data_loader.db_loader import execute_query_to_dataframe
-from model_data_loader.formula_parser import FormulaParser
-from model_data_loader.query_generator import generate_query
-from model_data_loader.utils import load_xlsx_row, extract_zip, zip_back, get_column_offset, \
-    get_first_num_row_index, get_connections
-from datetime import datetime
+from db_loader import execute_query_to_dataframe
+from formula_parser import FormulaParser
+from config import TEMP_PATH, INPUT_PATH, OUTPUT_PATH
+from utils.time_utils import get_date_range
+from query_generator import generate_query
+from utils.excel_utils import load_xlsx_row, get_column_offset, get_first_num_row_index, get_connections, update_sheet
+from utils.zip_utils import extract_zip, insert_zip
+from datetime import datetime, timedelta
+from loguru import logger
+
 
 # https://foss.heptapod.net/openpyxl/openpyxl/-/issues/2019
 # TODO когда issue закроется, то можно будет сохранять конечный
-#  файл с помощью openpyxl, не теряя "Запросы и подключения"
-
-
-def update_sheet(workbook: Workbook, sheet_name: str, data: DataFrame, column_names: list[str], formulas: list[str],
-                 row_offset: int, column_offset: int):
-    """
-    Заносит данные из data pandas DataFrame'a в лист sheet_name книги workbook,
-    создает новую строку в конце, в которую сохраняет формулы из formulas
-    Parameters:
-        workbook: открытая книга openpyxl, по окончании не закрывается
-        sheet_name: лист, в который пишем
-        data: pandas DataFrame, названия колонок такие же как и в column_names (кол-во м.б. и меньше)
-        column_names: названия всех колонок в листе sheet_name
-        formulas: формулы для сохранения в последней строке
-        row_offset: начальный адрес строки, нумерация с 0
-        column_offset: начальный адрес колонки, нумерация с 0
-    """
-    if sheet_name in workbook.sheetnames:
-        sheet = workbook[sheet_name]
-    else:
-        sheet = workbook.create_sheet(sheet_name)
-    for (column_name, column_data) in data.iteritems():
-        column_index = column_names.index(column_name) + column_offset
-        for j, value in enumerate(column_data):
-            if column_name == 'Date':
-                # TODO дата печатается как число
-                # j+1 т.к. в екселе строки нумеруются с 1
-                sheet.cell(row=j + 1 + row_offset, column=column_index).number_format = 'dd.mm.yyyy'
-                sheet.cell(row=j + 1 + row_offset, column=column_index).value = value
-                # insert_value = value.strftime('%d.%m.%Y')
-            else:
-                insert_value = value
-                sheet.cell(row=j + 1 + row_offset, column=column_index).value = insert_value
-    last_row_index = sheet.max_row + 1
-    sheet.insert_rows(last_row_index)
-    for column_index, formula in enumerate(formulas):
-        sheet.cell(row=last_row_index, column=column_index + column_offset).value = formula
-
-
-# TODO handle if end_date < begin_date
-# TODO delete temporary file
-def main(input_path, temp_path, output_path, sheet_name, begin_date: datetime, end_date: datetime):
+#  файл с помощью openpyxl, не теряя "Запросы и подключения",
+#  т.е. без плясок с архивациями
+def process_model(input_file_path, temp_file_path, output_file_path,
+         model_name, sheet_name, begin_date: datetime, end_date: datetime):
     """
     Parameters:
-        input_path: путь к входному xlsx файлу
-        temp_path: путь для хранения временной копии xlsx файла, включая имя
-        output_path: путь к выходному xlsx файлу, включая имя
+        input_file_path: путь к входному xlsx файлу
+        temp_file_path: путь для хранения временной копии xlsx файла, включая имя
+        output_file_path: путь к выходному xlsx файлу, включая имя
         sheet_name: имя листа
         begin_date:
         end_date:
     """
+
+    if end_date - begin_date < timedelta(0):
+        raise Exception("end_date can't be before begin_date")
+
+    # TODO убрать из копии лишние листы, чтобы сократить время открытия/закрытия книги
+    #  пока не удалось, если убирать лишние листы, забивая содержимое файлов нулями,
+    #  то openpyxl жалуется, что xlsx битый
     # создаем копию книги
-    shutil.copy(input_path, temp_path)
-    workbook = load_workbook(temp_path)
+    shutil.copy(input_file_path, temp_file_path)
+
+    logger.info('loading workbook')
+    workbook = load_workbook(temp_file_path)
 
     column_offset = get_column_offset(workbook, sheet_name, 10)
     row_offset = get_first_num_row_index(workbook, sheet_name, 10)
 
-    # читаем формулы из последней строки TODO постоянный инкремент последней строки
+    logger.info('workbook loaded, parsing formulas')
+    # читаем формулы из последней строки
     formulas = load_xlsx_row(workbook, sheet_name, workbook[sheet_name].max_row)
+    logger.info(f'loaded formulas from {workbook[sheet_name].max_row}')
 
     # адрес строки с именами колонок row_offset-1 и +1 тк нумерация строк с 1
     column_names = load_xlsx_row(workbook, sheet_name, row_offset)
 
     # разархивируем копию in-memory
-    temporary_extracted = extract_zip(temp_path)
+    temporary_extracted = extract_zip(temp_file_path)
 
     # парсим формулы екселя в python объекты
-    formula_parser = FormulaParser(formulas[:], get_connections(temporary_extracted))
+    formula_parser = FormulaParser(formulas[:], get_connections(temporary_extracted), model_name)
 
+    logger.info('formulas parsed, generating query')
     # генерируем запрос, результат запроса помещаем в pandas DataFrame
     query = generate_query(
         list(formula_parser.data_sources.values()), formula_parser.sum_if_formulas, column_names, begin_date, end_date
     )
+    logger.debug('generated query:\n' + query)
 
+    logger.info('query generated, executing query')
     df_generated: DataFrame = execute_query_to_dataframe(query)
 
     # В копию книги в лист 'sheet_name' вносим изменения
+    logger.info(f'query executed, updating sheet {sheet_name}')
     update_sheet(workbook, sheet_name, df_generated, column_names, formulas, row_offset, column_offset)
-    workbook.save(temp_path)
+
+    logger.info(f'sheet {sheet_name} updated, saving')
+    workbook.save(temp_file_path)
 
     # разархивируем in-memory только что сохранненый xlsx
-    temporary_extracted = extract_zip(temp_path)
+    temporary_extracted = extract_zip(temp_file_path)
 
     # Копию листа из временной книги вставляем в исходную
     workbook_xml_str = temporary_extracted['xl/workbook.xml'].decode("utf-8")
@@ -112,27 +97,57 @@ def main(input_path, temp_path, output_path, sheet_name, begin_date: datetime, e
     for sheet in sheets:
         if sheet.attrib['name'] == sheet_name:
             sheet_r_id = sheet.attrib['{' + namespace['r'] + '}id']
-            m = re.search(r'\d+$', sheet_r_id)
-            if not m:
+            matcher = re.search(r'\d+$', sheet_r_id)
+            if not matcher:
                 raise ValueError('cant find index')
-            sheet_index = m.group()
+            sheet_index = matcher.group()
             target_xml_name = 'xl/worksheets/sheet' + sheet_index + '.xml'
             target_xml = temporary_extracted[target_xml_name]
     if target_xml is None:
         raise ValueError('Target list "Daily" was not found')
 
     # разархивируем входной файл, чтобы внести изменения в него
-    main_extracted = extract_zip(input_path)
+    main_extracted = extract_zip(input_file_path)
     main_extracted[target_xml_name] = target_xml
 
-    zip_back(output_path, main_extracted)
+    insert_zip(output_file_path, main_extracted)
+
+    os.remove(temp_file_path)
+    logger.info(f'finished processing {model_name}')
+
+
+def main():
+
+    logger.info('starting')
+
+    if not os.path.exists('./' + TEMP_PATH):
+        os.makedirs('./' + TEMP_PATH)
+
+    for file_name in os.listdir(INPUT_PATH):
+        if not re.match(r'.*\.xlsx$', file_name):
+            logger.debug(f'skipping {file_name}')
+            continue
+        matcher = re.match(r'(.*)(?=\.xlsx)', file_name)
+        logger.info(f'processing {file_name} file')
+        if matcher:
+            model_name = matcher.group(0)
+        else:
+            raise RuntimeError(f'empty file name: {file_name}')
+        # TODO what's range to use?
+        begin_date, end_date = get_date_range()
+        logger.debug('date range: from ' + begin_date.strftime('%d.%m.%Y') + ' to ' + end_date.strftime('%d.%m.%Y'))
+        process_model(
+            input_file_path=INPUT_PATH + '/' + file_name,
+            temp_file_path=TEMP_PATH + '/' + file_name,
+            output_file_path=OUTPUT_PATH + '/' + file_name,
+            model_name=model_name,
+            sheet_name='Daily',
+            begin_date=begin_date, end_date=end_date
+        )
+    logger.info('finished processing files')
 
 
 if __name__ == '__main__':
-    t1 = datetime.now()
-    main(
-        input_path='src/BE SD.xlsx', temp_path='tmp/BE_SD_copy_2.xlsx', output_path='out/res2.xlsx',
-        sheet_name='Daily',
-        begin_date=datetime(day=1, month=1, year=2015), end_date=datetime(day=1, month=4, year=2024)  # 1 <= month <= 12
-    )
-    print('executed for ' + str((datetime.now() - t1).seconds))
+    logger.remove()
+    logger.add(sys.stderr, level="INFO")
+    main()

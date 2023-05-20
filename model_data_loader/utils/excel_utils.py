@@ -1,15 +1,12 @@
 import re
-from io import StringIO
 from string import ascii_uppercase as auc
 from xml.etree import ElementTree
-from zipfile import ZipFile
+from io import StringIO
 
-from openpyxl.reader.excel import load_workbook
+from loguru import logger
+from openpyxl.workbook import Workbook
+from pandas import DataFrame
 
-
-# *******************************
-# *         EXCEL UTILS         *
-# *******************************
 
 def excel_to_int(excel_index: str) -> int:
     """
@@ -90,7 +87,7 @@ def get_first_num_row_index(workbook, sheet_name, check_column_index) -> int:
     return i - 1
 
 
-# TODO возможно решение уже есть в openpyxl:
+# TODO возможно решение уже есть в openpyxl, но по нему очень мало документации:
 #  https://openpyxl.readthedocs.io/en/stable/api/openpyxl.workbook.external_link.external.html
 # TODO do more testing
 def get_connections(extracted_zip: dict[str, bytes]) -> dict[str, str]:
@@ -122,50 +119,50 @@ def get_connections(extracted_zip: dict[str, bytes]) -> dict[str, str]:
     return res
 
 
-# ****************************
-# *         ZIP UTILS        *
-# ****************************
-
-def extract_zip(input_zip) -> dict[str, bytes]:
-    input_zip = ZipFile(input_zip)
-    return {name: input_zip.read(name) for name in input_zip.namelist()}
-
-
-def zip_back(zip_path: str, files: dict[str, bytes]):
-    with open(zip_path, 'w+') as file_created:  # file creation TODO Create file with ZipFile
-        pass
-    with ZipFile(zip_path, mode='w') as archive:
-        for file_name, file_content in files.items():
-            archive.writestr(file_name, file_content)
-
-
-# *****************************
-# *         TEXT UTILS        *
-# ******************************
-
-def indent_with_tabs(text: str, num: int) -> str:
+def update_sheet(workbook: Workbook, sheet_name: str, data: DataFrame, column_names: list[str], formulas: list[str],
+                 row_offset: int, column_offset: int) -> None:
     """
-    Вставляет num табуляций в начало каждой строки
+    Заносит данные из data pandas DataFrame'a в лист sheet_name книги workbook,
+    создает новую строку в конце, в которую сохраняет формулы из formulas
+    Parameters:
+        workbook: открытая книга openpyxl, по окончании не закрывается
+        sheet_name: лист, в который пишем
+        data: pandas DataFrame, названия колонок такие же как и в column_names (кол-во м.б. и меньше)
+        column_names: названия всех колонок в листе sheet_name
+        formulas: формулы для сохранения в последней строке
+        row_offset: начальный адрес строки, нумерация с 0
+        column_offset: начальный адрес колонки, нумерация с 0
     """
-    indent_space = '\t' * num
-    text = indent_space + text.replace('\n', '\n' + indent_space)
-    return text
+    if sheet_name in workbook.sheetnames:
+        sheet = workbook[sheet_name]
+    else:
+        sheet = workbook.create_sheet(sheet_name)
+    date_column_index = -1
+    for (column_name, column_data) in data.items():
+        column_index = column_names.index(column_name) + column_offset
+        for j, value in enumerate(column_data):
+            if column_name == 'Date':
+                # TODO дата печатается как число
+                date_column_index = column_index
+                # j+1 т.к. в екселе строки нумеруются с 1
+                sheet.cell(row=j + 1 + row_offset, column=column_index).number_format = 'dd.mm.yyyy'
+                sheet.cell(row=j + 1 + row_offset, column=column_index).value = value
+                # insert_value = value.strftime('%d.%m.%Y')
+            else:
+                insert_value = value
+                sheet.cell(row=j + 1 + row_offset, column=column_index).value = insert_value
 
-
-if __name__ == '__main__':
-
-    # print(get_column_offset(load_workbook('src/test.xlsx'), 'temp', 10))
-    print(get_first_num_row_index(load_workbook('src/BE_SD_copy.xlsx', data_only=False), 'Daily', 10))
-
-    # Testing of 'excel_to_int' function
-    print(' BA: ' + str(excel_to_int('BA')))
-    print(' CY: ' + str(excel_to_int('CY')))
-    print(' AB: ' + str(excel_to_int('AB')))
-    print('  A: ' + str(excel_to_int('A')))
-    print('  Z: ' + str(excel_to_int('Z')))
-    # Testing of 'int_to_excel_index' function
-    print(' 52: ' + str(int_to_excel_index(52)))
-    print('102: ' + str(int_to_excel_index(102)))
-    print(' 27: ' + str(int_to_excel_index(27)))
-    print('  0: ' + str(int_to_excel_index(0)))
-    print(' 25: ' + str(int_to_excel_index(25)))
+    # check if last row is already filled with formulas (date cell value is -1)
+    last_date_cell_value = sheet.cell(row=sheet.max_row, column=date_column_index).value
+    logger.debug(f'value in {date_column_index}:{sheet.max_row} cell is: '
+                 f'{last_date_cell_value} with type {type(last_date_cell_value)}')
+    logger.info('checking if last row contains formulas')
+    if last_date_cell_value != -1:
+        logger.info('creating last row with formulas')
+        last_row_index = sheet.max_row + 1
+        sheet.insert_rows(last_row_index)
+        for column_index, formula in enumerate(formulas):
+            sheet.cell(row=last_row_index, column=column_index + column_offset).value = formula
+        sheet.cell(row=last_row_index, column=date_column_index).value = -1
+    else:
+        logger.info('date was matched')
