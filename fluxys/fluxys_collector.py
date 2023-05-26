@@ -29,6 +29,9 @@ DEPENDING_X_PATHS: Mapping['Data_Type', Mapping[str, str]] = {
 
 
 def create_driver(path_to_save: str):
+    """
+    function to create web driver with chrome options
+    """
     user_agent = 'Mozilla/5.0 (X11; Linux x86_64) ' \
                  'AppleWebKit/537.36 (KHTML, like Gecko) ' \
                  'Chrome/33.0.1750.517 ' \
@@ -50,6 +53,9 @@ def create_driver(path_to_save: str):
 
 
 def collect_fluxys_data(data_type: Data_Type, from_date: str, to_date: str, file_name: str):
+    """
+    function to collect data from fluxys with selenium for the set date range
+    """
     # create driver
     driver = create_driver(os.getcwd())
     driver.get('https://gasdata.fluxys.com/en/transmission-ztp-trading-services/flow-data/')
