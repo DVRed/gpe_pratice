@@ -217,7 +217,7 @@ class FluxysDataFrame:
         self._divide_flow_types()
         
         # replace NaN values with 0
-        self._df.value = self._df.apply(lambda x: 0 if np.isnan(x.value) else x.value, axis=1)
+        # self._df.value = self._df.apply(lambda x: 0 if np.isnan(x.value) else x.value, axis=1)
         # drop rows with NaN values
         self._df.drop(self._df[np.isnan(self._df.value)].index, inplace = True)
 
