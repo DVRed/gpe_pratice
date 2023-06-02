@@ -1,0 +1,2038 @@
+date,delivery_point,point_type,curve_name,value
+2015-09-30,Isle Of Grain,lng_terminal,Opening Stock,2183287680.0
+2015-09-30,South Hook,lng_terminal,Opening Stock,2419054551.0
+2015-09-30,Dragon,lng_terminal,Opening Stock,605794871.0
+2015-09-30,Rough,ugs,Opening Stock,30387391764.0
+2015-09-30,Aldbrough,ugs,Opening Stock,1582287476.0
+2015-09-30,Holford,ugs,Opening Stock,692302413.0
+2015-09-30,Hill Top,ugs,Opening Stock,76213084.0
+2015-09-30,Stublach,ugs,Opening Stock,2130354306.0
+2015-09-30,Humbly Grove,ugs,Opening Stock,2554424293.0
+2015-09-30,Hornsea,ugs,Opening Stock,2114357453.0
+2015-09-30,Holehouse Farm,ugs,Opening Stock,228036573.0
+2015-09-30,Avonmouth,ugs,Opening Stock,39668430.0
+2016-09-30,Isle Of Grain,lng_terminal,Opening Stock,3932612444.0
+2016-09-30,South Hook,lng_terminal,Opening Stock,3338366889.0
+2016-09-30,Dragon,lng_terminal,Opening Stock,1788214621.0
+2016-09-30,Rough,ugs,Opening Stock,13714654884.0
+2016-09-30,Aldbrough,ugs,Opening Stock,2430233749.0
+2016-09-30,Holford,ugs,Opening Stock,1833958543.0
+2016-09-30,Hill Top,ugs,Opening Stock,170558442.0
+2016-09-30,Stublach,ugs,Opening Stock,2513622079.0
+2016-09-30,Humbly Grove,ugs,Opening Stock,2915512077.0
+2016-09-30,Hornsea,ugs,Opening Stock,2411829235.0
+2016-09-30,Holehouse Farm,ugs,Opening Stock,371535350.0
+2016-09-30,Avonmouth,ugs,Opening Stock,0.0
+2017-09-30,Isle Of Grain,lng_terminal,Opening Stock,3536828973.0
+2017-09-30,South Hook,lng_terminal,Opening Stock,1917485262.0
+2017-09-30,Dragon,lng_terminal,Opening Stock,777766345.0
+2017-09-30,Rough,ugs,Opening Stock,10714934418.0
+2017-09-30,Aldbrough,ugs,Opening Stock,1103910882.0
+2017-09-30,Holford,ugs,Opening Stock,701681005.0
+2017-09-30,Hill Top,ugs,Opening Stock,20156133.0
+2017-09-30,Stublach,ugs,Opening Stock,832432397.0
+2017-09-30,Humbly Grove,ugs,Opening Stock,2786301724.0
+2017-09-30,Hornsea,ugs,Opening Stock,1896714139.0
+2017-09-30,Holehouse Farm,ugs,Opening Stock,402272285.0
+2017-09-30,Avonmouth,ugs,Opening Stock,0.0
+2018-09-30,Isle Of Grain,lng_terminal,Opening Stock,4980272618.0
+2018-09-30,South Hook,lng_terminal,Opening Stock,2899309271.0
+2018-09-30,Dragon,lng_terminal,Opening Stock,1292602488.0
+2018-09-30,Rough,ugs,Opening Stock,0.0
+2018-09-30,Aldbrough,ugs,Opening Stock,1178208552.0
+2018-09-30,Holford,ugs,Opening Stock,1001179990.0
+2018-09-30,Hill Top,ugs,Opening Stock,138669183.0
+2018-09-30,Stublach,ugs,Opening Stock,1229372343.0
+2018-09-30,Humbly Grove,ugs,Opening Stock,3076075448.0
+2018-09-30,Hornsea,ugs,Opening Stock,2006797218.0
+2018-09-30,Holehouse Farm,ugs,Opening Stock,154609031.0
+2018-09-30,Avonmouth,ugs,Opening Stock,0.0
+2019-09-30,Humbly Grove,ugs,Opening Stock,3016382403.0
+2019-09-30,Holehouse Farm,ugs,Opening Stock,155881183.0
+2019-09-30,Holford,ugs,Opening Stock,1355494996.0
+2019-09-30,South Hook,lng_terminal,Opening Stock,2466741475.0
+2019-09-30,Dragon,lng_terminal,Opening Stock,1881990146.0
+2019-09-30,Isle Of Grain,lng_terminal,Opening Stock,5662427260.0
+2019-09-30,Hornsea,ugs,Opening Stock,2368563476.0
+2019-09-30,Aldbrough,ugs,Opening Stock,2263038069.0
+2019-09-30,Stublach,ugs,Opening Stock,5226753304.0
+2019-09-30,Hill Top,ugs,Opening Stock,247763982.0
+2020-09-30,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-09-30,South Hook,lng_terminal,Opening Stock,3123354099.0
+2020-09-30,Dragon,lng_terminal,Opening Stock,1773683343.0
+2020-09-30,Isle Of Grain,lng_terminal,Opening Stock,3923372336.0
+2020-09-30,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-09-30,Aldbrough,ugs,Opening Stock,1558351898.0
+2020-09-30,Hornsea,ugs,Opening Stock,2440311245.0
+2020-09-30,Holford,ugs,Opening Stock,915111024.0
+2020-09-30,Hill Top,ugs,Opening Stock,252273483.0
+2020-09-30,Stublach,ugs,Opening Stock,3281573522.0
+2020-11-01,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-01,South Hook,lng_terminal,Opening Stock,2874112376.0
+2020-11-01,Dragon,lng_terminal,Opening Stock,1168007330.0
+2020-11-01,Isle Of Grain,lng_terminal,Opening Stock,4757383493.0
+2020-11-01,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-01,Aldbrough,ugs,Opening Stock,2435516945.0
+2020-11-01,Hornsea,ugs,Opening Stock,2587139174.0
+2020-11-01,Holford,ugs,Opening Stock,2070335728.0
+2020-11-01,Hill Top,ugs,Opening Stock,294519287.0
+2020-11-01,Stublach,ugs,Opening Stock,4669288275.0
+2020-11-02,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-02,South Hook,lng_terminal,Opening Stock,2583517205.0
+2020-11-02,Dragon,lng_terminal,Opening Stock,1140873021.0
+2020-11-02,Isle Of Grain,lng_terminal,Opening Stock,4627655772.0
+2020-11-02,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-02,Aldbrough,ugs,Opening Stock,2514406693.0
+2020-11-02,Hornsea,ugs,Opening Stock,2598642900.0
+2020-11-02,Holford,ugs,Opening Stock,2237413993.0
+2020-11-02,Hill Top,ugs,Opening Stock,360611750.0
+2020-11-02,Stublach,ugs,Opening Stock,4833960029.0
+2020-11-03,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-03,South Hook,lng_terminal,Opening Stock,2292994967.0
+2020-11-03,Dragon,lng_terminal,Opening Stock,1066599549.0
+2020-11-03,Isle Of Grain,lng_terminal,Opening Stock,4514807427.0
+2020-11-03,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-03,Aldbrough,ugs,Opening Stock,2519373029.0
+2020-11-03,Hornsea,ugs,Opening Stock,2594447131.0
+2020-11-03,Holford,ugs,Opening Stock,2311924777.0
+2020-11-03,Hill Top,ugs,Opening Stock,360611750.0
+2020-11-03,Stublach,ugs,Opening Stock,4973927945.0
+2020-11-04,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-04,South Hook,lng_terminal,Opening Stock,2055065176.0
+2020-11-04,Dragon,lng_terminal,Opening Stock,895307676.0
+2020-11-04,Isle Of Grain,lng_terminal,Opening Stock,5334610458.0
+2020-11-04,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-04,Aldbrough,ugs,Opening Stock,2491828891.0
+2020-11-04,Hornsea,ugs,Opening Stock,2582727849.0
+2020-11-04,Holford,ugs,Opening Stock,2262563429.0
+2020-11-04,Hill Top,ugs,Opening Stock,348852863.0
+2020-11-04,Stublach,ugs,Opening Stock,4924270290.0
+2020-11-05,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-05,South Hook,lng_terminal,Opening Stock,3083857280.0
+2020-11-05,Dragon,lng_terminal,Opening Stock,1625708347.0
+2020-11-05,Isle Of Grain,lng_terminal,Opening Stock,5163647002.0
+2020-11-05,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-05,Aldbrough,ugs,Opening Stock,2469097445.0
+2020-11-05,Hornsea,ugs,Opening Stock,2576147226.0
+2020-11-05,Holford,ugs,Opening Stock,2136570453.0
+2020-11-05,Hill Top,ugs,Opening Stock,348852863.0
+2020-11-05,Stublach,ugs,Opening Stock,4875985271.0
+2020-11-06,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-06,South Hook,lng_terminal,Opening Stock,2793598376.0
+2020-11-06,Dragon,lng_terminal,Opening Stock,1652394797.0
+2020-11-06,Isle Of Grain,lng_terminal,Opening Stock,4834096657.0
+2020-11-06,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-06,Aldbrough,ugs,Opening Stock,2454047552.0
+2020-11-06,Hornsea,ugs,Opening Stock,2576147226.0
+2020-11-06,Holford,ugs,Opening Stock,2020808397.0
+2020-11-06,Hill Top,ugs,Opening Stock,348852863.0
+2020-11-06,Stublach,ugs,Opening Stock,4822302680.0
+2020-11-07,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-07,South Hook,lng_terminal,Opening Stock,2489293212.0
+2020-11-07,Dragon,lng_terminal,Opening Stock,1513629748.0
+2020-11-07,Isle Of Grain,lng_terminal,Opening Stock,4487038427.0
+2020-11-07,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-07,Aldbrough,ugs,Opening Stock,2454047552.0
+2020-11-07,Hornsea,ugs,Opening Stock,2562072360.0
+2020-11-07,Holford,ugs,Opening Stock,1979720965.0
+2020-11-07,Hill Top,ugs,Opening Stock,333155364.0
+2020-11-07,Stublach,ugs,Opening Stock,4805895907.0
+2020-11-08,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-08,South Hook,lng_terminal,Opening Stock,3384550279.0
+2020-11-08,Dragon,lng_terminal,Opening Stock,1387930233.0
+2020-11-08,Isle Of Grain,lng_terminal,Opening Stock,5157636255.0
+2020-11-08,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-08,Aldbrough,ugs,Opening Stock,2421653757.0
+2020-11-08,Hornsea,ugs,Opening Stock,2549526551.0
+2020-11-08,Holford,ugs,Opening Stock,1947863187.0
+2020-11-08,Hill Top,ugs,Opening Stock,333155364.0
+2020-11-08,Stublach,ugs,Opening Stock,4776074119.0
+2020-11-09,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-09,South Hook,lng_terminal,Opening Stock,3228369618.0
+2020-11-09,Dragon,lng_terminal,Opening Stock,1389346238.0
+2020-11-09,Isle Of Grain,lng_terminal,Opening Stock,5094881044.0
+2020-11-09,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-09,Aldbrough,ugs,Opening Stock,2421653757.0
+2020-11-09,Hornsea,ugs,Opening Stock,2549526551.0
+2020-11-09,Holford,ugs,Opening Stock,1947863187.0
+2020-11-09,Hill Top,ugs,Opening Stock,333155364.0
+2020-11-09,Stublach,ugs,Opening Stock,4810948465.0
+2020-11-10,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-10,South Hook,lng_terminal,Opening Stock,3076328592.0
+2020-11-10,Dragon,lng_terminal,Opening Stock,1309899880.0
+2020-11-10,Isle Of Grain,lng_terminal,Opening Stock,4864845956.0
+2020-11-10,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-10,Aldbrough,ugs,Opening Stock,2396742616.0
+2020-11-10,Hornsea,ugs,Opening Stock,2525524902.0
+2020-11-10,Holford,ugs,Opening Stock,1947863187.0
+2020-11-10,Hill Top,ugs,Opening Stock,333155364.0
+2020-11-10,Stublach,ugs,Opening Stock,4818278739.0
+2020-11-11,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-11,South Hook,lng_terminal,Opening Stock,2915239196.0
+2020-11-11,Dragon,lng_terminal,Opening Stock,1232737494.0
+2020-11-11,Isle Of Grain,lng_terminal,Opening Stock,4704851021.0
+2020-11-11,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-11,Aldbrough,ugs,Opening Stock,2413819417.0
+2020-11-11,Hornsea,ugs,Opening Stock,2511109555.0
+2020-11-11,Holford,ugs,Opening Stock,1947863187.0
+2020-11-11,Hill Top,ugs,Opening Stock,333155364.0
+2020-11-11,Stublach,ugs,Opening Stock,4827794057.0
+2020-11-12,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-12,South Hook,lng_terminal,Opening Stock,2757356531.0
+2020-11-12,Dragon,lng_terminal,Opening Stock,1187495449.0
+2020-11-12,Isle Of Grain,lng_terminal,Opening Stock,4537284693.0
+2020-11-12,Humbly Grove,ugs,Opening Stock,2606143281.0
+2020-11-12,Aldbrough,ugs,Opening Stock,2421412809.0
+2020-11-12,Hornsea,ugs,Opening Stock,2496499002.0
+2020-11-12,Holford,ugs,Opening Stock,1947863187.0
+2020-11-12,Hill Top,ugs,Opening Stock,333155364.0
+2020-11-12,Stublach,ugs,Opening Stock,4828101999.0
+2020-11-13,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-13,South Hook,lng_terminal,Opening Stock,3394416787.0
+2020-11-13,Dragon,lng_terminal,Opening Stock,1098236472.0
+2020-11-13,Isle Of Grain,lng_terminal,Opening Stock,4995169136.0
+2020-11-13,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-13,Aldbrough,ugs,Opening Stock,2421397128.0
+2020-11-13,Hornsea,ugs,Opening Stock,2495332460.0
+2020-11-13,Holford,ugs,Opening Stock,1947863187.0
+2020-11-13,Hill Top,ugs,Opening Stock,330212580.0
+2020-11-13,Stublach,ugs,Opening Stock,4814160784.0
+2020-11-14,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-14,South Hook,lng_terminal,Opening Stock,3530606319.0
+2020-11-14,Dragon,lng_terminal,Opening Stock,1005326004.0
+2020-11-14,Isle Of Grain,lng_terminal,Opening Stock,5338009037.0
+2020-11-14,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-14,Aldbrough,ugs,Opening Stock,2383311014.0
+2020-11-14,Hornsea,ugs,Opening Stock,2512937508.0
+2020-11-14,Holford,ugs,Opening Stock,1928675703.0
+2020-11-14,Hill Top,ugs,Opening Stock,330212580.0
+2020-11-14,Stublach,ugs,Opening Stock,4799522841.0
+2020-11-15,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-15,South Hook,lng_terminal,Opening Stock,3448124556.0
+2020-11-15,Dragon,lng_terminal,Opening Stock,1006219924.0
+2020-11-15,Isle Of Grain,lng_terminal,Opening Stock,5223202646.0
+2020-11-15,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-15,Aldbrough,ugs,Opening Stock,2464091501.0
+2020-11-15,Hornsea,ugs,Opening Stock,2532608738.0
+2020-11-15,Holford,ugs,Opening Stock,2018093747.0
+2020-11-15,Hill Top,ugs,Opening Stock,362630628.0
+2020-11-15,Stublach,ugs,Opening Stock,4853962121.0
+2020-11-16,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-16,South Hook,lng_terminal,Opening Stock,3365605113.0
+2020-11-16,Dragon,lng_terminal,Opening Stock,1006282866.0
+2020-11-16,Isle Of Grain,lng_terminal,Opening Stock,5108578231.0
+2020-11-16,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-16,Aldbrough,ugs,Opening Stock,2506683181.0
+2020-11-16,Hornsea,ugs,Opening Stock,2552662496.0
+2020-11-16,Holford,ugs,Opening Stock,2117735771.0
+2020-11-16,Hill Top,ugs,Opening Stock,365067016.0
+2020-11-16,Stublach,ugs,Opening Stock,4906132232.0
+2020-11-17,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-17,South Hook,lng_terminal,Opening Stock,3265228466.0
+2020-11-17,Dragon,lng_terminal,Opening Stock,954877135.0
+2020-11-17,Isle Of Grain,lng_terminal,Opening Stock,4952137253.0
+2020-11-17,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-17,Aldbrough,ugs,Opening Stock,2481992722.0
+2020-11-17,Hornsea,ugs,Opening Stock,2562146253.0
+2020-11-17,Holford,ugs,Opening Stock,2117735771.0
+2020-11-17,Hill Top,ugs,Opening Stock,364839241.0
+2020-11-17,Stublach,ugs,Opening Stock,4861999111.0
+2020-11-18,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-18,South Hook,lng_terminal,Opening Stock,3175288875.0
+2020-11-18,Dragon,lng_terminal,Opening Stock,918534743.0
+2020-11-18,Isle Of Grain,lng_terminal,Opening Stock,4844144723.0
+2020-11-18,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-18,Aldbrough,ugs,Opening Stock,2506443523.0
+2020-11-18,Hornsea,ugs,Opening Stock,2582251849.0
+2020-11-18,Holford,ugs,Opening Stock,2164621319.0
+2020-11-18,Hill Top,ugs,Opening Stock,364871449.0
+2020-11-18,Stublach,ugs,Opening Stock,4910619601.0
+2020-11-19,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-19,South Hook,lng_terminal,Opening Stock,3100699215.0
+2020-11-19,Dragon,lng_terminal,Opening Stock,882142245.0
+2020-11-19,Isle Of Grain,lng_terminal,Opening Stock,4918345155.0
+2020-11-19,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-19,Aldbrough,ugs,Opening Stock,2539116973.0
+2020-11-19,Hornsea,ugs,Opening Stock,2595313057.0
+2020-11-19,Holford,ugs,Opening Stock,2243710523.0
+2020-11-19,Hill Top,ugs,Opening Stock,364871449.0
+2020-11-19,Stublach,ugs,Opening Stock,4949915313.0
+2020-11-20,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-20,South Hook,lng_terminal,Opening Stock,3010713871.0
+2020-11-20,Dragon,lng_terminal,Opening Stock,785882087.0
+2020-11-20,Isle Of Grain,lng_terminal,Opening Stock,5472330942.0
+2020-11-20,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-20,Aldbrough,ugs,Opening Stock,2512759659.0
+2020-11-20,Hornsea,ugs,Opening Stock,2586477336.0
+2020-11-20,Holford,ugs,Opening Stock,2144113995.0
+2020-11-20,Hill Top,ugs,Opening Stock,350154508.0
+2020-11-20,Stublach,ugs,Opening Stock,4814877709.0
+2020-11-21,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-21,South Hook,lng_terminal,Opening Stock,2896968630.0
+2020-11-21,Dragon,lng_terminal,Opening Stock,1661817767.0
+2020-11-21,Isle Of Grain,lng_terminal,Opening Stock,5283795508.0
+2020-11-21,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-21,Aldbrough,ugs,Opening Stock,2482178647.0
+2020-11-21,Hornsea,ugs,Opening Stock,2591804817.0
+2020-11-21,Holford,ugs,Opening Stock,2173395844.0
+2020-11-21,Hill Top,ugs,Opening Stock,350154508.0
+2020-11-21,Stublach,ugs,Opening Stock,4803355905.0
+2020-11-22,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-22,South Hook,lng_terminal,Opening Stock,2811122991.0
+2020-11-22,Dragon,lng_terminal,Opening Stock,1450699352.0
+2020-11-22,Isle Of Grain,lng_terminal,Opening Stock,4988263447.0
+2020-11-22,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-22,Aldbrough,ugs,Opening Stock,2459500111.0
+2020-11-22,Hornsea,ugs,Opening Stock,2595408610.0
+2020-11-22,Holford,ugs,Opening Stock,2209422441.0
+2020-11-22,Hill Top,ugs,Opening Stock,364874233.0
+2020-11-22,Stublach,ugs,Opening Stock,4889717973.0
+2020-11-23,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-23,South Hook,lng_terminal,Opening Stock,3771624722.0
+2020-11-23,Dragon,lng_terminal,Opening Stock,1221038684.0
+2020-11-23,Isle Of Grain,lng_terminal,Opening Stock,4796481964.0
+2020-11-23,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-23,Aldbrough,ugs,Opening Stock,2437427312.0
+2020-11-23,Hornsea,ugs,Opening Stock,2595408610.0
+2020-11-23,Holford,ugs,Opening Stock,2167242741.0
+2020-11-23,Hill Top,ugs,Opening Stock,364874233.0
+2020-11-23,Stublach,ugs,Opening Stock,4896409723.0
+2020-11-24,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-24,South Hook,lng_terminal,Opening Stock,3677244582.0
+2020-11-24,Dragon,lng_terminal,Opening Stock,970959275.0
+2020-11-24,Isle Of Grain,lng_terminal,Opening Stock,4329880695.0
+2020-11-24,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-24,Aldbrough,ugs,Opening Stock,2403728024.0
+2020-11-24,Hornsea,ugs,Opening Stock,2588570037.0
+2020-11-24,Holford,ugs,Opening Stock,2126783361.0
+2020-11-24,Hill Top,ugs,Opening Stock,364874233.0
+2020-11-24,Stublach,ugs,Opening Stock,4874475693.0
+2020-11-25,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-25,South Hook,lng_terminal,Opening Stock,3587806889.0
+2020-11-25,Dragon,lng_terminal,Opening Stock,715311074.0
+2020-11-25,Isle Of Grain,lng_terminal,Opening Stock,4042697599.0
+2020-11-25,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-25,Aldbrough,ugs,Opening Stock,2414548995.0
+2020-11-25,Hornsea,ugs,Opening Stock,2598036291.0
+2020-11-25,Holford,ugs,Opening Stock,2233033603.0
+2020-11-25,Hill Top,ugs,Opening Stock,366111169.0
+2020-11-25,Stublach,ugs,Opening Stock,4885062045.0
+2020-11-26,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-26,South Hook,lng_terminal,Opening Stock,3498554902.0
+2020-11-26,Dragon,lng_terminal,Opening Stock,464300064.0
+2020-11-26,Isle Of Grain,lng_terminal,Opening Stock,4644870997.0
+2020-11-26,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-26,Aldbrough,ugs,Opening Stock,2425711927.0
+2020-11-26,Hornsea,ugs,Opening Stock,2601247325.0
+2020-11-26,Holford,ugs,Opening Stock,2161426419.0
+2020-11-26,Hill Top,ugs,Opening Stock,366111169.0
+2020-11-26,Stublach,ugs,Opening Stock,4870984463.0
+2020-11-27,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-27,South Hook,lng_terminal,Opening Stock,3409202127.0
+2020-11-27,Dragon,lng_terminal,Opening Stock,610128797.0
+2020-11-27,Isle Of Grain,lng_terminal,Opening Stock,4865915458.0
+2020-11-27,Humbly Grove,ugs,Opening Stock,2606123281.0
+2020-11-27,Aldbrough,ugs,Opening Stock,2310477746.0
+2020-11-27,Hornsea,ugs,Opening Stock,2586520884.0
+2020-11-27,Holford,ugs,Opening Stock,2092750155.0
+2020-11-27,Hill Top,ugs,Opening Stock,351415065.0
+2020-11-27,Stublach,ugs,Opening Stock,4828896288.0
+2020-11-28,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-28,South Hook,lng_terminal,Opening Stock,3319821576.0
+2020-11-28,Dragon,lng_terminal,Opening Stock,962875218.0
+2020-11-28,Isle Of Grain,lng_terminal,Opening Stock,5333835619.0
+2020-11-28,Humbly Grove,ugs,Opening Stock,2587057448.0
+2020-11-28,Aldbrough,ugs,Opening Stock,2144321871.0
+2020-11-28,Hornsea,ugs,Opening Stock,2548672899.0
+2020-11-28,Holford,ugs,Opening Stock,2007680795.0
+2020-11-28,Hill Top,ugs,Opening Stock,351415065.0
+2020-11-28,Stublach,ugs,Opening Stock,4718330468.0
+2020-11-29,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-29,South Hook,lng_terminal,Opening Stock,4360466023.0
+2020-11-29,Dragon,lng_terminal,Opening Stock,691094190.0
+2020-11-29,Isle Of Grain,lng_terminal,Opening Stock,5128844640.0
+2020-11-29,Humbly Grove,ugs,Opening Stock,2538739392.0
+2020-11-29,Aldbrough,ugs,Opening Stock,2190082835.0
+2020-11-29,Hornsea,ugs,Opening Stock,2548672899.0
+2020-11-29,Holford,ugs,Opening Stock,2007680795.0
+2020-11-29,Hill Top,ugs,Opening Stock,351415065.0
+2020-11-29,Stublach,ugs,Opening Stock,4717579774.0
+2020-11-30,Holehouse Farm,ugs,Opening Stock,214844565.0
+2020-11-30,South Hook,lng_terminal,Opening Stock,4269442876.0
+2020-11-30,Dragon,lng_terminal,Opening Stock,1425809689.0
+2020-11-30,Isle Of Grain,lng_terminal,Opening Stock,5685497197.0
+2020-11-30,Humbly Grove,ugs,Opening Stock,2489165223.0
+2020-11-30,Aldbrough,ugs,Opening Stock,2276095040.0
+2020-11-30,Hornsea,ugs,Opening Stock,2557228086.0
+2020-11-30,Holford,ugs,Opening Stock,2112902499.0
+2020-11-30,Hill Top,ugs,Opening Stock,366135347.0
+2020-11-30,Stublach,ugs,Opening Stock,4754333960.0
+2021-11-01,Humbly Grove,ugs,Opening Stock,2683902479.0
+2021-11-01,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-01,Isle Of Grain,lng_terminal,Opening Stock,5920924348.0
+2021-11-01,Aldbrough,ugs,Opening Stock,2400172193.0
+2021-11-01,South Hook,lng_terminal,Opening Stock,2894394614.0
+2021-11-01,Dragon,lng_terminal,Opening Stock,1745426720.0
+2021-11-01,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-01,Holford,ugs,Opening Stock,2447554121.0
+2021-11-01,Stublach,ugs,Opening Stock,4850270485.0
+2021-11-01,Hornsea,ugs,Opening Stock,2979668977.0
+2021-11-02,Hornsea,ugs,Opening Stock,2984645603.0
+2021-11-02,Dragon,lng_terminal,Opening Stock,1614845118.0
+2021-11-02,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-02,Aldbrough,ugs,Opening Stock,2403607777.0
+2021-11-02,South Hook,lng_terminal,Opening Stock,2630331106.0
+2021-11-02,Stublach,ugs,Opening Stock,4964350973.0
+2021-11-02,Humbly Grove,ugs,Opening Stock,2683902479.0
+2021-11-02,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-02,Holford,ugs,Opening Stock,2450500958.0
+2021-11-02,Isle Of Grain,lng_terminal,Opening Stock,5860475030.0
+2021-11-03,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-03,Holford,ugs,Opening Stock,2425205882.0
+2021-11-03,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-03,South Hook,lng_terminal,Opening Stock,2351897883.0
+2021-11-03,Aldbrough,ugs,Opening Stock,2403606449.0
+2021-11-03,Isle Of Grain,lng_terminal,Opening Stock,5734874957.0
+2021-11-03,Stublach,ugs,Opening Stock,4855675784.0
+2021-11-03,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-03,Dragon,lng_terminal,Opening Stock,1467093966.0
+2021-11-03,Humbly Grove,ugs,Opening Stock,2683902479.0
+2021-11-04,Holford,ugs,Opening Stock,2425205882.0
+2021-11-04,Dragon,lng_terminal,Opening Stock,1287054732.0
+2021-11-04,South Hook,lng_terminal,Opening Stock,3689027741.0
+2021-11-04,Isle Of Grain,lng_terminal,Opening Stock,5673165597.0
+2021-11-04,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-04,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-04,Stublach,ugs,Opening Stock,4757630430.0
+2021-11-04,Humbly Grove,ugs,Opening Stock,2683902479.0
+2021-11-04,Aldbrough,ugs,Opening Stock,2360892268.0
+2021-11-04,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-05,Isle Of Grain,lng_terminal,Opening Stock,5590623156.0
+2021-11-05,Humbly Grove,ugs,Opening Stock,2683902479.0
+2021-11-05,Stublach,ugs,Opening Stock,4606119579.0
+2021-11-05,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-05,Dragon,lng_terminal,Opening Stock,1117203406.0
+2021-11-05,Aldbrough,ugs,Opening Stock,2316354824.0
+2021-11-05,South Hook,lng_terminal,Opening Stock,3474855240.0
+2021-11-05,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-05,Holford,ugs,Opening Stock,2425205882.0
+2021-11-05,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-06,Holford,ugs,Opening Stock,2384655482.0
+2021-11-06,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-06,Aldbrough,ugs,Opening Stock,2255360079.0
+2021-11-06,Isle Of Grain,lng_terminal,Opening Stock,5523550009.0
+2021-11-06,South Hook,lng_terminal,Opening Stock,4550259309.0
+2021-11-06,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-06,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-06,Stublach,ugs,Opening Stock,4477109911.0
+2021-11-06,Dragon,lng_terminal,Opening Stock,953077199.0
+2021-11-06,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-07,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-07,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-07,Aldbrough,ugs,Opening Stock,2341409327.0
+2021-11-07,Stublach,ugs,Opening Stock,4683035691.0
+2021-11-07,Dragon,lng_terminal,Opening Stock,1741166538.0
+2021-11-07,Isle Of Grain,lng_terminal,Opening Stock,5462957364.0
+2021-11-07,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-07,South Hook,lng_terminal,Opening Stock,4251583153.0
+2021-11-07,Holford,ugs,Opening Stock,2440452107.0
+2021-11-07,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-08,Dragon,lng_terminal,Opening Stock,1595655051.0
+2021-11-08,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-08,Aldbrough,ugs,Opening Stock,2374704227.0
+2021-11-08,Isle Of Grain,lng_terminal,Opening Stock,5396722720.0
+2021-11-08,Holford,ugs,Opening Stock,2458037601.0
+2021-11-08,South Hook,lng_terminal,Opening Stock,3958730331.0
+2021-11-08,Stublach,ugs,Opening Stock,4869056190.0
+2021-11-08,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-08,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-08,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-09,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-09,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-09,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-09,Stublach,ugs,Opening Stock,4918418014.0
+2021-11-09,Isle Of Grain,lng_terminal,Opening Stock,5293563480.0
+2021-11-09,Dragon,lng_terminal,Opening Stock,1447778845.0
+2021-11-09,Aldbrough,ugs,Opening Stock,2386473661.0
+2021-11-09,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-09,South Hook,lng_terminal,Opening Stock,3677649091.0
+2021-11-09,Holford,ugs,Opening Stock,2458037601.0
+2021-11-10,South Hook,lng_terminal,Opening Stock,3387899709.0
+2021-11-10,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-10,Isle Of Grain,lng_terminal,Opening Stock,5198653924.0
+2021-11-10,Aldbrough,ugs,Opening Stock,2416165094.0
+2021-11-10,Holford,ugs,Opening Stock,2458037601.0
+2021-11-10,Stublach,ugs,Opening Stock,4917737504.0
+2021-11-10,Dragon,lng_terminal,Opening Stock,1391851242.0
+2021-11-10,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-10,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-10,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-11,Dragon,lng_terminal,Opening Stock,1235316467.0
+2021-11-11,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-11,Stublach,ugs,Opening Stock,4871146106.0
+2021-11-11,Holford,ugs,Opening Stock,2458037601.0
+2021-11-11,South Hook,lng_terminal,Opening Stock,3068750775.0
+2021-11-11,Aldbrough,ugs,Opening Stock,2360402408.0
+2021-11-11,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-11,Isle Of Grain,lng_terminal,Opening Stock,5028504661.0
+2021-11-11,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-11,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-12,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-12,Aldbrough,ugs,Opening Stock,2360402408.0
+2021-11-12,Holford,ugs,Opening Stock,2460959415.0
+2021-11-12,Dragon,lng_terminal,Opening Stock,1072446790.0
+2021-11-12,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-12,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-12,Stublach,ugs,Opening Stock,4803321511.0
+2021-11-12,Isle Of Grain,lng_terminal,Opening Stock,4827642114.0
+2021-11-12,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-12,South Hook,lng_terminal,Opening Stock,2758748771.0
+2021-11-13,Isle Of Grain,lng_terminal,Opening Stock,4651449875.0
+2021-11-13,Aldbrough,ugs,Opening Stock,2383294901.0
+2021-11-13,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-13,Stublach,ugs,Opening Stock,4818662657.0
+2021-11-13,South Hook,lng_terminal,Opening Stock,2493402778.0
+2021-11-13,Holford,ugs,Opening Stock,2460959415.0
+2021-11-13,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-13,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-13,Dragon,lng_terminal,Opening Stock,924202312.0
+2021-11-13,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-14,Hornsea,ugs,Opening Stock,2986629886.0
+2021-11-14,Aldbrough,ugs,Opening Stock,2332386844.0
+2021-11-14,Holford,ugs,Opening Stock,2460959415.0
+2021-11-14,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-14,Isle Of Grain,lng_terminal,Opening Stock,4497476079.0
+2021-11-14,South Hook,lng_terminal,Opening Stock,4000249167.0
+2021-11-14,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-14,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-14,Stublach,ugs,Opening Stock,4879064841.0
+2021-11-14,Dragon,lng_terminal,Opening Stock,774542091.0
+2021-11-15,Isle Of Grain,lng_terminal,Opening Stock,4326886174.0
+2021-11-15,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-15,South Hook,lng_terminal,Opening Stock,3759787243.0
+2021-11-15,Hornsea,ugs,Opening Stock,3009740022.0
+2021-11-15,Aldbrough,ugs,Opening Stock,2344223175.0
+2021-11-15,Holford,ugs,Opening Stock,2460959415.0
+2021-11-15,Dragon,lng_terminal,Opening Stock,1750469599.0
+2021-11-15,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-15,Stublach,ugs,Opening Stock,4975926594.0
+2021-11-15,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-16,South Hook,lng_terminal,Opening Stock,3488889689.0
+2021-11-16,Aldbrough,ugs,Opening Stock,2351479813.0
+2021-11-16,Holford,ugs,Opening Stock,2460959415.0
+2021-11-16,Dragon,lng_terminal,Opening Stock,1639453819.0
+2021-11-16,Isle Of Grain,lng_terminal,Opening Stock,5046836254.0
+2021-11-16,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-16,Hornsea,ugs,Opening Stock,2989740020.0
+2021-11-16,Hill Top,ugs,Opening Stock,490443176.0
+2021-11-16,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-16,Stublach,ugs,Opening Stock,4884736741.0
+2021-11-17,Aldbrough,ugs,Opening Stock,2367911967.0
+2021-11-17,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-17,Stublach,ugs,Opening Stock,4872360839.0
+2021-11-17,Hill Top,ugs,Opening Stock,461117642.0
+2021-11-17,Dragon,lng_terminal,Opening Stock,1574827636.0
+2021-11-17,Isle Of Grain,lng_terminal,Opening Stock,5295352295.0
+2021-11-17,South Hook,lng_terminal,Opening Stock,3257610403.0
+2021-11-17,Holford,ugs,Opening Stock,2469743059.0
+2021-11-17,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-17,Hornsea,ugs,Opening Stock,2989740020.0
+2021-11-18,Holford,ugs,Opening Stock,2484388535.0
+2021-11-18,Stublach,ugs,Opening Stock,4893236581.0
+2021-11-18,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-18,Dragon,lng_terminal,Opening Stock,1535995734.0
+2021-11-18,Hill Top,ugs,Opening Stock,461117642.0
+2021-11-18,Aldbrough,ugs,Opening Stock,2402356324.0
+2021-11-18,Hornsea,ugs,Opening Stock,2991711068.0
+2021-11-18,South Hook,lng_terminal,Opening Stock,3977508946.0
+2021-11-18,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-18,Isle Of Grain,lng_terminal,Opening Stock,5756966008.0
+2021-11-19,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-19,Aldbrough,ugs,Opening Stock,2412902244.0
+2021-11-19,Stublach,ugs,Opening Stock,4941031941.0
+2021-11-19,Hill Top,ugs,Opening Stock,490522071.0
+2021-11-19,Hornsea,ugs,Opening Stock,2995011242.0
+2021-11-19,Holford,ugs,Opening Stock,2484388535.0
+2021-11-19,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-19,Isle Of Grain,lng_terminal,Opening Stock,5607769430.0
+2021-11-19,South Hook,lng_terminal,Opening Stock,3743817543.0
+2021-11-19,Dragon,lng_terminal,Opening Stock,1496102239.0
+2021-11-20,Holford,ugs,Opening Stock,2487319451.0
+2021-11-20,Stublach,ugs,Opening Stock,4946347211.0
+2021-11-20,Hornsea,ugs,Opening Stock,3001312614.0
+2021-11-20,Isle Of Grain,lng_terminal,Opening Stock,6413686319.0
+2021-11-20,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-20,Aldbrough,ugs,Opening Stock,2426868871.0
+2021-11-20,Hill Top,ugs,Opening Stock,492499831.0
+2021-11-20,Dragon,lng_terminal,Opening Stock,1457716842.0
+2021-11-20,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-20,South Hook,lng_terminal,Opening Stock,3515282202.0
+2021-11-21,Hornsea,ugs,Opening Stock,3007224884.0
+2021-11-21,South Hook,lng_terminal,Opening Stock,3413484568.0
+2021-11-21,Aldbrough,ugs,Opening Stock,2445835902.0
+2021-11-21,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-21,Hill Top,ugs,Opening Stock,493699283.0
+2021-11-21,Dragon,lng_terminal,Opening Stock,1458312802.0
+2021-11-21,Stublach,ugs,Opening Stock,5041334901.0
+2021-11-21,Holford,ugs,Opening Stock,2509283110.0
+2021-11-21,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-21,Isle Of Grain,lng_terminal,Opening Stock,6524626061.0
+2021-11-22,Hill Top,ugs,Opening Stock,493699283.0
+2021-11-22,Isle Of Grain,lng_terminal,Opening Stock,6491762652.0
+2021-11-22,Dragon,lng_terminal,Opening Stock,1380533889.0
+2021-11-22,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-22,Holford,ugs,Opening Stock,2491724922.0
+2021-11-22,Aldbrough,ugs,Opening Stock,2445835902.0
+2021-11-22,South Hook,lng_terminal,Opening Stock,5053805013.0
+2021-11-22,Hornsea,ugs,Opening Stock,3007224884.0
+2021-11-22,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-22,Stublach,ugs,Opening Stock,4984425361.0
+2021-11-23,Aldbrough,ugs,Opening Stock,2445835902.0
+2021-11-23,Hill Top,ugs,Opening Stock,496213451.0
+2021-11-23,Isle Of Grain,lng_terminal,Opening Stock,6342248910.0
+2021-11-23,Dragon,lng_terminal,Opening Stock,1089930368.0
+2021-11-23,Hornsea,ugs,Opening Stock,3007224884.0
+2021-11-23,South Hook,lng_terminal,Opening Stock,4649653427.0
+2021-11-23,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-23,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-23,Stublach,ugs,Opening Stock,4975924648.0
+2021-11-23,Holford,ugs,Opening Stock,2491724922.0
+2021-11-24,Hill Top,ugs,Opening Stock,496213451.0
+2021-11-24,Stublach,ugs,Opening Stock,4980475465.0
+2021-11-24,Aldbrough,ugs,Opening Stock,2435367690.0
+2021-11-24,Holford,ugs,Opening Stock,2491724922.0
+2021-11-24,South Hook,lng_terminal,Opening Stock,4299484188.0
+2021-11-24,Dragon,lng_terminal,Opening Stock,788634336.0
+2021-11-24,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-24,Isle Of Grain,lng_terminal,Opening Stock,6114600248.0
+2021-11-24,Hornsea,ugs,Opening Stock,2996998115.0
+2021-11-24,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-25,Aldbrough,ugs,Opening Stock,2435367690.0
+2021-11-25,Hill Top,ugs,Opening Stock,496213451.0
+2021-11-25,Dragon,lng_terminal,Opening Stock,788634336.0
+2021-11-25,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-25,Hornsea,ugs,Opening Stock,2978186684.0
+2021-11-25,Holford,ugs,Opening Stock,2494660179.0
+2021-11-25,Stublach,ugs,Opening Stock,4920266768.0
+2021-11-25,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-25,Isle Of Grain,lng_terminal,Opening Stock,5879564648.0
+2021-11-25,South Hook,lng_terminal,Opening Stock,5104512149.0
+2021-11-26,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-26,Stublach,ugs,Opening Stock,4898492556.0
+2021-11-26,Isle Of Grain,lng_terminal,Opening Stock,5607495193.0
+2021-11-26,Hill Top,ugs,Opening Stock,497401502.0
+2021-11-26,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-26,Hornsea,ugs,Opening Stock,2979423592.0
+2021-11-26,Aldbrough,ugs,Opening Stock,2439317687.0
+2021-11-26,Holford,ugs,Opening Stock,2462579363.0
+2021-11-26,Dragon,lng_terminal,Opening Stock,1303825054.0
+2021-11-26,South Hook,lng_terminal,Opening Stock,5048769823.0
+2021-11-27,Hill Top,ugs,Opening Stock,497401502.0
+2021-11-27,Stublach,ugs,Opening Stock,4951804090.0
+2021-11-27,Isle Of Grain,lng_terminal,Opening Stock,5332197978.0
+2021-11-27,Aldbrough,ugs,Opening Stock,2432521223.0
+2021-11-27,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-27,Holford,ugs,Opening Stock,2308760179.0
+2021-11-27,Dragon,lng_terminal,Opening Stock,1137350492.0
+2021-11-27,Hornsea,ugs,Opening Stock,2989526242.0
+2021-11-27,South Hook,lng_terminal,Opening Stock,4965679029.0
+2021-11-27,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-28,South Hook,lng_terminal,Opening Stock,4836414029.0
+2021-11-28,Aldbrough,ugs,Opening Stock,2432521223.0
+2021-11-28,Hill Top,ugs,Opening Stock,497401502.0
+2021-11-28,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-28,Holford,ugs,Opening Stock,2075768403.0
+2021-11-28,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-28,Hornsea,ugs,Opening Stock,2992794395.0
+2021-11-28,Isle Of Grain,lng_terminal,Opening Stock,5929889917.0
+2021-11-28,Dragon,lng_terminal,Opening Stock,965925363.0
+2021-11-28,Stublach,ugs,Opening Stock,4881215978.0
+2021-11-29,Aldbrough,ugs,Opening Stock,2345067443.0
+2021-11-29,South Hook,lng_terminal,Opening Stock,4707258029.0
+2021-11-29,Isle Of Grain,lng_terminal,Opening Stock,5597015192.0
+2021-11-29,Holford,ugs,Opening Stock,1835975159.0
+2021-11-29,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-29,Dragon,lng_terminal,Opening Stock,785489244.0
+2021-11-29,Stublach,ugs,Opening Stock,4726686963.0
+2021-11-29,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-29,Hill Top,ugs,Opening Stock,497401502.0
+2021-11-29,Hornsea,ugs,Opening Stock,2966882543.0
+2021-11-30,Hill Top,ugs,Opening Stock,494414552.0
+2021-11-30,Humbly Grove,ugs,Opening Stock,2682728590.0
+2021-11-30,South Hook,lng_terminal,Opening Stock,4513408029.0
+2021-11-30,Hornsea,ugs,Opening Stock,2966882543.0
+2021-11-30,Aldbrough,ugs,Opening Stock,2340985866.0
+2021-11-30,Isle Of Grain,lng_terminal,Opening Stock,5206355591.0
+2021-11-30,Holehouse Farm,ugs,Opening Stock,235954293.0
+2021-11-30,Holford,ugs,Opening Stock,1614714071.0
+2021-11-30,Dragon,lng_terminal,Opening Stock,545038862.0
+2021-11-30,Stublach,ugs,Opening Stock,4489442939.0
+2023-05-25,South Hook,lng_terminal,Opening Stock,2881277914.0
+2023-05-25,Hornsea,ugs,Opening Stock,2947608243.0
+2023-05-25,Holehouse Farm,ugs,Opening Stock,206147665.0
+2023-05-25,Hill Top,ugs,Opening Stock,38099230.0
+2023-05-25,Aldbrough,ugs,Opening Stock,362719763.0
+2023-05-25,Stublach,ugs,Opening Stock,1418925203.0
+2023-05-25,Holford,ugs,Opening Stock,1170836146.0
+2023-05-25,Humbly Grove,ugs,Opening Stock,2374779866.0
+2023-05-25,Rough,ugs,Opening Stock,5787947825.0
+2023-05-25,Isle Of Grain,lng_terminal,Opening Stock,4972964777.0
+2023-05-25,Dragon,lng_terminal,Opening Stock,705435012.0
+2015-09-30,Isle Of Grain,lng_terminal,Inflow,0.0
+2015-09-30,South Hook,lng_terminal,Inflow,0.0
+2015-09-30,Dragon,lng_terminal,Inflow,0.0
+2015-09-30,Rough,ugs,Inflow,0.0
+2015-09-30,Aldbrough,ugs,Inflow,32493261.0
+2015-09-30,Holford,ugs,Inflow,5855005.0
+2015-09-30,Hill Top,ugs,Inflow,0.0
+2015-09-30,Stublach,ugs,Inflow,24955077.0
+2015-09-30,Humbly Grove,ugs,Inflow,0.0
+2015-09-30,Hornsea,ugs,Inflow,0.0
+2015-09-30,Holehouse Farm,ugs,Inflow,0.0
+2015-09-30,Avonmouth,ugs,Inflow,0.0
+2016-09-30,Isle Of Grain,lng_terminal,Inflow,0.0
+2016-09-30,South Hook,lng_terminal,Inflow,0.0
+2016-09-30,Dragon,lng_terminal,Inflow,0.0
+2016-09-30,Rough,ugs,Inflow,0.0
+2016-09-30,Aldbrough,ugs,Inflow,0.0
+2016-09-30,Holford,ugs,Inflow,0.0
+2016-09-30,Hill Top,ugs,Inflow,0.0
+2016-09-30,Stublach,ugs,Inflow,110071.0
+2016-09-30,Humbly Grove,ugs,Inflow,12009444.0
+2016-09-30,Hornsea,ugs,Inflow,19000863.0
+2016-09-30,Holehouse Farm,ugs,Inflow,0.0
+2016-09-30,Avonmouth,ugs,Inflow,0.0
+2017-09-30,Isle Of Grain,lng_terminal,Inflow,79300658.0
+2017-09-30,South Hook,lng_terminal,Inflow,0.0
+2017-09-30,Dragon,lng_terminal,Inflow,0.0
+2017-09-30,Rough,ugs,Inflow,0.0
+2017-09-30,Aldbrough,ugs,Inflow,18414479.0
+2017-09-30,Holford,ugs,Inflow,163239248.0
+2017-09-30,Hill Top,ugs,Inflow,15278875.0
+2017-09-30,Stublach,ugs,Inflow,52424823.0
+2017-09-30,Humbly Grove,ugs,Inflow,0.0
+2017-09-30,Hornsea,ugs,Inflow,8887904.0
+2017-09-30,Holehouse Farm,ugs,Inflow,0.0
+2017-09-30,Avonmouth,ugs,Inflow,0.0
+2018-09-30,Isle Of Grain,lng_terminal,Inflow,0.0
+2018-09-30,South Hook,lng_terminal,Inflow,0.0
+2018-09-30,Dragon,lng_terminal,Inflow,0.0
+2018-09-30,Rough,ugs,Inflow,0.0
+2018-09-30,Aldbrough,ugs,Inflow,0.0
+2018-09-30,Holford,ugs,Inflow,0.0
+2018-09-30,Hill Top,ugs,Inflow,0.0
+2018-09-30,Stublach,ugs,Inflow,0.0
+2018-09-30,Humbly Grove,ugs,Inflow,0.0
+2018-09-30,Hornsea,ugs,Inflow,7188852.0
+2018-09-30,Holehouse Farm,ugs,Inflow,0.0
+2018-09-30,Avonmouth,ugs,Inflow,0.0
+2019-09-30,Humbly Grove,ugs,Inflow,0.0
+2019-09-30,Holehouse Farm,ugs,Inflow,0.0
+2019-09-30,Holford,ugs,Inflow,2926364.0
+2019-09-30,South Hook,lng_terminal,Inflow,0.0
+2019-09-30,Dragon,lng_terminal,Inflow,0.0
+2019-09-30,Isle Of Grain,lng_terminal,Inflow,0.0
+2019-09-30,Hornsea,ugs,Inflow,8235896.0
+2019-09-30,Aldbrough,ugs,Inflow,0.0
+2019-09-30,Stublach,ugs,Inflow,9219301.0
+2019-09-30,Hill Top,ugs,Inflow,58805253.0
+2020-09-30,Holehouse Farm,ugs,Inflow,0.0
+2020-09-30,South Hook,lng_terminal,Inflow,0.0
+2020-09-30,Dragon,lng_terminal,Inflow,782705.0
+2020-09-30,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-09-30,Humbly Grove,ugs,Inflow,0.0
+2020-09-30,Aldbrough,ugs,Inflow,0.0
+2020-09-30,Hornsea,ugs,Inflow,0.0
+2020-09-30,Holford,ugs,Inflow,0.0
+2020-09-30,Hill Top,ugs,Inflow,82843288.0
+2020-09-30,Stublach,ugs,Inflow,34116018.0
+2020-11-01,Holehouse Farm,ugs,Inflow,0.0
+2020-11-01,South Hook,lng_terminal,Inflow,0.0
+2020-11-01,Dragon,lng_terminal,Inflow,0.0
+2020-11-01,Isle Of Grain,lng_terminal,Inflow,25916463.0
+2020-11-01,Humbly Grove,ugs,Inflow,0.0
+2020-11-01,Aldbrough,ugs,Inflow,92761445.0
+2020-11-01,Hornsea,ugs,Inflow,5913240.0
+2020-11-01,Holford,ugs,Inflow,139273104.0
+2020-11-01,Hill Top,ugs,Inflow,7408044.0
+2020-11-01,Stublach,ugs,Inflow,177174318.0
+2020-11-02,Holehouse Farm,ugs,Inflow,0.0
+2020-11-02,South Hook,lng_terminal,Inflow,0.0
+2020-11-02,Dragon,lng_terminal,Inflow,0.0
+2020-11-02,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-02,Humbly Grove,ugs,Inflow,0.0
+2020-11-02,Aldbrough,ugs,Inflow,78889748.0
+2020-11-02,Hornsea,ugs,Inflow,11503726.0
+2020-11-02,Holford,ugs,Inflow,167078265.0
+2020-11-02,Hill Top,ugs,Inflow,66092463.0
+2020-11-02,Stublach,ugs,Inflow,164671754.0
+2020-11-03,Holehouse Farm,ugs,Inflow,0.0
+2020-11-03,South Hook,lng_terminal,Inflow,0.0
+2020-11-03,Dragon,lng_terminal,Inflow,0.0
+2020-11-03,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-03,Humbly Grove,ugs,Inflow,0.0
+2020-11-03,Aldbrough,ugs,Inflow,4966336.0
+2020-11-03,Hornsea,ugs,Inflow,0.0
+2020-11-03,Holford,ugs,Inflow,74510784.0
+2020-11-03,Hill Top,ugs,Inflow,0.0
+2020-11-03,Stublach,ugs,Inflow,139967916.0
+2020-11-04,Holehouse Farm,ugs,Inflow,0.0
+2020-11-04,South Hook,lng_terminal,Inflow,0.0
+2020-11-04,Dragon,lng_terminal,Inflow,0.0
+2020-11-04,Isle Of Grain,lng_terminal,Inflow,819803031.0
+2020-11-04,Humbly Grove,ugs,Inflow,0.0
+2020-11-04,Aldbrough,ugs,Inflow,0.0
+2020-11-04,Hornsea,ugs,Inflow,0.0
+2020-11-04,Holford,ugs,Inflow,0.0
+2020-11-04,Hill Top,ugs,Inflow,0.0
+2020-11-04,Stublach,ugs,Inflow,0.0
+2020-11-05,Holehouse Farm,ugs,Inflow,0.0
+2020-11-05,South Hook,lng_terminal,Inflow,1028792104.0
+2020-11-05,Dragon,lng_terminal,Inflow,730400671.0
+2020-11-05,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-05,Humbly Grove,ugs,Inflow,0.0
+2020-11-05,Aldbrough,ugs,Inflow,0.0
+2020-11-05,Hornsea,ugs,Inflow,0.0
+2020-11-05,Holford,ugs,Inflow,0.0
+2020-11-05,Hill Top,ugs,Inflow,0.0
+2020-11-05,Stublach,ugs,Inflow,0.0
+2020-11-06,Holehouse Farm,ugs,Inflow,0.0
+2020-11-06,South Hook,lng_terminal,Inflow,0.0
+2020-11-06,Dragon,lng_terminal,Inflow,26686450.0
+2020-11-06,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-06,Humbly Grove,ugs,Inflow,0.0
+2020-11-06,Aldbrough,ugs,Inflow,0.0
+2020-11-06,Hornsea,ugs,Inflow,0.0
+2020-11-06,Holford,ugs,Inflow,0.0
+2020-11-06,Hill Top,ugs,Inflow,0.0
+2020-11-06,Stublach,ugs,Inflow,0.0
+2020-11-07,Holehouse Farm,ugs,Inflow,0.0
+2020-11-07,South Hook,lng_terminal,Inflow,0.0
+2020-11-07,Dragon,lng_terminal,Inflow,0.0
+2020-11-07,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-07,Humbly Grove,ugs,Inflow,0.0
+2020-11-07,Aldbrough,ugs,Inflow,0.0
+2020-11-07,Hornsea,ugs,Inflow,0.0
+2020-11-07,Holford,ugs,Inflow,0.0
+2020-11-07,Hill Top,ugs,Inflow,0.0
+2020-11-07,Stublach,ugs,Inflow,0.0
+2020-11-08,Holehouse Farm,ugs,Inflow,0.0
+2020-11-08,South Hook,lng_terminal,Inflow,895257067.0
+2020-11-08,Dragon,lng_terminal,Inflow,0.0
+2020-11-08,Isle Of Grain,lng_terminal,Inflow,670597828.0
+2020-11-08,Humbly Grove,ugs,Inflow,0.0
+2020-11-08,Aldbrough,ugs,Inflow,0.0
+2020-11-08,Hornsea,ugs,Inflow,0.0
+2020-11-08,Holford,ugs,Inflow,0.0
+2020-11-08,Hill Top,ugs,Inflow,0.0
+2020-11-08,Stublach,ugs,Inflow,0.0
+2020-11-09,Holehouse Farm,ugs,Inflow,0.0
+2020-11-09,South Hook,lng_terminal,Inflow,0.0
+2020-11-09,Dragon,lng_terminal,Inflow,1416005.0
+2020-11-09,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-09,Humbly Grove,ugs,Inflow,0.0
+2020-11-09,Aldbrough,ugs,Inflow,0.0
+2020-11-09,Hornsea,ugs,Inflow,0.0
+2020-11-09,Holford,ugs,Inflow,0.0
+2020-11-09,Hill Top,ugs,Inflow,0.0
+2020-11-09,Stublach,ugs,Inflow,34874346.0
+2020-11-10,Holehouse Farm,ugs,Inflow,0.0
+2020-11-10,South Hook,lng_terminal,Inflow,0.0
+2020-11-10,Dragon,lng_terminal,Inflow,0.0
+2020-11-10,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-10,Humbly Grove,ugs,Inflow,0.0
+2020-11-10,Aldbrough,ugs,Inflow,0.0
+2020-11-10,Hornsea,ugs,Inflow,0.0
+2020-11-10,Holford,ugs,Inflow,0.0
+2020-11-10,Hill Top,ugs,Inflow,0.0
+2020-11-10,Stublach,ugs,Inflow,7330274.0
+2020-11-11,Holehouse Farm,ugs,Inflow,0.0
+2020-11-11,South Hook,lng_terminal,Inflow,0.0
+2020-11-11,Dragon,lng_terminal,Inflow,0.0
+2020-11-11,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-11,Humbly Grove,ugs,Inflow,0.0
+2020-11-11,Aldbrough,ugs,Inflow,17076801.0
+2020-11-11,Hornsea,ugs,Inflow,0.0
+2020-11-11,Holford,ugs,Inflow,0.0
+2020-11-11,Hill Top,ugs,Inflow,0.0
+2020-11-11,Stublach,ugs,Inflow,9515318.0
+2020-11-12,Holehouse Farm,ugs,Inflow,0.0
+2020-11-12,South Hook,lng_terminal,Inflow,0.0
+2020-11-12,Dragon,lng_terminal,Inflow,0.0
+2020-11-12,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-12,Humbly Grove,ugs,Inflow,20000.0
+2020-11-12,Aldbrough,ugs,Inflow,7593392.0
+2020-11-12,Hornsea,ugs,Inflow,0.0
+2020-11-12,Holford,ugs,Inflow,0.0
+2020-11-12,Hill Top,ugs,Inflow,0.0
+2020-11-12,Stublach,ugs,Inflow,307942.0
+2020-11-13,Holehouse Farm,ugs,Inflow,0.0
+2020-11-13,South Hook,lng_terminal,Inflow,637060256.0
+2020-11-13,Dragon,lng_terminal,Inflow,0.0
+2020-11-13,Isle Of Grain,lng_terminal,Inflow,457884443.0
+2020-11-13,Humbly Grove,ugs,Inflow,0.0
+2020-11-13,Aldbrough,ugs,Inflow,0.0
+2020-11-13,Hornsea,ugs,Inflow,0.0
+2020-11-13,Holford,ugs,Inflow,0.0
+2020-11-13,Hill Top,ugs,Inflow,0.0
+2020-11-13,Stublach,ugs,Inflow,0.0
+2020-11-14,Holehouse Farm,ugs,Inflow,0.0
+2020-11-14,South Hook,lng_terminal,Inflow,136189532.0
+2020-11-14,Dragon,lng_terminal,Inflow,0.0
+2020-11-14,Isle Of Grain,lng_terminal,Inflow,342839901.0
+2020-11-14,Humbly Grove,ugs,Inflow,0.0
+2020-11-14,Aldbrough,ugs,Inflow,0.0
+2020-11-14,Hornsea,ugs,Inflow,17605048.0
+2020-11-14,Holford,ugs,Inflow,0.0
+2020-11-14,Hill Top,ugs,Inflow,0.0
+2020-11-14,Stublach,ugs,Inflow,0.0
+2020-11-15,Holehouse Farm,ugs,Inflow,0.0
+2020-11-15,South Hook,lng_terminal,Inflow,0.0
+2020-11-15,Dragon,lng_terminal,Inflow,893920.0
+2020-11-15,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-15,Humbly Grove,ugs,Inflow,0.0
+2020-11-15,Aldbrough,ugs,Inflow,80780487.0
+2020-11-15,Hornsea,ugs,Inflow,19671230.0
+2020-11-15,Holford,ugs,Inflow,89418044.0
+2020-11-15,Hill Top,ugs,Inflow,32418048.0
+2020-11-15,Stublach,ugs,Inflow,54439280.0
+2020-11-16,Holehouse Farm,ugs,Inflow,0.0
+2020-11-16,South Hook,lng_terminal,Inflow,0.0
+2020-11-16,Dragon,lng_terminal,Inflow,62942.0
+2020-11-16,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-16,Humbly Grove,ugs,Inflow,0.0
+2020-11-16,Aldbrough,ugs,Inflow,42591680.0
+2020-11-16,Hornsea,ugs,Inflow,20053758.0
+2020-11-16,Holford,ugs,Inflow,99642024.0
+2020-11-16,Hill Top,ugs,Inflow,2436388.0
+2020-11-16,Stublach,ugs,Inflow,52170111.0
+2020-11-17,Holehouse Farm,ugs,Inflow,0.0
+2020-11-17,South Hook,lng_terminal,Inflow,0.0
+2020-11-17,Dragon,lng_terminal,Inflow,0.0
+2020-11-17,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-17,Humbly Grove,ugs,Inflow,0.0
+2020-11-17,Aldbrough,ugs,Inflow,0.0
+2020-11-17,Hornsea,ugs,Inflow,9483757.0
+2020-11-17,Holford,ugs,Inflow,0.0
+2020-11-17,Hill Top,ugs,Inflow,0.0
+2020-11-17,Stublach,ugs,Inflow,0.0
+2020-11-18,Holehouse Farm,ugs,Inflow,0.0
+2020-11-18,South Hook,lng_terminal,Inflow,0.0
+2020-11-18,Dragon,lng_terminal,Inflow,0.0
+2020-11-18,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-18,Humbly Grove,ugs,Inflow,0.0
+2020-11-18,Aldbrough,ugs,Inflow,24450801.0
+2020-11-18,Hornsea,ugs,Inflow,20105596.0
+2020-11-18,Holford,ugs,Inflow,46885548.0
+2020-11-18,Hill Top,ugs,Inflow,32208.0
+2020-11-18,Stublach,ugs,Inflow,48620490.0
+2020-11-19,Holehouse Farm,ugs,Inflow,0.0
+2020-11-19,South Hook,lng_terminal,Inflow,0.0
+2020-11-19,Dragon,lng_terminal,Inflow,0.0
+2020-11-19,Isle Of Grain,lng_terminal,Inflow,74200432.0
+2020-11-19,Humbly Grove,ugs,Inflow,0.0
+2020-11-19,Aldbrough,ugs,Inflow,32673450.0
+2020-11-19,Hornsea,ugs,Inflow,13061208.0
+2020-11-19,Holford,ugs,Inflow,79089204.0
+2020-11-19,Hill Top,ugs,Inflow,0.0
+2020-11-19,Stublach,ugs,Inflow,39295712.0
+2020-11-20,Holehouse Farm,ugs,Inflow,0.0
+2020-11-20,South Hook,lng_terminal,Inflow,0.0
+2020-11-20,Dragon,lng_terminal,Inflow,0.0
+2020-11-20,Isle Of Grain,lng_terminal,Inflow,553985787.0
+2020-11-20,Humbly Grove,ugs,Inflow,0.0
+2020-11-20,Aldbrough,ugs,Inflow,0.0
+2020-11-20,Hornsea,ugs,Inflow,0.0
+2020-11-20,Holford,ugs,Inflow,0.0
+2020-11-20,Hill Top,ugs,Inflow,0.0
+2020-11-20,Stublach,ugs,Inflow,0.0
+2020-11-21,Holehouse Farm,ugs,Inflow,0.0
+2020-11-21,South Hook,lng_terminal,Inflow,0.0
+2020-11-21,Dragon,lng_terminal,Inflow,875935680.0
+2020-11-21,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-21,Humbly Grove,ugs,Inflow,0.0
+2020-11-21,Aldbrough,ugs,Inflow,0.0
+2020-11-21,Hornsea,ugs,Inflow,5327481.0
+2020-11-21,Holford,ugs,Inflow,29281849.0
+2020-11-21,Hill Top,ugs,Inflow,0.0
+2020-11-21,Stublach,ugs,Inflow,0.0
+2020-11-22,Holehouse Farm,ugs,Inflow,0.0
+2020-11-22,South Hook,lng_terminal,Inflow,0.0
+2020-11-22,Dragon,lng_terminal,Inflow,0.0
+2020-11-22,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-22,Humbly Grove,ugs,Inflow,0.0
+2020-11-22,Aldbrough,ugs,Inflow,0.0
+2020-11-22,Hornsea,ugs,Inflow,3603793.0
+2020-11-22,Holford,ugs,Inflow,36026597.0
+2020-11-22,Hill Top,ugs,Inflow,14719725.0
+2020-11-22,Stublach,ugs,Inflow,86362068.0
+2020-11-23,Holehouse Farm,ugs,Inflow,0.0
+2020-11-23,South Hook,lng_terminal,Inflow,960501731.0
+2020-11-23,Dragon,lng_terminal,Inflow,0.0
+2020-11-23,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-23,Humbly Grove,ugs,Inflow,0.0
+2020-11-23,Aldbrough,ugs,Inflow,0.0
+2020-11-23,Hornsea,ugs,Inflow,0.0
+2020-11-23,Holford,ugs,Inflow,0.0
+2020-11-23,Hill Top,ugs,Inflow,0.0
+2020-11-23,Stublach,ugs,Inflow,6691750.0
+2020-11-24,Holehouse Farm,ugs,Inflow,0.0
+2020-11-24,South Hook,lng_terminal,Inflow,0.0
+2020-11-24,Dragon,lng_terminal,Inflow,0.0
+2020-11-24,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-24,Humbly Grove,ugs,Inflow,0.0
+2020-11-24,Aldbrough,ugs,Inflow,0.0
+2020-11-24,Hornsea,ugs,Inflow,0.0
+2020-11-24,Holford,ugs,Inflow,0.0
+2020-11-24,Hill Top,ugs,Inflow,0.0
+2020-11-24,Stublach,ugs,Inflow,0.0
+2020-11-25,Holehouse Farm,ugs,Inflow,0.0
+2020-11-25,South Hook,lng_terminal,Inflow,0.0
+2020-11-25,Dragon,lng_terminal,Inflow,0.0
+2020-11-25,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-25,Humbly Grove,ugs,Inflow,0.0
+2020-11-25,Aldbrough,ugs,Inflow,10820971.0
+2020-11-25,Hornsea,ugs,Inflow,9466254.0
+2020-11-25,Holford,ugs,Inflow,106250242.0
+2020-11-25,Hill Top,ugs,Inflow,1236936.0
+2020-11-25,Stublach,ugs,Inflow,10586352.0
+2020-11-26,Holehouse Farm,ugs,Inflow,0.0
+2020-11-26,South Hook,lng_terminal,Inflow,0.0
+2020-11-26,Dragon,lng_terminal,Inflow,0.0
+2020-11-26,Isle Of Grain,lng_terminal,Inflow,602173398.0
+2020-11-26,Humbly Grove,ugs,Inflow,0.0
+2020-11-26,Aldbrough,ugs,Inflow,11162932.0
+2020-11-26,Hornsea,ugs,Inflow,3211034.0
+2020-11-26,Holford,ugs,Inflow,0.0
+2020-11-26,Hill Top,ugs,Inflow,0.0
+2020-11-26,Stublach,ugs,Inflow,0.0
+2020-11-27,Holehouse Farm,ugs,Inflow,0.0
+2020-11-27,South Hook,lng_terminal,Inflow,0.0
+2020-11-27,Dragon,lng_terminal,Inflow,145828733.0
+2020-11-27,Isle Of Grain,lng_terminal,Inflow,221044461.0
+2020-11-27,Humbly Grove,ugs,Inflow,0.0
+2020-11-27,Aldbrough,ugs,Inflow,0.0
+2020-11-27,Hornsea,ugs,Inflow,0.0
+2020-11-27,Holford,ugs,Inflow,0.0
+2020-11-27,Hill Top,ugs,Inflow,0.0
+2020-11-27,Stublach,ugs,Inflow,0.0
+2020-11-28,Holehouse Farm,ugs,Inflow,0.0
+2020-11-28,South Hook,lng_terminal,Inflow,0.0
+2020-11-28,Dragon,lng_terminal,Inflow,352746421.0
+2020-11-28,Isle Of Grain,lng_terminal,Inflow,467920161.0
+2020-11-28,Humbly Grove,ugs,Inflow,0.0
+2020-11-28,Aldbrough,ugs,Inflow,0.0
+2020-11-28,Hornsea,ugs,Inflow,0.0
+2020-11-28,Holford,ugs,Inflow,0.0
+2020-11-28,Hill Top,ugs,Inflow,0.0
+2020-11-28,Stublach,ugs,Inflow,0.0
+2020-11-29,Holehouse Farm,ugs,Inflow,0.0
+2020-11-29,South Hook,lng_terminal,Inflow,1040644447.0
+2020-11-29,Dragon,lng_terminal,Inflow,0.0
+2020-11-29,Isle Of Grain,lng_terminal,Inflow,0.0
+2020-11-29,Humbly Grove,ugs,Inflow,0.0
+2020-11-29,Aldbrough,ugs,Inflow,45760964.0
+2020-11-29,Hornsea,ugs,Inflow,0.0
+2020-11-29,Holford,ugs,Inflow,0.0
+2020-11-29,Hill Top,ugs,Inflow,0.0
+2020-11-29,Stublach,ugs,Inflow,0.0
+2020-11-30,Holehouse Farm,ugs,Inflow,0.0
+2020-11-30,South Hook,lng_terminal,Inflow,0.0
+2020-11-30,Dragon,lng_terminal,Inflow,734715499.0
+2020-11-30,Isle Of Grain,lng_terminal,Inflow,556652557.0
+2020-11-30,Humbly Grove,ugs,Inflow,0.0
+2020-11-30,Aldbrough,ugs,Inflow,86012205.0
+2020-11-30,Hornsea,ugs,Inflow,8555187.0
+2020-11-30,Holford,ugs,Inflow,105221704.0
+2020-11-30,Hill Top,ugs,Inflow,14720282.0
+2020-11-30,Stublach,ugs,Inflow,36754186.0
+2021-11-01,Humbly Grove,ugs,Inflow,15092778.0
+2021-11-01,Holehouse Farm,ugs,Inflow,0.0
+2021-11-01,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-01,Aldbrough,ugs,Inflow,21063142.0
+2021-11-01,South Hook,lng_terminal,Inflow,0.0
+2021-11-01,Dragon,lng_terminal,Inflow,732554626.0
+2021-11-01,Hill Top,ugs,Inflow,0.0
+2021-11-01,Holford,ugs,Inflow,15228017.0
+2021-11-01,Stublach,ugs,Inflow,89961923.0
+2021-11-01,Hornsea,ugs,Inflow,6267603.0
+2021-11-02,Hornsea,ugs,Inflow,4976626.0
+2021-11-02,Dragon,lng_terminal,Inflow,0.0
+2021-11-02,Hill Top,ugs,Inflow,0.0
+2021-11-02,Aldbrough,ugs,Inflow,3435584.0
+2021-11-02,South Hook,lng_terminal,Inflow,0.0
+2021-11-02,Stublach,ugs,Inflow,114080488.0
+2021-11-02,Humbly Grove,ugs,Inflow,0.0
+2021-11-02,Holehouse Farm,ugs,Inflow,0.0
+2021-11-02,Holford,ugs,Inflow,2946837.0
+2021-11-02,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-03,Holehouse Farm,ugs,Inflow,0.0
+2021-11-03,Holford,ugs,Inflow,0.0
+2021-11-03,Hill Top,ugs,Inflow,0.0
+2021-11-03,South Hook,lng_terminal,Inflow,0.0
+2021-11-03,Aldbrough,ugs,Inflow,0.0
+2021-11-03,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-03,Stublach,ugs,Inflow,0.0
+2021-11-03,Hornsea,ugs,Inflow,1984283.0
+2021-11-03,Dragon,lng_terminal,Inflow,0.0
+2021-11-03,Humbly Grove,ugs,Inflow,0.0
+2021-11-04,Holford,ugs,Inflow,0.0
+2021-11-04,Dragon,lng_terminal,Inflow,0.0
+2021-11-04,South Hook,lng_terminal,Inflow,1337129858.0
+2021-11-04,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-04,Holehouse Farm,ugs,Inflow,0.0
+2021-11-04,Hornsea,ugs,Inflow,0.0
+2021-11-04,Stublach,ugs,Inflow,0.0
+2021-11-04,Humbly Grove,ugs,Inflow,0.0
+2021-11-04,Aldbrough,ugs,Inflow,0.0
+2021-11-04,Hill Top,ugs,Inflow,0.0
+2021-11-05,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-05,Humbly Grove,ugs,Inflow,0.0
+2021-11-05,Stublach,ugs,Inflow,0.0
+2021-11-05,Holehouse Farm,ugs,Inflow,0.0
+2021-11-05,Dragon,lng_terminal,Inflow,0.0
+2021-11-05,Aldbrough,ugs,Inflow,0.0
+2021-11-05,South Hook,lng_terminal,Inflow,0.0
+2021-11-05,Hornsea,ugs,Inflow,0.0
+2021-11-05,Holford,ugs,Inflow,0.0
+2021-11-05,Hill Top,ugs,Inflow,0.0
+2021-11-06,Holford,ugs,Inflow,0.0
+2021-11-06,Hornsea,ugs,Inflow,0.0
+2021-11-06,Aldbrough,ugs,Inflow,0.0
+2021-11-06,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-06,South Hook,lng_terminal,Inflow,1075404069.0
+2021-11-06,Hill Top,ugs,Inflow,0.0
+2021-11-06,Humbly Grove,ugs,Inflow,0.0
+2021-11-06,Stublach,ugs,Inflow,0.0
+2021-11-06,Dragon,lng_terminal,Inflow,0.0
+2021-11-06,Holehouse Farm,ugs,Inflow,0.0
+2021-11-07,Holehouse Farm,ugs,Inflow,0.0
+2021-11-07,Hill Top,ugs,Inflow,0.0
+2021-11-07,Aldbrough,ugs,Inflow,86049248.0
+2021-11-07,Stublach,ugs,Inflow,205925780.0
+2021-11-07,Dragon,lng_terminal,Inflow,788089339.0
+2021-11-07,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-07,Humbly Grove,ugs,Inflow,0.0
+2021-11-07,South Hook,lng_terminal,Inflow,0.0
+2021-11-07,Holford,ugs,Inflow,55796625.0
+2021-11-07,Hornsea,ugs,Inflow,0.0
+2021-11-08,Dragon,lng_terminal,Inflow,0.0
+2021-11-08,Hornsea,ugs,Inflow,0.0
+2021-11-08,Aldbrough,ugs,Inflow,33294900.0
+2021-11-08,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-08,Holford,ugs,Inflow,17585494.0
+2021-11-08,South Hook,lng_terminal,Inflow,0.0
+2021-11-08,Stublach,ugs,Inflow,186020499.0
+2021-11-08,Humbly Grove,ugs,Inflow,0.0
+2021-11-08,Hill Top,ugs,Inflow,0.0
+2021-11-08,Holehouse Farm,ugs,Inflow,0.0
+2021-11-09,Humbly Grove,ugs,Inflow,0.0
+2021-11-09,Hornsea,ugs,Inflow,0.0
+2021-11-09,Hill Top,ugs,Inflow,0.0
+2021-11-09,Stublach,ugs,Inflow,49361824.0
+2021-11-09,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-09,Dragon,lng_terminal,Inflow,0.0
+2021-11-09,Aldbrough,ugs,Inflow,11769434.0
+2021-11-09,Holehouse Farm,ugs,Inflow,0.0
+2021-11-09,South Hook,lng_terminal,Inflow,0.0
+2021-11-09,Holford,ugs,Inflow,0.0
+2021-11-10,South Hook,lng_terminal,Inflow,0.0
+2021-11-10,Holehouse Farm,ugs,Inflow,0.0
+2021-11-10,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-10,Aldbrough,ugs,Inflow,29691433.0
+2021-11-10,Holford,ugs,Inflow,0.0
+2021-11-10,Stublach,ugs,Inflow,0.0
+2021-11-10,Dragon,lng_terminal,Inflow,0.0
+2021-11-10,Humbly Grove,ugs,Inflow,0.0
+2021-11-10,Hill Top,ugs,Inflow,0.0
+2021-11-10,Hornsea,ugs,Inflow,0.0
+2021-11-11,Dragon,lng_terminal,Inflow,0.0
+2021-11-11,Humbly Grove,ugs,Inflow,0.0
+2021-11-11,Stublach,ugs,Inflow,0.0
+2021-11-11,Holford,ugs,Inflow,0.0
+2021-11-11,South Hook,lng_terminal,Inflow,0.0
+2021-11-11,Aldbrough,ugs,Inflow,0.0
+2021-11-11,Hornsea,ugs,Inflow,0.0
+2021-11-11,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-11,Holehouse Farm,ugs,Inflow,0.0
+2021-11-11,Hill Top,ugs,Inflow,0.0
+2021-11-12,Holehouse Farm,ugs,Inflow,0.0
+2021-11-12,Aldbrough,ugs,Inflow,0.0
+2021-11-12,Holford,ugs,Inflow,2921814.0
+2021-11-12,Dragon,lng_terminal,Inflow,0.0
+2021-11-12,Humbly Grove,ugs,Inflow,0.0
+2021-11-12,Hill Top,ugs,Inflow,0.0
+2021-11-12,Stublach,ugs,Inflow,0.0
+2021-11-12,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-12,Hornsea,ugs,Inflow,0.0
+2021-11-12,South Hook,lng_terminal,Inflow,0.0
+2021-11-13,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-13,Aldbrough,ugs,Inflow,22892493.0
+2021-11-13,Hill Top,ugs,Inflow,0.0
+2021-11-13,Stublach,ugs,Inflow,15341146.0
+2021-11-13,South Hook,lng_terminal,Inflow,0.0
+2021-11-13,Holford,ugs,Inflow,0.0
+2021-11-13,Humbly Grove,ugs,Inflow,0.0
+2021-11-13,Hornsea,ugs,Inflow,0.0
+2021-11-13,Dragon,lng_terminal,Inflow,0.0
+2021-11-13,Holehouse Farm,ugs,Inflow,0.0
+2021-11-14,Hornsea,ugs,Inflow,0.0
+2021-11-14,Aldbrough,ugs,Inflow,0.0
+2021-11-14,Holford,ugs,Inflow,0.0
+2021-11-14,Holehouse Farm,ugs,Inflow,0.0
+2021-11-14,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-14,South Hook,lng_terminal,Inflow,1506846389.0
+2021-11-14,Humbly Grove,ugs,Inflow,0.0
+2021-11-14,Hill Top,ugs,Inflow,0.0
+2021-11-14,Stublach,ugs,Inflow,60402184.0
+2021-11-14,Dragon,lng_terminal,Inflow,0.0
+2021-11-15,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-15,Hill Top,ugs,Inflow,0.0
+2021-11-15,South Hook,lng_terminal,Inflow,0.0
+2021-11-15,Hornsea,ugs,Inflow,23110136.0
+2021-11-15,Aldbrough,ugs,Inflow,11836331.0
+2021-11-15,Holford,ugs,Inflow,0.0
+2021-11-15,Dragon,lng_terminal,Inflow,975927508.0
+2021-11-15,Holehouse Farm,ugs,Inflow,0.0
+2021-11-15,Stublach,ugs,Inflow,96861753.0
+2021-11-15,Humbly Grove,ugs,Inflow,0.0
+2021-11-16,South Hook,lng_terminal,Inflow,0.0
+2021-11-16,Aldbrough,ugs,Inflow,7256638.0
+2021-11-16,Holford,ugs,Inflow,0.0
+2021-11-16,Dragon,lng_terminal,Inflow,0.0
+2021-11-16,Isle Of Grain,lng_terminal,Inflow,719950080.0
+2021-11-16,Humbly Grove,ugs,Inflow,0.0
+2021-11-16,Hornsea,ugs,Inflow,0.0
+2021-11-16,Hill Top,ugs,Inflow,0.0
+2021-11-16,Holehouse Farm,ugs,Inflow,0.0
+2021-11-16,Stublach,ugs,Inflow,0.0
+2021-11-17,Aldbrough,ugs,Inflow,16432154.0
+2021-11-17,Holehouse Farm,ugs,Inflow,0.0
+2021-11-17,Stublach,ugs,Inflow,0.0
+2021-11-17,Hill Top,ugs,Inflow,0.0
+2021-11-17,Dragon,lng_terminal,Inflow,0.0
+2021-11-17,Isle Of Grain,lng_terminal,Inflow,248516041.0
+2021-11-17,South Hook,lng_terminal,Inflow,0.0
+2021-11-17,Holford,ugs,Inflow,8783644.0
+2021-11-17,Humbly Grove,ugs,Inflow,0.0
+2021-11-17,Hornsea,ugs,Inflow,0.0
+2021-11-18,Holford,ugs,Inflow,14645476.0
+2021-11-18,Stublach,ugs,Inflow,20875742.0
+2021-11-18,Humbly Grove,ugs,Inflow,0.0
+2021-11-18,Dragon,lng_terminal,Inflow,0.0
+2021-11-18,Hill Top,ugs,Inflow,0.0
+2021-11-18,Aldbrough,ugs,Inflow,34444357.0
+2021-11-18,Hornsea,ugs,Inflow,1971048.0
+2021-11-18,South Hook,lng_terminal,Inflow,719898543.0
+2021-11-18,Holehouse Farm,ugs,Inflow,0.0
+2021-11-18,Isle Of Grain,lng_terminal,Inflow,461613713.0
+2021-11-19,Humbly Grove,ugs,Inflow,0.0
+2021-11-19,Aldbrough,ugs,Inflow,10545920.0
+2021-11-19,Stublach,ugs,Inflow,47795360.0
+2021-11-19,Hill Top,ugs,Inflow,29404429.0
+2021-11-19,Hornsea,ugs,Inflow,3300174.0
+2021-11-19,Holford,ugs,Inflow,0.0
+2021-11-19,Holehouse Farm,ugs,Inflow,0.0
+2021-11-19,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-19,South Hook,lng_terminal,Inflow,0.0
+2021-11-19,Dragon,lng_terminal,Inflow,0.0
+2021-11-20,Holford,ugs,Inflow,2930916.0
+2021-11-20,Stublach,ugs,Inflow,5315270.0
+2021-11-20,Hornsea,ugs,Inflow,6301372.0
+2021-11-20,Isle Of Grain,lng_terminal,Inflow,805916889.0
+2021-11-20,Humbly Grove,ugs,Inflow,0.0
+2021-11-20,Aldbrough,ugs,Inflow,13966627.0
+2021-11-20,Hill Top,ugs,Inflow,1977760.0
+2021-11-20,Dragon,lng_terminal,Inflow,0.0
+2021-11-20,Holehouse Farm,ugs,Inflow,0.0
+2021-11-20,South Hook,lng_terminal,Inflow,0.0
+2021-11-21,Hornsea,ugs,Inflow,5912270.0
+2021-11-21,South Hook,lng_terminal,Inflow,0.0
+2021-11-21,Aldbrough,ugs,Inflow,18967031.0
+2021-11-21,Holehouse Farm,ugs,Inflow,0.0
+2021-11-21,Hill Top,ugs,Inflow,1199452.0
+2021-11-21,Dragon,lng_terminal,Inflow,595960.0
+2021-11-21,Stublach,ugs,Inflow,94987690.0
+2021-11-21,Holford,ugs,Inflow,21963659.0
+2021-11-21,Humbly Grove,ugs,Inflow,0.0
+2021-11-21,Isle Of Grain,lng_terminal,Inflow,110939742.0
+2021-11-22,Hill Top,ugs,Inflow,0.0
+2021-11-22,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-22,Dragon,lng_terminal,Inflow,0.0
+2021-11-22,Holehouse Farm,ugs,Inflow,0.0
+2021-11-22,Holford,ugs,Inflow,0.0
+2021-11-22,Aldbrough,ugs,Inflow,0.0
+2021-11-22,South Hook,lng_terminal,Inflow,1640320445.0
+2021-11-22,Hornsea,ugs,Inflow,0.0
+2021-11-22,Humbly Grove,ugs,Inflow,0.0
+2021-11-22,Stublach,ugs,Inflow,0.0
+2021-11-23,Aldbrough,ugs,Inflow,0.0
+2021-11-23,Hill Top,ugs,Inflow,2514168.0
+2021-11-23,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-23,Dragon,lng_terminal,Inflow,0.0
+2021-11-23,Hornsea,ugs,Inflow,0.0
+2021-11-23,South Hook,lng_terminal,Inflow,0.0
+2021-11-23,Holehouse Farm,ugs,Inflow,0.0
+2021-11-23,Humbly Grove,ugs,Inflow,0.0
+2021-11-23,Stublach,ugs,Inflow,0.0
+2021-11-23,Holford,ugs,Inflow,0.0
+2021-11-24,Hill Top,ugs,Inflow,0.0
+2021-11-24,Stublach,ugs,Inflow,4550817.0
+2021-11-24,Aldbrough,ugs,Inflow,0.0
+2021-11-24,Holford,ugs,Inflow,0.0
+2021-11-24,South Hook,lng_terminal,Inflow,0.0
+2021-11-24,Dragon,lng_terminal,Inflow,0.0
+2021-11-24,Holehouse Farm,ugs,Inflow,0.0
+2021-11-24,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-24,Hornsea,ugs,Inflow,0.0
+2021-11-24,Humbly Grove,ugs,Inflow,0.0
+2021-11-25,Aldbrough,ugs,Inflow,0.0
+2021-11-25,Hill Top,ugs,Inflow,0.0
+2021-11-25,Dragon,lng_terminal,Inflow,0.0
+2021-11-25,Humbly Grove,ugs,Inflow,0.0
+2021-11-25,Hornsea,ugs,Inflow,0.0
+2021-11-25,Holford,ugs,Inflow,2935257.0
+2021-11-25,Stublach,ugs,Inflow,0.0
+2021-11-25,Holehouse Farm,ugs,Inflow,0.0
+2021-11-25,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-25,South Hook,lng_terminal,Inflow,805027961.0
+2021-11-26,Holehouse Farm,ugs,Inflow,0.0
+2021-11-26,Stublach,ugs,Inflow,0.0
+2021-11-26,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-26,Hill Top,ugs,Inflow,1188051.0
+2021-11-26,Humbly Grove,ugs,Inflow,0.0
+2021-11-26,Hornsea,ugs,Inflow,1236908.0
+2021-11-26,Aldbrough,ugs,Inflow,3949997.0
+2021-11-26,Holford,ugs,Inflow,0.0
+2021-11-26,Dragon,lng_terminal,Inflow,515190718.0
+2021-11-26,South Hook,lng_terminal,Inflow,0.0
+2021-11-27,Hill Top,ugs,Inflow,0.0
+2021-11-27,Stublach,ugs,Inflow,53311534.0
+2021-11-27,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-27,Aldbrough,ugs,Inflow,0.0
+2021-11-27,Humbly Grove,ugs,Inflow,0.0
+2021-11-27,Holford,ugs,Inflow,0.0
+2021-11-27,Dragon,lng_terminal,Inflow,0.0
+2021-11-27,Hornsea,ugs,Inflow,10102650.0
+2021-11-27,South Hook,lng_terminal,Inflow,0.0
+2021-11-27,Holehouse Farm,ugs,Inflow,0.0
+2021-11-28,South Hook,lng_terminal,Inflow,0.0
+2021-11-28,Aldbrough,ugs,Inflow,0.0
+2021-11-28,Hill Top,ugs,Inflow,0.0
+2021-11-28,Holehouse Farm,ugs,Inflow,0.0
+2021-11-28,Holford,ugs,Inflow,0.0
+2021-11-28,Humbly Grove,ugs,Inflow,0.0
+2021-11-28,Hornsea,ugs,Inflow,3268153.0
+2021-11-28,Isle Of Grain,lng_terminal,Inflow,597691939.0
+2021-11-28,Dragon,lng_terminal,Inflow,0.0
+2021-11-28,Stublach,ugs,Inflow,0.0
+2021-11-29,Aldbrough,ugs,Inflow,0.0
+2021-11-29,South Hook,lng_terminal,Inflow,0.0
+2021-11-29,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-29,Holford,ugs,Inflow,0.0
+2021-11-29,Humbly Grove,ugs,Inflow,0.0
+2021-11-29,Dragon,lng_terminal,Inflow,0.0
+2021-11-29,Stublach,ugs,Inflow,0.0
+2021-11-29,Holehouse Farm,ugs,Inflow,0.0
+2021-11-29,Hill Top,ugs,Inflow,0.0
+2021-11-29,Hornsea,ugs,Inflow,0.0
+2021-11-30,Hill Top,ugs,Inflow,0.0
+2021-11-30,Humbly Grove,ugs,Inflow,0.0
+2021-11-30,South Hook,lng_terminal,Inflow,0.0
+2021-11-30,Hornsea,ugs,Inflow,0.0
+2021-11-30,Aldbrough,ugs,Inflow,0.0
+2021-11-30,Isle Of Grain,lng_terminal,Inflow,0.0
+2021-11-30,Holehouse Farm,ugs,Inflow,0.0
+2021-11-30,Holford,ugs,Inflow,0.0
+2021-11-30,Dragon,lng_terminal,Inflow,0.0
+2021-11-30,Stublach,ugs,Inflow,0.0
+2023-05-25,South Hook,lng_terminal,Inflow,194847038.0
+2023-05-25,Hornsea,ugs,Inflow,11981551.0
+2023-05-25,Holehouse Farm,ugs,Inflow,0.0
+2023-05-25,Hill Top,ugs,Inflow,0.0
+2023-05-25,Aldbrough,ugs,Inflow,0.0
+2023-05-25,Stublach,ugs,Inflow,0.0
+2023-05-25,Holford,ugs,Inflow,0.0
+2023-05-25,Humbly Grove,ugs,Inflow,0.0
+2023-05-25,Rough,ugs,Inflow,53224785.0
+2023-05-25,Isle Of Grain,lng_terminal,Inflow,0.0
+2023-05-25,Dragon,lng_terminal,Inflow,0.0
+2015-09-30,Isle Of Grain,lng_terminal,Outflow,28835291.0
+2015-09-30,South Hook,lng_terminal,Outflow,375193109.0
+2015-09-30,Dragon,lng_terminal,Outflow,37433585.0
+2015-09-30,Rough,ugs,Outflow,16121.0
+2015-09-30,Aldbrough,ugs,Outflow,0.0
+2015-09-30,Holford,ugs,Outflow,0.0
+2015-09-30,Hill Top,ugs,Outflow,0.0
+2015-09-30,Stublach,ugs,Outflow,0.0
+2015-09-30,Humbly Grove,ugs,Outflow,0.0
+2015-09-30,Hornsea,ugs,Outflow,0.0
+2015-09-30,Holehouse Farm,ugs,Outflow,0.0
+2015-09-30,Avonmouth,ugs,Outflow,704042.0
+2016-09-30,Isle Of Grain,lng_terminal,Outflow,29546710.0
+2016-09-30,South Hook,lng_terminal,Outflow,318273262.0
+2016-09-30,Dragon,lng_terminal,Outflow,3491603.0
+2016-09-30,Rough,ugs,Outflow,0.0
+2016-09-30,Aldbrough,ugs,Outflow,38089324.0
+2016-09-30,Holford,ugs,Outflow,35043556.0
+2016-09-30,Hill Top,ugs,Outflow,0.0
+2016-09-30,Stublach,ugs,Outflow,0.0
+2016-09-30,Humbly Grove,ugs,Outflow,0.0
+2016-09-30,Hornsea,ugs,Outflow,0.0
+2016-09-30,Holehouse Farm,ugs,Outflow,0.0
+2016-09-30,Avonmouth,ugs,Outflow,0.0
+2017-09-30,Isle Of Grain,lng_terminal,Outflow,0.0
+2017-09-30,South Hook,lng_terminal,Outflow,55627777.0
+2017-09-30,Dragon,lng_terminal,Outflow,25432464.0
+2017-09-30,Rough,ugs,Outflow,0.0
+2017-09-30,Aldbrough,ugs,Outflow,0.0
+2017-09-30,Holford,ugs,Outflow,0.0
+2017-09-30,Hill Top,ugs,Outflow,0.0
+2017-09-30,Stublach,ugs,Outflow,0.0
+2017-09-30,Humbly Grove,ugs,Outflow,0.0
+2017-09-30,Hornsea,ugs,Outflow,0.0
+2017-09-30,Holehouse Farm,ugs,Outflow,0.0
+2017-09-30,Avonmouth,ugs,Outflow,0.0
+2018-09-30,Isle Of Grain,lng_terminal,Outflow,29419508.0
+2018-09-30,South Hook,lng_terminal,Outflow,55471111.0
+2018-09-30,Dragon,lng_terminal,Outflow,2654653.0
+2018-09-30,Rough,ugs,Outflow,0.0
+2018-09-30,Aldbrough,ugs,Outflow,79376618.0
+2018-09-30,Holford,ugs,Outflow,0.0
+2018-09-30,Hill Top,ugs,Outflow,0.0
+2018-09-30,Stublach,ugs,Outflow,17805329.0
+2018-09-30,Humbly Grove,ugs,Outflow,0.0
+2018-09-30,Hornsea,ugs,Outflow,0.0
+2018-09-30,Holehouse Farm,ugs,Outflow,0.0
+2018-09-30,Avonmouth,ugs,Outflow,0.0
+2019-09-30,Humbly Grove,ugs,Outflow,0.0
+2019-09-30,Holehouse Farm,ugs,Outflow,0.0
+2019-09-30,Holford,ugs,Outflow,0.0
+2019-09-30,South Hook,lng_terminal,Outflow,141818380.0
+2019-09-30,Dragon,lng_terminal,Outflow,271144.0
+2019-09-30,Isle Of Grain,lng_terminal,Outflow,32912251.0
+2019-09-30,Hornsea,ugs,Outflow,0.0
+2019-09-30,Aldbrough,ugs,Outflow,15798555.0
+2019-09-30,Stublach,ugs,Outflow,0.0
+2019-09-30,Hill Top,ugs,Outflow,0.0
+2020-09-30,Holehouse Farm,ugs,Outflow,0.0
+2020-09-30,South Hook,lng_terminal,Outflow,374070337.0
+2020-09-30,Dragon,lng_terminal,Outflow,0.0
+2020-09-30,Isle Of Grain,lng_terminal,Outflow,92877798.0
+2020-09-30,Humbly Grove,ugs,Outflow,0.0
+2020-09-30,Aldbrough,ugs,Outflow,90324110.0
+2020-09-30,Hornsea,ugs,Outflow,0.0
+2020-09-30,Holford,ugs,Outflow,0.0
+2020-09-30,Hill Top,ugs,Outflow,0.0
+2020-09-30,Stublach,ugs,Outflow,0.0
+2020-11-01,Holehouse Farm,ugs,Outflow,0.0
+2020-11-01,South Hook,lng_terminal,Outflow,216904315.0
+2020-11-01,Dragon,lng_terminal,Outflow,299300.0
+2020-11-01,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-01,Humbly Grove,ugs,Outflow,0.0
+2020-11-01,Aldbrough,ugs,Outflow,0.0
+2020-11-01,Hornsea,ugs,Outflow,0.0
+2020-11-01,Holford,ugs,Outflow,0.0
+2020-11-01,Hill Top,ugs,Outflow,0.0
+2020-11-01,Stublach,ugs,Outflow,0.0
+2020-11-02,Holehouse Farm,ugs,Outflow,0.0
+2020-11-02,South Hook,lng_terminal,Outflow,290595171.0
+2020-11-02,Dragon,lng_terminal,Outflow,27134309.0
+2020-11-02,Isle Of Grain,lng_terminal,Outflow,129727721.0
+2020-11-02,Humbly Grove,ugs,Outflow,0.0
+2020-11-02,Aldbrough,ugs,Outflow,0.0
+2020-11-02,Hornsea,ugs,Outflow,0.0
+2020-11-02,Holford,ugs,Outflow,0.0
+2020-11-02,Hill Top,ugs,Outflow,0.0
+2020-11-02,Stublach,ugs,Outflow,0.0
+2020-11-03,Holehouse Farm,ugs,Outflow,0.0
+2020-11-03,South Hook,lng_terminal,Outflow,290522238.0
+2020-11-03,Dragon,lng_terminal,Outflow,74273472.0
+2020-11-03,Isle Of Grain,lng_terminal,Outflow,112848345.0
+2020-11-03,Humbly Grove,ugs,Outflow,0.0
+2020-11-03,Aldbrough,ugs,Outflow,0.0
+2020-11-03,Hornsea,ugs,Outflow,4195769.0
+2020-11-03,Holford,ugs,Outflow,0.0
+2020-11-03,Hill Top,ugs,Outflow,0.0
+2020-11-03,Stublach,ugs,Outflow,0.0
+2020-11-04,Holehouse Farm,ugs,Outflow,0.0
+2020-11-04,South Hook,lng_terminal,Outflow,237929791.0
+2020-11-04,Dragon,lng_terminal,Outflow,171291873.0
+2020-11-04,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-04,Humbly Grove,ugs,Outflow,0.0
+2020-11-04,Aldbrough,ugs,Outflow,27544138.0
+2020-11-04,Hornsea,ugs,Outflow,11719282.0
+2020-11-04,Holford,ugs,Outflow,49361348.0
+2020-11-04,Hill Top,ugs,Outflow,11758887.0
+2020-11-04,Stublach,ugs,Outflow,49657655.0
+2020-11-05,Holehouse Farm,ugs,Outflow,0.0
+2020-11-05,South Hook,lng_terminal,Outflow,0.0
+2020-11-05,Dragon,lng_terminal,Outflow,0.0
+2020-11-05,Isle Of Grain,lng_terminal,Outflow,170963456.0
+2020-11-05,Humbly Grove,ugs,Outflow,0.0
+2020-11-05,Aldbrough,ugs,Outflow,22731446.0
+2020-11-05,Hornsea,ugs,Outflow,6580623.0
+2020-11-05,Holford,ugs,Outflow,125992976.0
+2020-11-05,Hill Top,ugs,Outflow,0.0
+2020-11-05,Stublach,ugs,Outflow,48285019.0
+2020-11-06,Holehouse Farm,ugs,Outflow,0.0
+2020-11-06,South Hook,lng_terminal,Outflow,290258904.0
+2020-11-06,Dragon,lng_terminal,Outflow,0.0
+2020-11-06,Isle Of Grain,lng_terminal,Outflow,329550345.0
+2020-11-06,Humbly Grove,ugs,Outflow,0.0
+2020-11-06,Aldbrough,ugs,Outflow,15049893.0
+2020-11-06,Hornsea,ugs,Outflow,0.0
+2020-11-06,Holford,ugs,Outflow,115762056.0
+2020-11-06,Hill Top,ugs,Outflow,0.0
+2020-11-06,Stublach,ugs,Outflow,53682591.0
+2020-11-07,Holehouse Farm,ugs,Outflow,0.0
+2020-11-07,South Hook,lng_terminal,Outflow,304305164.0
+2020-11-07,Dragon,lng_terminal,Outflow,138765049.0
+2020-11-07,Isle Of Grain,lng_terminal,Outflow,347058230.0
+2020-11-07,Humbly Grove,ugs,Outflow,0.0
+2020-11-07,Aldbrough,ugs,Outflow,0.0
+2020-11-07,Hornsea,ugs,Outflow,14074866.0
+2020-11-07,Holford,ugs,Outflow,41087432.0
+2020-11-07,Hill Top,ugs,Outflow,15697499.0
+2020-11-07,Stublach,ugs,Outflow,16406773.0
+2020-11-08,Holehouse Farm,ugs,Outflow,0.0
+2020-11-08,South Hook,lng_terminal,Outflow,0.0
+2020-11-08,Dragon,lng_terminal,Outflow,125699515.0
+2020-11-08,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-08,Humbly Grove,ugs,Outflow,0.0
+2020-11-08,Aldbrough,ugs,Outflow,32393795.0
+2020-11-08,Hornsea,ugs,Outflow,12545809.0
+2020-11-08,Holford,ugs,Outflow,31857778.0
+2020-11-08,Hill Top,ugs,Outflow,0.0
+2020-11-08,Stublach,ugs,Outflow,29821788.0
+2020-11-09,Holehouse Farm,ugs,Outflow,0.0
+2020-11-09,South Hook,lng_terminal,Outflow,156180661.0
+2020-11-09,Dragon,lng_terminal,Outflow,0.0
+2020-11-09,Isle Of Grain,lng_terminal,Outflow,62755211.0
+2020-11-09,Humbly Grove,ugs,Outflow,0.0
+2020-11-09,Aldbrough,ugs,Outflow,0.0
+2020-11-09,Hornsea,ugs,Outflow,0.0
+2020-11-09,Holford,ugs,Outflow,0.0
+2020-11-09,Hill Top,ugs,Outflow,0.0
+2020-11-09,Stublach,ugs,Outflow,0.0
+2020-11-10,Holehouse Farm,ugs,Outflow,0.0
+2020-11-10,South Hook,lng_terminal,Outflow,152041026.0
+2020-11-10,Dragon,lng_terminal,Outflow,79446358.0
+2020-11-10,Isle Of Grain,lng_terminal,Outflow,230035088.0
+2020-11-10,Humbly Grove,ugs,Outflow,0.0
+2020-11-10,Aldbrough,ugs,Outflow,24911141.0
+2020-11-10,Hornsea,ugs,Outflow,24001649.0
+2020-11-10,Holford,ugs,Outflow,0.0
+2020-11-10,Hill Top,ugs,Outflow,0.0
+2020-11-10,Stublach,ugs,Outflow,0.0
+2020-11-11,Holehouse Farm,ugs,Outflow,0.0
+2020-11-11,South Hook,lng_terminal,Outflow,161089396.0
+2020-11-11,Dragon,lng_terminal,Outflow,77162386.0
+2020-11-11,Isle Of Grain,lng_terminal,Outflow,159994935.0
+2020-11-11,Humbly Grove,ugs,Outflow,0.0
+2020-11-11,Aldbrough,ugs,Outflow,0.0
+2020-11-11,Hornsea,ugs,Outflow,14415347.0
+2020-11-11,Holford,ugs,Outflow,0.0
+2020-11-11,Hill Top,ugs,Outflow,0.0
+2020-11-11,Stublach,ugs,Outflow,0.0
+2020-11-12,Holehouse Farm,ugs,Outflow,0.0
+2020-11-12,South Hook,lng_terminal,Outflow,157882665.0
+2020-11-12,Dragon,lng_terminal,Outflow,45242045.0
+2020-11-12,Isle Of Grain,lng_terminal,Outflow,167566328.0
+2020-11-12,Humbly Grove,ugs,Outflow,0.0
+2020-11-12,Aldbrough,ugs,Outflow,0.0
+2020-11-12,Hornsea,ugs,Outflow,14610553.0
+2020-11-12,Holford,ugs,Outflow,0.0
+2020-11-12,Hill Top,ugs,Outflow,0.0
+2020-11-12,Stublach,ugs,Outflow,0.0
+2020-11-13,Holehouse Farm,ugs,Outflow,0.0
+2020-11-13,South Hook,lng_terminal,Outflow,0.0
+2020-11-13,Dragon,lng_terminal,Outflow,89258977.0
+2020-11-13,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-13,Humbly Grove,ugs,Outflow,20000.0
+2020-11-13,Aldbrough,ugs,Outflow,15681.0
+2020-11-13,Hornsea,ugs,Outflow,1166542.0
+2020-11-13,Holford,ugs,Outflow,0.0
+2020-11-13,Hill Top,ugs,Outflow,2942784.0
+2020-11-13,Stublach,ugs,Outflow,13941215.0
+2020-11-14,Holehouse Farm,ugs,Outflow,0.0
+2020-11-14,South Hook,lng_terminal,Outflow,0.0
+2020-11-14,Dragon,lng_terminal,Outflow,92910468.0
+2020-11-14,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-14,Humbly Grove,ugs,Outflow,0.0
+2020-11-14,Aldbrough,ugs,Outflow,38086114.0
+2020-11-14,Hornsea,ugs,Outflow,0.0
+2020-11-14,Holford,ugs,Outflow,19187484.0
+2020-11-14,Hill Top,ugs,Outflow,0.0
+2020-11-14,Stublach,ugs,Outflow,14637943.0
+2020-11-15,Holehouse Farm,ugs,Outflow,0.0
+2020-11-15,South Hook,lng_terminal,Outflow,82481763.0
+2020-11-15,Dragon,lng_terminal,Outflow,0.0
+2020-11-15,Isle Of Grain,lng_terminal,Outflow,114806391.0
+2020-11-15,Humbly Grove,ugs,Outflow,0.0
+2020-11-15,Aldbrough,ugs,Outflow,0.0
+2020-11-15,Hornsea,ugs,Outflow,0.0
+2020-11-15,Holford,ugs,Outflow,0.0
+2020-11-15,Hill Top,ugs,Outflow,0.0
+2020-11-15,Stublach,ugs,Outflow,0.0
+2020-11-16,Holehouse Farm,ugs,Outflow,0.0
+2020-11-16,South Hook,lng_terminal,Outflow,82519443.0
+2020-11-16,Dragon,lng_terminal,Outflow,0.0
+2020-11-16,Isle Of Grain,lng_terminal,Outflow,114624415.0
+2020-11-16,Humbly Grove,ugs,Outflow,0.0
+2020-11-16,Aldbrough,ugs,Outflow,0.0
+2020-11-16,Hornsea,ugs,Outflow,0.0
+2020-11-16,Holford,ugs,Outflow,0.0
+2020-11-16,Hill Top,ugs,Outflow,0.0
+2020-11-16,Stublach,ugs,Outflow,0.0
+2020-11-17,Holehouse Farm,ugs,Outflow,0.0
+2020-11-17,South Hook,lng_terminal,Outflow,100376647.0
+2020-11-17,Dragon,lng_terminal,Outflow,51405731.0
+2020-11-17,Isle Of Grain,lng_terminal,Outflow,156440978.0
+2020-11-17,Humbly Grove,ugs,Outflow,0.0
+2020-11-17,Aldbrough,ugs,Outflow,24690459.0
+2020-11-17,Hornsea,ugs,Outflow,0.0
+2020-11-17,Holford,ugs,Outflow,0.0
+2020-11-17,Hill Top,ugs,Outflow,227775.0
+2020-11-17,Stublach,ugs,Outflow,44133121.0
+2020-11-18,Holehouse Farm,ugs,Outflow,0.0
+2020-11-18,South Hook,lng_terminal,Outflow,89939591.0
+2020-11-18,Dragon,lng_terminal,Outflow,36342392.0
+2020-11-18,Isle Of Grain,lng_terminal,Outflow,107992530.0
+2020-11-18,Humbly Grove,ugs,Outflow,0.0
+2020-11-18,Aldbrough,ugs,Outflow,0.0
+2020-11-18,Hornsea,ugs,Outflow,0.0
+2020-11-18,Holford,ugs,Outflow,0.0
+2020-11-18,Hill Top,ugs,Outflow,0.0
+2020-11-18,Stublach,ugs,Outflow,0.0
+2020-11-19,Holehouse Farm,ugs,Outflow,0.0
+2020-11-19,South Hook,lng_terminal,Outflow,74589660.0
+2020-11-19,Dragon,lng_terminal,Outflow,36392498.0
+2020-11-19,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-19,Humbly Grove,ugs,Outflow,0.0
+2020-11-19,Aldbrough,ugs,Outflow,0.0
+2020-11-19,Hornsea,ugs,Outflow,0.0
+2020-11-19,Holford,ugs,Outflow,0.0
+2020-11-19,Hill Top,ugs,Outflow,0.0
+2020-11-19,Stublach,ugs,Outflow,0.0
+2020-11-20,Holehouse Farm,ugs,Outflow,0.0
+2020-11-20,South Hook,lng_terminal,Outflow,89985344.0
+2020-11-20,Dragon,lng_terminal,Outflow,96260158.0
+2020-11-20,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-20,Humbly Grove,ugs,Outflow,0.0
+2020-11-20,Aldbrough,ugs,Outflow,26357314.0
+2020-11-20,Hornsea,ugs,Outflow,8835721.0
+2020-11-20,Holford,ugs,Outflow,99596528.0
+2020-11-20,Hill Top,ugs,Outflow,14716941.0
+2020-11-20,Stublach,ugs,Outflow,135037604.0
+2020-11-21,Holehouse Farm,ugs,Outflow,0.0
+2020-11-21,South Hook,lng_terminal,Outflow,113745241.0
+2020-11-21,Dragon,lng_terminal,Outflow,0.0
+2020-11-21,Isle Of Grain,lng_terminal,Outflow,188535434.0
+2020-11-21,Humbly Grove,ugs,Outflow,0.0
+2020-11-21,Aldbrough,ugs,Outflow,30581012.0
+2020-11-21,Hornsea,ugs,Outflow,0.0
+2020-11-21,Holford,ugs,Outflow,0.0
+2020-11-21,Hill Top,ugs,Outflow,0.0
+2020-11-21,Stublach,ugs,Outflow,11521804.0
+2020-11-22,Holehouse Farm,ugs,Outflow,0.0
+2020-11-22,South Hook,lng_terminal,Outflow,85845639.0
+2020-11-22,Dragon,lng_terminal,Outflow,211118415.0
+2020-11-22,Isle Of Grain,lng_terminal,Outflow,295532061.0
+2020-11-22,Humbly Grove,ugs,Outflow,0.0
+2020-11-22,Aldbrough,ugs,Outflow,22678536.0
+2020-11-22,Hornsea,ugs,Outflow,0.0
+2020-11-22,Holford,ugs,Outflow,0.0
+2020-11-22,Hill Top,ugs,Outflow,0.0
+2020-11-22,Stublach,ugs,Outflow,0.0
+2020-11-23,Holehouse Farm,ugs,Outflow,0.0
+2020-11-23,South Hook,lng_terminal,Outflow,0.0
+2020-11-23,Dragon,lng_terminal,Outflow,229660668.0
+2020-11-23,Isle Of Grain,lng_terminal,Outflow,191781483.0
+2020-11-23,Humbly Grove,ugs,Outflow,0.0
+2020-11-23,Aldbrough,ugs,Outflow,22072799.0
+2020-11-23,Hornsea,ugs,Outflow,0.0
+2020-11-23,Holford,ugs,Outflow,42179700.0
+2020-11-23,Hill Top,ugs,Outflow,0.0
+2020-11-23,Stublach,ugs,Outflow,0.0
+2020-11-24,Holehouse Farm,ugs,Outflow,0.0
+2020-11-24,South Hook,lng_terminal,Outflow,94380140.0
+2020-11-24,Dragon,lng_terminal,Outflow,250079409.0
+2020-11-24,Isle Of Grain,lng_terminal,Outflow,466601269.0
+2020-11-24,Humbly Grove,ugs,Outflow,0.0
+2020-11-24,Aldbrough,ugs,Outflow,33699288.0
+2020-11-24,Hornsea,ugs,Outflow,6838573.0
+2020-11-24,Holford,ugs,Outflow,40459380.0
+2020-11-24,Hill Top,ugs,Outflow,0.0
+2020-11-24,Stublach,ugs,Outflow,21934030.0
+2020-11-25,Holehouse Farm,ugs,Outflow,0.0
+2020-11-25,South Hook,lng_terminal,Outflow,89437693.0
+2020-11-25,Dragon,lng_terminal,Outflow,255648201.0
+2020-11-25,Isle Of Grain,lng_terminal,Outflow,287183096.0
+2020-11-25,Humbly Grove,ugs,Outflow,0.0
+2020-11-25,Aldbrough,ugs,Outflow,0.0
+2020-11-25,Hornsea,ugs,Outflow,0.0
+2020-11-25,Holford,ugs,Outflow,0.0
+2020-11-25,Hill Top,ugs,Outflow,0.0
+2020-11-25,Stublach,ugs,Outflow,0.0
+2020-11-26,Holehouse Farm,ugs,Outflow,0.0
+2020-11-26,South Hook,lng_terminal,Outflow,89251987.0
+2020-11-26,Dragon,lng_terminal,Outflow,251011010.0
+2020-11-26,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-26,Humbly Grove,ugs,Outflow,0.0
+2020-11-26,Aldbrough,ugs,Outflow,0.0
+2020-11-26,Hornsea,ugs,Outflow,0.0
+2020-11-26,Holford,ugs,Outflow,71607184.0
+2020-11-26,Hill Top,ugs,Outflow,0.0
+2020-11-26,Stublach,ugs,Outflow,14077582.0
+2020-11-27,Holehouse Farm,ugs,Outflow,0.0
+2020-11-27,South Hook,lng_terminal,Outflow,89352775.0
+2020-11-27,Dragon,lng_terminal,Outflow,0.0
+2020-11-27,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-27,Humbly Grove,ugs,Outflow,0.0
+2020-11-27,Aldbrough,ugs,Outflow,115234181.0
+2020-11-27,Hornsea,ugs,Outflow,14726441.0
+2020-11-27,Holford,ugs,Outflow,68676264.0
+2020-11-27,Hill Top,ugs,Outflow,14696104.0
+2020-11-27,Stublach,ugs,Outflow,42088175.0
+2020-11-28,Holehouse Farm,ugs,Outflow,0.0
+2020-11-28,South Hook,lng_terminal,Outflow,89380551.0
+2020-11-28,Dragon,lng_terminal,Outflow,0.0
+2020-11-28,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-28,Humbly Grove,ugs,Outflow,19065833.0
+2020-11-28,Aldbrough,ugs,Outflow,166155875.0
+2020-11-28,Hornsea,ugs,Outflow,37847985.0
+2020-11-28,Holford,ugs,Outflow,85069360.0
+2020-11-28,Hill Top,ugs,Outflow,0.0
+2020-11-28,Stublach,ugs,Outflow,110565820.0
+2020-11-29,Holehouse Farm,ugs,Outflow,0.0
+2020-11-29,South Hook,lng_terminal,Outflow,0.0
+2020-11-29,Dragon,lng_terminal,Outflow,271781028.0
+2020-11-29,Isle Of Grain,lng_terminal,Outflow,204990979.0
+2020-11-29,Humbly Grove,ugs,Outflow,48318056.0
+2020-11-29,Aldbrough,ugs,Outflow,0.0
+2020-11-29,Hornsea,ugs,Outflow,0.0
+2020-11-29,Holford,ugs,Outflow,0.0
+2020-11-29,Hill Top,ugs,Outflow,0.0
+2020-11-29,Stublach,ugs,Outflow,750694.0
+2020-11-30,Holehouse Farm,ugs,Outflow,0.0
+2020-11-30,South Hook,lng_terminal,Outflow,91023147.0
+2020-11-30,Dragon,lng_terminal,Outflow,0.0
+2020-11-30,Isle Of Grain,lng_terminal,Outflow,0.0
+2020-11-30,Humbly Grove,ugs,Outflow,49574169.0
+2020-11-30,Aldbrough,ugs,Outflow,0.0
+2020-11-30,Hornsea,ugs,Outflow,0.0
+2020-11-30,Holford,ugs,Outflow,0.0
+2020-11-30,Hill Top,ugs,Outflow,0.0
+2020-11-30,Stublach,ugs,Outflow,0.0
+2021-11-01,Humbly Grove,ugs,Outflow,0.0
+2021-11-01,Holehouse Farm,ugs,Outflow,0.0
+2021-11-01,Isle Of Grain,lng_terminal,Outflow,54712134.0
+2021-11-01,Aldbrough,ugs,Outflow,0.0
+2021-11-01,South Hook,lng_terminal,Outflow,207614350.0
+2021-11-01,Dragon,lng_terminal,Outflow,0.0
+2021-11-01,Hill Top,ugs,Outflow,0.0
+2021-11-01,Holford,ugs,Outflow,0.0
+2021-11-01,Stublach,ugs,Outflow,0.0
+2021-11-01,Hornsea,ugs,Outflow,0.0
+2021-11-02,Hornsea,ugs,Outflow,0.0
+2021-11-02,Dragon,lng_terminal,Outflow,130581602.0
+2021-11-02,Hill Top,ugs,Outflow,0.0
+2021-11-02,Aldbrough,ugs,Outflow,0.0
+2021-11-02,South Hook,lng_terminal,Outflow,264063508.0
+2021-11-02,Stublach,ugs,Outflow,0.0
+2021-11-02,Humbly Grove,ugs,Outflow,0.0
+2021-11-02,Holehouse Farm,ugs,Outflow,0.0
+2021-11-02,Holford,ugs,Outflow,0.0
+2021-11-02,Isle Of Grain,lng_terminal,Outflow,60449318.0
+2021-11-03,Holehouse Farm,ugs,Outflow,0.0
+2021-11-03,Holford,ugs,Outflow,25295076.0
+2021-11-03,Hill Top,ugs,Outflow,0.0
+2021-11-03,South Hook,lng_terminal,Outflow,278433223.0
+2021-11-03,Aldbrough,ugs,Outflow,1328.0
+2021-11-03,Isle Of Grain,lng_terminal,Outflow,125600073.0
+2021-11-03,Stublach,ugs,Outflow,108675189.0
+2021-11-03,Hornsea,ugs,Outflow,0.0
+2021-11-03,Dragon,lng_terminal,Outflow,147751152.0
+2021-11-03,Humbly Grove,ugs,Outflow,0.0
+2021-11-04,Holford,ugs,Outflow,0.0
+2021-11-04,Dragon,lng_terminal,Outflow,180039234.0
+2021-11-04,South Hook,lng_terminal,Outflow,0.0
+2021-11-04,Isle Of Grain,lng_terminal,Outflow,61709360.0
+2021-11-04,Holehouse Farm,ugs,Outflow,0.0
+2021-11-04,Hornsea,ugs,Outflow,0.0
+2021-11-04,Stublach,ugs,Outflow,98045354.0
+2021-11-04,Humbly Grove,ugs,Outflow,0.0
+2021-11-04,Aldbrough,ugs,Outflow,42714181.0
+2021-11-04,Hill Top,ugs,Outflow,0.0
+2021-11-05,Isle Of Grain,lng_terminal,Outflow,82542441.0
+2021-11-05,Humbly Grove,ugs,Outflow,0.0
+2021-11-05,Stublach,ugs,Outflow,151510851.0
+2021-11-05,Holehouse Farm,ugs,Outflow,0.0
+2021-11-05,Dragon,lng_terminal,Outflow,169851326.0
+2021-11-05,Aldbrough,ugs,Outflow,44537444.0
+2021-11-05,South Hook,lng_terminal,Outflow,214172501.0
+2021-11-05,Hornsea,ugs,Outflow,0.0
+2021-11-05,Holford,ugs,Outflow,0.0
+2021-11-05,Hill Top,ugs,Outflow,0.0
+2021-11-06,Holford,ugs,Outflow,40550400.0
+2021-11-06,Hornsea,ugs,Outflow,0.0
+2021-11-06,Aldbrough,ugs,Outflow,60994745.0
+2021-11-06,Isle Of Grain,lng_terminal,Outflow,67073147.0
+2021-11-06,South Hook,lng_terminal,Outflow,0.0
+2021-11-06,Hill Top,ugs,Outflow,0.0
+2021-11-06,Humbly Grove,ugs,Outflow,1173889.0
+2021-11-06,Stublach,ugs,Outflow,129009668.0
+2021-11-06,Dragon,lng_terminal,Outflow,164126207.0
+2021-11-06,Holehouse Farm,ugs,Outflow,0.0
+2021-11-07,Holehouse Farm,ugs,Outflow,0.0
+2021-11-07,Hill Top,ugs,Outflow,0.0
+2021-11-07,Aldbrough,ugs,Outflow,0.0
+2021-11-07,Stublach,ugs,Outflow,0.0
+2021-11-07,Dragon,lng_terminal,Outflow,0.0
+2021-11-07,Isle Of Grain,lng_terminal,Outflow,60592645.0
+2021-11-07,Humbly Grove,ugs,Outflow,0.0
+2021-11-07,South Hook,lng_terminal,Outflow,298676156.0
+2021-11-07,Holford,ugs,Outflow,0.0
+2021-11-07,Hornsea,ugs,Outflow,0.0
+2021-11-08,Dragon,lng_terminal,Outflow,145511487.0
+2021-11-08,Hornsea,ugs,Outflow,0.0
+2021-11-08,Aldbrough,ugs,Outflow,0.0
+2021-11-08,Isle Of Grain,lng_terminal,Outflow,66234644.0
+2021-11-08,Holford,ugs,Outflow,0.0
+2021-11-08,South Hook,lng_terminal,Outflow,292852822.0
+2021-11-08,Stublach,ugs,Outflow,0.0
+2021-11-08,Humbly Grove,ugs,Outflow,0.0
+2021-11-08,Hill Top,ugs,Outflow,0.0
+2021-11-08,Holehouse Farm,ugs,Outflow,0.0
+2021-11-09,Humbly Grove,ugs,Outflow,0.0
+2021-11-09,Hornsea,ugs,Outflow,0.0
+2021-11-09,Hill Top,ugs,Outflow,0.0
+2021-11-09,Stublach,ugs,Outflow,0.0
+2021-11-09,Isle Of Grain,lng_terminal,Outflow,103159240.0
+2021-11-09,Dragon,lng_terminal,Outflow,147876206.0
+2021-11-09,Aldbrough,ugs,Outflow,0.0
+2021-11-09,Holehouse Farm,ugs,Outflow,0.0
+2021-11-09,South Hook,lng_terminal,Outflow,281081240.0
+2021-11-09,Holford,ugs,Outflow,0.0
+2021-11-10,South Hook,lng_terminal,Outflow,289749382.0
+2021-11-10,Holehouse Farm,ugs,Outflow,0.0
+2021-11-10,Isle Of Grain,lng_terminal,Outflow,94909556.0
+2021-11-10,Aldbrough,ugs,Outflow,0.0
+2021-11-10,Holford,ugs,Outflow,0.0
+2021-11-10,Stublach,ugs,Outflow,680510.0
+2021-11-10,Dragon,lng_terminal,Outflow,55927603.0
+2021-11-10,Humbly Grove,ugs,Outflow,0.0
+2021-11-10,Hill Top,ugs,Outflow,0.0
+2021-11-10,Hornsea,ugs,Outflow,0.0
+2021-11-11,Dragon,lng_terminal,Outflow,156534775.0
+2021-11-11,Humbly Grove,ugs,Outflow,0.0
+2021-11-11,Stublach,ugs,Outflow,46591398.0
+2021-11-11,Holford,ugs,Outflow,0.0
+2021-11-11,South Hook,lng_terminal,Outflow,319148934.0
+2021-11-11,Aldbrough,ugs,Outflow,55762686.0
+2021-11-11,Hornsea,ugs,Outflow,0.0
+2021-11-11,Isle Of Grain,lng_terminal,Outflow,170149263.0
+2021-11-11,Holehouse Farm,ugs,Outflow,0.0
+2021-11-11,Hill Top,ugs,Outflow,0.0
+2021-11-12,Holehouse Farm,ugs,Outflow,0.0
+2021-11-12,Aldbrough,ugs,Outflow,0.0
+2021-11-12,Holford,ugs,Outflow,0.0
+2021-11-12,Dragon,lng_terminal,Outflow,162869677.0
+2021-11-12,Humbly Grove,ugs,Outflow,0.0
+2021-11-12,Hill Top,ugs,Outflow,0.0
+2021-11-12,Stublach,ugs,Outflow,67824595.0
+2021-11-12,Isle Of Grain,lng_terminal,Outflow,200862547.0
+2021-11-12,Hornsea,ugs,Outflow,0.0
+2021-11-12,South Hook,lng_terminal,Outflow,310002004.0
+2021-11-13,Isle Of Grain,lng_terminal,Outflow,176192239.0
+2021-11-13,Aldbrough,ugs,Outflow,0.0
+2021-11-13,Hill Top,ugs,Outflow,0.0
+2021-11-13,Stublach,ugs,Outflow,0.0
+2021-11-13,South Hook,lng_terminal,Outflow,265345993.0
+2021-11-13,Holford,ugs,Outflow,0.0
+2021-11-13,Humbly Grove,ugs,Outflow,0.0
+2021-11-13,Hornsea,ugs,Outflow,0.0
+2021-11-13,Dragon,lng_terminal,Outflow,148244478.0
+2021-11-13,Holehouse Farm,ugs,Outflow,0.0
+2021-11-14,Hornsea,ugs,Outflow,0.0
+2021-11-14,Aldbrough,ugs,Outflow,50908057.0
+2021-11-14,Holford,ugs,Outflow,0.0
+2021-11-14,Holehouse Farm,ugs,Outflow,0.0
+2021-11-14,Isle Of Grain,lng_terminal,Outflow,153973796.0
+2021-11-14,South Hook,lng_terminal,Outflow,0.0
+2021-11-14,Humbly Grove,ugs,Outflow,0.0
+2021-11-14,Hill Top,ugs,Outflow,0.0
+2021-11-14,Stublach,ugs,Outflow,0.0
+2021-11-14,Dragon,lng_terminal,Outflow,149660221.0
+2021-11-15,Isle Of Grain,lng_terminal,Outflow,170589905.0
+2021-11-15,Hill Top,ugs,Outflow,0.0
+2021-11-15,South Hook,lng_terminal,Outflow,240461924.0
+2021-11-15,Hornsea,ugs,Outflow,0.0
+2021-11-15,Aldbrough,ugs,Outflow,0.0
+2021-11-15,Holford,ugs,Outflow,0.0
+2021-11-15,Dragon,lng_terminal,Outflow,0.0
+2021-11-15,Holehouse Farm,ugs,Outflow,0.0
+2021-11-15,Stublach,ugs,Outflow,0.0
+2021-11-15,Humbly Grove,ugs,Outflow,0.0
+2021-11-16,South Hook,lng_terminal,Outflow,270897554.0
+2021-11-16,Aldbrough,ugs,Outflow,0.0
+2021-11-16,Holford,ugs,Outflow,0.0
+2021-11-16,Dragon,lng_terminal,Outflow,111015780.0
+2021-11-16,Isle Of Grain,lng_terminal,Outflow,0.0
+2021-11-16,Humbly Grove,ugs,Outflow,0.0
+2021-11-16,Hornsea,ugs,Outflow,20000002.0
+2021-11-16,Hill Top,ugs,Outflow,0.0
+2021-11-16,Holehouse Farm,ugs,Outflow,0.0
+2021-11-16,Stublach,ugs,Outflow,91189853.0
+2021-11-17,Aldbrough,ugs,Outflow,0.0
+2021-11-17,Holehouse Farm,ugs,Outflow,0.0
+2021-11-17,Stublach,ugs,Outflow,12375902.0
+2021-11-17,Hill Top,ugs,Outflow,29325534.0
+2021-11-17,Dragon,lng_terminal,Outflow,64626183.0
+2021-11-17,Isle Of Grain,lng_terminal,Outflow,0.0
+2021-11-17,South Hook,lng_terminal,Outflow,231279286.0
+2021-11-17,Holford,ugs,Outflow,0.0
+2021-11-17,Humbly Grove,ugs,Outflow,0.0
+2021-11-17,Hornsea,ugs,Outflow,0.0
+2021-11-18,Holford,ugs,Outflow,0.0
+2021-11-18,Stublach,ugs,Outflow,0.0
+2021-11-18,Humbly Grove,ugs,Outflow,0.0
+2021-11-18,Dragon,lng_terminal,Outflow,38831902.0
+2021-11-18,Hill Top,ugs,Outflow,0.0
+2021-11-18,Aldbrough,ugs,Outflow,0.0
+2021-11-18,Hornsea,ugs,Outflow,0.0
+2021-11-18,South Hook,lng_terminal,Outflow,0.0
+2021-11-18,Holehouse Farm,ugs,Outflow,0.0
+2021-11-18,Isle Of Grain,lng_terminal,Outflow,0.0
+2021-11-19,Humbly Grove,ugs,Outflow,0.0
+2021-11-19,Aldbrough,ugs,Outflow,0.0
+2021-11-19,Stublach,ugs,Outflow,0.0
+2021-11-19,Hill Top,ugs,Outflow,0.0
+2021-11-19,Hornsea,ugs,Outflow,0.0
+2021-11-19,Holford,ugs,Outflow,0.0
+2021-11-19,Holehouse Farm,ugs,Outflow,0.0
+2021-11-19,Isle Of Grain,lng_terminal,Outflow,149196578.0
+2021-11-19,South Hook,lng_terminal,Outflow,233691403.0
+2021-11-19,Dragon,lng_terminal,Outflow,39893495.0
+2021-11-20,Holford,ugs,Outflow,0.0
+2021-11-20,Stublach,ugs,Outflow,0.0
+2021-11-20,Hornsea,ugs,Outflow,0.0
+2021-11-20,Isle Of Grain,lng_terminal,Outflow,0.0
+2021-11-20,Humbly Grove,ugs,Outflow,0.0
+2021-11-20,Aldbrough,ugs,Outflow,0.0
+2021-11-20,Hill Top,ugs,Outflow,0.0
+2021-11-20,Dragon,lng_terminal,Outflow,38385397.0
+2021-11-20,Holehouse Farm,ugs,Outflow,0.0
+2021-11-20,South Hook,lng_terminal,Outflow,228535341.0
+2021-11-21,Hornsea,ugs,Outflow,0.0
+2021-11-21,South Hook,lng_terminal,Outflow,101797634.0
+2021-11-21,Aldbrough,ugs,Outflow,0.0
+2021-11-21,Holehouse Farm,ugs,Outflow,0.0
+2021-11-21,Hill Top,ugs,Outflow,0.0
+2021-11-21,Dragon,lng_terminal,Outflow,0.0
+2021-11-21,Stublach,ugs,Outflow,0.0
+2021-11-21,Holford,ugs,Outflow,0.0
+2021-11-21,Humbly Grove,ugs,Outflow,0.0
+2021-11-21,Isle Of Grain,lng_terminal,Outflow,0.0
+2021-11-22,Hill Top,ugs,Outflow,0.0
+2021-11-22,Isle Of Grain,lng_terminal,Outflow,32863409.0
+2021-11-22,Dragon,lng_terminal,Outflow,77778913.0
+2021-11-22,Holehouse Farm,ugs,Outflow,0.0
+2021-11-22,Holford,ugs,Outflow,17558188.0
+2021-11-22,Aldbrough,ugs,Outflow,0.0
+2021-11-22,South Hook,lng_terminal,Outflow,0.0
+2021-11-22,Hornsea,ugs,Outflow,0.0
+2021-11-22,Humbly Grove,ugs,Outflow,0.0
+2021-11-22,Stublach,ugs,Outflow,56909540.0
+2021-11-23,Aldbrough,ugs,Outflow,0.0
+2021-11-23,Hill Top,ugs,Outflow,0.0
+2021-11-23,Isle Of Grain,lng_terminal,Outflow,149513742.0
+2021-11-23,Dragon,lng_terminal,Outflow,290603521.0
+2021-11-23,Hornsea,ugs,Outflow,0.0
+2021-11-23,South Hook,lng_terminal,Outflow,404151586.0
+2021-11-23,Holehouse Farm,ugs,Outflow,0.0
+2021-11-23,Humbly Grove,ugs,Outflow,0.0
+2021-11-23,Stublach,ugs,Outflow,8500713.0
+2021-11-23,Holford,ugs,Outflow,0.0
+2021-11-24,Hill Top,ugs,Outflow,0.0
+2021-11-24,Stublach,ugs,Outflow,0.0
+2021-11-24,Aldbrough,ugs,Outflow,10468212.0
+2021-11-24,Holford,ugs,Outflow,0.0
+2021-11-24,South Hook,lng_terminal,Outflow,350169239.0
+2021-11-24,Dragon,lng_terminal,Outflow,301296032.0
+2021-11-24,Holehouse Farm,ugs,Outflow,0.0
+2021-11-24,Isle Of Grain,lng_terminal,Outflow,227648662.0
+2021-11-24,Hornsea,ugs,Outflow,10226769.0
+2021-11-24,Humbly Grove,ugs,Outflow,0.0
+2021-11-25,Aldbrough,ugs,Outflow,0.0
+2021-11-25,Hill Top,ugs,Outflow,0.0
+2021-11-25,Dragon,lng_terminal,Outflow,0.0
+2021-11-25,Humbly Grove,ugs,Outflow,0.0
+2021-11-25,Hornsea,ugs,Outflow,18811431.0
+2021-11-25,Holford,ugs,Outflow,0.0
+2021-11-25,Stublach,ugs,Outflow,60208697.0
+2021-11-25,Holehouse Farm,ugs,Outflow,0.0
+2021-11-25,Isle Of Grain,lng_terminal,Outflow,235035600.0
+2021-11-25,South Hook,lng_terminal,Outflow,0.0
+2021-11-26,Holehouse Farm,ugs,Outflow,0.0
+2021-11-26,Stublach,ugs,Outflow,21774212.0
+2021-11-26,Isle Of Grain,lng_terminal,Outflow,272069455.0
+2021-11-26,Hill Top,ugs,Outflow,0.0
+2021-11-26,Humbly Grove,ugs,Outflow,0.0
+2021-11-26,Hornsea,ugs,Outflow,0.0
+2021-11-26,Aldbrough,ugs,Outflow,0.0
+2021-11-26,Holford,ugs,Outflow,32080816.0
+2021-11-26,Dragon,lng_terminal,Outflow,0.0
+2021-11-26,South Hook,lng_terminal,Outflow,55742326.0
+2021-11-27,Hill Top,ugs,Outflow,0.0
+2021-11-27,Stublach,ugs,Outflow,0.0
+2021-11-27,Isle Of Grain,lng_terminal,Outflow,275297215.0
+2021-11-27,Aldbrough,ugs,Outflow,6796464.0
+2021-11-27,Humbly Grove,ugs,Outflow,0.0
+2021-11-27,Holford,ugs,Outflow,153819184.0
+2021-11-27,Dragon,lng_terminal,Outflow,166474562.0
+2021-11-27,Hornsea,ugs,Outflow,0.0
+2021-11-27,South Hook,lng_terminal,Outflow,83090794.0
+2021-11-27,Holehouse Farm,ugs,Outflow,0.0
+2021-11-28,South Hook,lng_terminal,Outflow,129265000.0
+2021-11-28,Aldbrough,ugs,Outflow,0.0
+2021-11-28,Hill Top,ugs,Outflow,0.0
+2021-11-28,Holehouse Farm,ugs,Outflow,0.0
+2021-11-28,Holford,ugs,Outflow,232991776.0
+2021-11-28,Humbly Grove,ugs,Outflow,0.0
+2021-11-28,Hornsea,ugs,Outflow,0.0
+2021-11-28,Isle Of Grain,lng_terminal,Outflow,0.0
+2021-11-28,Dragon,lng_terminal,Outflow,171425129.0
+2021-11-28,Stublach,ugs,Outflow,70588112.0
+2021-11-29,Aldbrough,ugs,Outflow,87453780.0
+2021-11-29,South Hook,lng_terminal,Outflow,129156000.0
+2021-11-29,Isle Of Grain,lng_terminal,Outflow,332874725.0
+2021-11-29,Holford,ugs,Outflow,239793244.0
+2021-11-29,Humbly Grove,ugs,Outflow,0.0
+2021-11-29,Dragon,lng_terminal,Outflow,180436119.0
+2021-11-29,Stublach,ugs,Outflow,154529015.0
+2021-11-29,Holehouse Farm,ugs,Outflow,0.0
+2021-11-29,Hill Top,ugs,Outflow,0.0
+2021-11-29,Hornsea,ugs,Outflow,25911852.0
+2021-11-30,Hill Top,ugs,Outflow,2986950.0
+2021-11-30,Humbly Grove,ugs,Outflow,0.0
+2021-11-30,South Hook,lng_terminal,Outflow,193850000.0
+2021-11-30,Hornsea,ugs,Outflow,0.0
+2021-11-30,Aldbrough,ugs,Outflow,4081577.0
+2021-11-30,Isle Of Grain,lng_terminal,Outflow,390659601.0
+2021-11-30,Holehouse Farm,ugs,Outflow,0.0
+2021-11-30,Holford,ugs,Outflow,221261088.0
+2021-11-30,Dragon,lng_terminal,Outflow,240450382.0
+2021-11-30,Stublach,ugs,Outflow,237244024.0
+2023-05-25,South Hook,lng_terminal,Outflow,0.0
+2023-05-25,Hornsea,ugs,Outflow,0.0
+2023-05-25,Holehouse Farm,ugs,Outflow,0.0
+2023-05-25,Hill Top,ugs,Outflow,0.0
+2023-05-25,Aldbrough,ugs,Outflow,64682995.0
+2023-05-25,Stublach,ugs,Outflow,63742656.0
+2023-05-25,Holford,ugs,Outflow,15377920.0
+2023-05-25,Humbly Grove,ugs,Outflow,0.0
+2023-05-25,Rough,ugs,Outflow,0.0
+2023-05-25,Isle Of Grain,lng_terminal,Outflow,263427262.0
+2023-05-25,Dragon,lng_terminal,Outflow,214996119.0
