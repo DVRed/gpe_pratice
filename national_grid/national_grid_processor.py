@@ -31,7 +31,7 @@ def get_previous_date(df: pd.DataFrame, days: int = 1) -> datetime:
     """
     gets the date 'days' days ago (default is 1)
     """
-    cur_date_str = df.loc[1, 'Gasday']
+    cur_date_str = df.loc[0, 'Gasday']
     cur_date_obj = datetime.strptime(cur_date_str, DATE_FORMAT)
     prev_date_obj = cur_date_obj - timedelta(days=days)
     return prev_date_obj
